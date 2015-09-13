@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [Tests]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.kkb.test.SampleTestNgTest">
+        <methods>
+          <include name="initWebDriver"/>
+          <include name="tearDown"/>
+          <include name="testHomePageHasAHeader"/>
+          <include name="initTestSuite"/>
+        </methods>
+      </class> <!-- com.kkb.test.SampleTestNgTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->
