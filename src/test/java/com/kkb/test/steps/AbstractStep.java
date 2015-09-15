@@ -3,8 +3,6 @@
  */
 package com.kkb.test.steps;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -14,13 +12,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 /**
- * @author jianping.gao
+ * @author sh.deng
  * 
  */
 public abstract class AbstractStep extends BaseStep {
@@ -31,13 +26,7 @@ public abstract class AbstractStep extends BaseStep {
 	private final static Logger logger = LoggerFactory
 			.getLogger(AbstractStep.class);
 
-	/**
-	 * test before
-	 * 
-	 * @param args
-	 */
 
-	
 	public void beforeSuite(String sys) {
 		init(sys);
 		printCaseInfo();
@@ -98,11 +87,7 @@ public abstract class AbstractStep extends BaseStep {
 	 * @throws  
 	 * 
 	 */
-
-	public void beforeMethod(String sys)  {
-	
-	
-
+	public void beforeMethod()  {
 	}
 
 	/**
@@ -110,14 +95,7 @@ public abstract class AbstractStep extends BaseStep {
 	 */
 	@AfterMethod
 	public void afterMethod() {
-		
 	
 	}
 
-	/**
-	 * 请写case之前，添加需要依赖的参数到这个方法中,具体在case实现此方法
-	 * 
-	 * params.add(ParameterConstant.PRODUCT_ID);
-	 */
-	public abstract void addNeedParam();
 }

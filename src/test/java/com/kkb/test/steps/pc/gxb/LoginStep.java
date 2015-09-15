@@ -3,10 +3,10 @@
  */
 package com.kkb.test.steps.pc.gxb;
 
-import java.io.IOException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -14,10 +14,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.kkb.test.actions.gxb.LoginAct;
+import com.kkb.test.actions.pc.gxb.IndexAct;
 import com.kkb.test.constants.Constant;
 import com.kkb.test.steps.AbstractStep;
-import com.kkb.test.steps.BaseStep;
 
 /**
  * @author dengshuhai
@@ -26,10 +25,15 @@ import com.kkb.test.steps.BaseStep;
  */
 public class LoginStep extends AbstractStep {
 	/**
-	 * wap首页
+	 * 首页动作
 	 */
-	protected LoginAct loginAct;
-
+	protected IndexAct loginAct;
+	/**
+	 * slf4j
+	 */
+	private final static Logger logger = LoggerFactory
+			.getLogger(LoginStep.class);
+	
 	@BeforeSuite
 	public void beforeSuite() {
 		super.beforeSuite(Constant.GXB);
@@ -50,8 +54,7 @@ public class LoginStep extends AbstractStep {
 	public void afterTest() {
 
 	}
-	@Test
-	public void test(){}
+	
 	/**
 	 * 
 	 * @param sys
@@ -85,21 +88,27 @@ public class LoginStep extends AbstractStep {
 	
 	}
 	/**
-	 * wap 用户登录
+	 * gxb 用户登录
 	 */
 	public void userLogin(){
-		LoginAct l = new LoginAct(driver);
-		l.clickToLogin();
-		l.inputUserName(loginName);
-		l.inputPassword(password);
-		l.clickLogin();
+		try {
+			IndexAct l = new IndexAct(driver);
+			int i = 0;
+			while(i<5&&!l.checkLogin()){
+				logger.info("状态为：未登录");
+				l.clickToLogin();
+				l.inputUserName(loginName);
+				l.inputPassword(password);
+				l.clickLogin();
+				i++;
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			logger.error("登录失败！");
+			e.printStackTrace();
+		}
 
 	}
 
-	@Override
-	public void addNeedParam() {
-		// TODO Auto-generated method stub
 		
-	}
-	
 }

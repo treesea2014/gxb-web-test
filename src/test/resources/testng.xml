@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests" verbose="5">
-  <test name="Test1">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<listeners>     
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+  <test name="Test">
     <classes>
-      <class name="com.kkb.test.SampleTestNgTest"/>
+      <class name="com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep"/>
     </classes>
-  </test>  
-</suite>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

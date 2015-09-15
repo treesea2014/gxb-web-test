@@ -64,7 +64,7 @@ public class Action {
 	/**
 	 * 
 	 */
-	private int waitSencond = 30;
+	private int waitSencond = 60;
 
 	/**
 	 * 

@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.kkb.test.util.reporter.TestngListener"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test(failed)" parallel="tests">
     <classes>
-      <class name="com.kkb.test.steps.pc.gxb.LoginStep">
+      <class name="com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep">
         <methods>
-          <include name="test"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="testAvatars"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.kkb.test.steps.pc.gxb.LoginStep -->
+      </class> <!-- com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
