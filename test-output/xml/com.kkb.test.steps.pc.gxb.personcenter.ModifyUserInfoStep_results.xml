@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="6.973">
+  <properties />
+            <testcase name="testAvatars" time="0.540" classname="com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep">
+                <failure type="java.lang.AssertionError"
+                  message="testCurrencyAdd  failed  &gt;&gt; null"
+              >
+<![CDATA[java.lang.AssertionError: testCurrencyAdd  failed  >> null
+  org.testng.Assert.fail(Assert.java:94)
+  com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep.testAvatars(ModifyUserInfoStep.java:63)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:483)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+  org.testng.TestRunner.privateRun(TestRunner.java:771)
+  org.testng.TestRunner.run(TestRunner.java:621)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="testUserInfo" time="6.433" classname="com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep" />
+      
+</testsuite>
