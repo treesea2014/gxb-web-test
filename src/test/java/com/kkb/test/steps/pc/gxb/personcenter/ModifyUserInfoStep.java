@@ -35,6 +35,8 @@ public class ModifyUserInfoStep extends LoginStep {
 			personCenterAct = new PersonCenterAct(driver);
 			personCenterAct.clickPersonCenter();
 			personCenterAct.clickUserInfoEdit();
+			Assert.fail();
+
 			personCenterAct.switchToWindow(driver.getWindowHandle());
 			personCenterAct.clickUserInfo();
 			logger.info("高校帮-个人中心-个人信息设置-测试用例执行结束！");
@@ -50,12 +52,13 @@ public class ModifyUserInfoStep extends LoginStep {
 		}
 
 	}
-	@Test(description = "高校帮-个人中心-个人信息设置 " , priority = 2)
+	@Test(description = "高校帮-个人中心-个人信息设置1 " , priority = 2)
 	public void testAvatars() throws Exception {
 		try {
-			Assert.fail();
 			personCenterAct = new PersonCenterAct(driver);
-			personCenterAct.clickAvatars();
+			personCenterAct.snapshot();
+			//personCenterAct.clickAvatars();
+			personCenterAct.snapshot();
 			logger.info("高校帮-个人中心-个人信息设置-测试用例执行结束！");
 		} catch (AssertionError e) {
 			logger.error("testCurrencyAdd  failed ", e);

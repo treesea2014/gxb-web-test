@@ -8,6 +8,7 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestContext;
@@ -65,7 +66,8 @@ public class TestngListener  extends TestListenerAdapter {
 	private void takeScreenShot(ITestResult tr) {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 		String mDateTime = formatter.format(new Date());
-		String fileName = mDateTime + "_" + tr.getName();
+		String fileName = mDateTime + "_" +tr.getName();
+		//
 		String imgUrl = "screenshot" + File.separator + fileName + ".jpg";
 		File scrFile = ((TakesScreenshot)(BaseStep.driver)).getScreenshotAs(OutputType.FILE);
 		File screenshot = new File("test-output/html" + File.separator
@@ -76,13 +78,11 @@ public class TestngListener  extends TestListenerAdapter {
 			logger.error("截图操作失败" + e.getMessage());
 		}
 		Reporter.setCurrentTestResult(tr);
-		//Reporter.log(screenshot.getPath());
-		// 这里实现把图片链接直接输出到结果文件中，通过邮件发送结果则可以直接显示图片
-		//("<img src=\"../" + filePath + "\"/>");
-		// <a href="failScreenShot/${testClass.name}.jpg" target="_blank"><img src="failScreenShot/${testClass.name}.jpg" style="height:200px;"></a>    
+		//Reporter.log(imgUrl+"\n");
+		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
+		Reporter.log("<img height=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
 
-		//Reporter.setEscapeHtml(false);
-		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+"><img height='200px' src=\"" +imgUrl  + "\"/></a>");
+
 	}
 
 }

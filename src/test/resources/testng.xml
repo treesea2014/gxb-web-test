@@ -2,9 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
 <listeners>     
-	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+	
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
-	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 </listeners>
   <test name="Test">
     <classes>

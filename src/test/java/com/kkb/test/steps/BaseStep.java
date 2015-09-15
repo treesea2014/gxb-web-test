@@ -41,7 +41,7 @@ public class BaseStep {
 	/**
 	 * WebDriver
 	 */
-	public static WebDriver driver;
+	public  static WebDriver driver;
 
 	/**
 	 * WebDriver

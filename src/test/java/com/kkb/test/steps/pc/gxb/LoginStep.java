@@ -12,8 +12,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import com.kkb.test.actions.pc.gxb.IndexAct;
 import com.kkb.test.constants.Constant;
 import com.kkb.test.steps.AbstractStep;

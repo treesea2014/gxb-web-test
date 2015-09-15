@@ -11,6 +11,8 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -32,8 +34,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Reporter;
 
 import com.google.common.base.Function;
+import com.kkb.test.steps.BaseStep;
 
 /**
  * @author treesa888@icloud.com
@@ -623,6 +627,25 @@ public class Action {
 			logger.error("截图操作失败" + e.getMessage());
 		}
 
+	}
+	
+	public void snapshot(){
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+		String mDateTime = formatter.format(new Date());
+		String fileName = mDateTime ;
+		//
+		String imgUrl = "screenshot" + File.separator + fileName + ".jpg";
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File screenshot = new File("test-output/html" + File.separator
+				+ imgUrl);
+		try {
+			FileUtils.copyFile(scrFile, screenshot);
+		} catch (IOException e) {
+			logger.error("截图操作失败" + e.getMessage());
+		}
+		//Reporter.log(imgUrl+"\n");
+		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
+		Reporter.log("<img height=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
 	}
 
 	/**
