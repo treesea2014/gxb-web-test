@@ -2,18 +2,16 @@ package com.kkb.test;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
-
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.kkb.test.util.PropertyLoader;
+
 import ru.stqa.selenium.factory.WebDriverFactory;
 import ru.stqa.selenium.factory.WebDriverFactoryMode;
-
-import com.kkb.test.util.PropertyLoader;
-import com.kkb.test.util.WebdriverFactory;
 
 /**
  * Base class for TestNG-based test classes

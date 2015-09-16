@@ -2,7 +2,6 @@ package com.kkb.test.util;
 
 import java.io.File;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,15 +29,19 @@ public class WebdriverFactory {
 	private final static Logger logger = LoggerFactory
 			.getLogger(WebdriverFactory.class);
 
+
 	public final String DEFAULT_DRIVER = "firefox";
 	public final String FIRFOX_DRIVER = "firefox";
 	public final String CHROME_DRIVER = "chrome";
+	public final String SAFARI_DRIVER = "safari";
+
 	public final String IE_DRIVER = "ie";
 	public final String IPHONE_DRIVER = "iphone";
 	public final String ANDROID_DRIVER = "android";
 
 	public final String FIRFOX_DRIVER_PATH = "selenium.browser.firefox";
 	public final String CHROME_DRIVER_PATH = "selenium.browser.chrome.driver";
+	public final String SAFARI_DRIVER_PATH = "selenium.browser.safari.driver";
 	public final String IE_DRIVER_PATH = "selenium.browser.ie.driver.32";
 
 	private int timeout = 60;
@@ -69,6 +73,8 @@ public class WebdriverFactory {
 			webDriver = chromeBrowserInstance(classpath);
 		} else if (IE_DRIVER.equals(browser)) {
 			webDriver = ieBrowserInstance(classpath);
+		} else if (SAFARI_DRIVER.equals(browser)) {
+			webDriver = safariBrowserInstance(classpath);
 		} else if (IPHONE_DRIVER.equals(browser)) {
 			webDriver = Iphone_chromeBrowserInstance(classpath);
 		} else if (ANDROID_DRIVER.equals(browser)) {
@@ -77,11 +83,11 @@ public class WebdriverFactory {
 			webDriver = firefoxBrowserInstance(classpath);
 		}
 
-		webDriver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+		/*webDriver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		webDriver.manage().timeouts()
 				.pageLoadTimeout(timeout, TimeUnit.SECONDS);
 		webDriver.manage().timeouts()
-				.setScriptTimeout(timeout, TimeUnit.SECONDS);
+				.setScriptTimeout(timeout, TimeUnit.SECONDS);*/
 		webDriver.manage().deleteAllCookies();
 		webDriver.manage().window().maximize();
 		return webDriver;
@@ -107,6 +113,25 @@ public class WebdriverFactory {
 		return driver;
 	}
 
+	/**
+	 * safari browser instance
+	 * 
+	 * @param browserPath
+	 * @return
+	 */
+	private WebDriver safariBrowserInstance(String classpath) {
+		String browserPath = classpath
+				+ props.getProperty(SAFARI_DRIVER_PATH);
+		File file = new File(browserPath);
+		if (!file.exists()) {
+			browserPath = new File(classpath).getParentFile().getPath()
+					+ "\\classes\\"
+					+ props.getProperty(SAFARI_DRIVER_PATH);		}
+		//System.setProperty("webdriver.safari.driver", browserPath);
+		WebDriver driver = new SafariDriver();
+		logger.info("启动Safari浏览器   [{}]", browserPath);
+		return driver;
+	}
 	/**
 	 * Firefox browser instance
 	 * 

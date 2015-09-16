@@ -35,7 +35,7 @@ public class ModifyUserInfoStep extends LoginStep {
 			personCenterAct = new PersonCenterAct(driver);
 			personCenterAct.clickPersonCenter();
 			personCenterAct.clickUserInfoEdit();
-			Assert.fail();
+
 
 			personCenterAct.switchToWindow(driver.getWindowHandle());
 			personCenterAct.clickUserInfo();
@@ -56,7 +56,6 @@ public class ModifyUserInfoStep extends LoginStep {
 	public void testAvatars() throws Exception {
 		try {
 			personCenterAct = new PersonCenterAct(driver);
-			personCenterAct.snapshot();
 			//personCenterAct.clickAvatars();
 			personCenterAct.snapshot();
 			logger.info("高校帮-个人中心-个人信息设置-测试用例执行结束！");

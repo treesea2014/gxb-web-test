@@ -37,7 +37,6 @@ import org.slf4j.LoggerFactory;
 import org.testng.Reporter;
 
 import com.google.common.base.Function;
-import com.kkb.test.steps.BaseStep;
 
 /**
  * @author treesa888@icloud.com
@@ -68,7 +67,7 @@ public class Action {
 	/**
 	 * 
 	 */
-	private int waitSencond = 60;
+	private int waitSencond = 30;
 
 	/**
 	 * 
@@ -107,7 +106,20 @@ public class Action {
 	public void type(WebElement element, String text) {
 		type(element, text, second);
 	}
-
+	/**
+	 * 高亮对象
+	 * @param element
+	 */
+	public void higthLight(WebElement element){
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+        String js = "element = arguments[0];" +
+             "original_style = element.getAttribute('style');" +
+             "element.setAttribute('style', original_style + \";" +
+             "background: green; border: 2px solid red;\");" +
+             "setTimeout(function(){element.setAttribute('style', original_style);}, 1000);"; 
+        jsExecutor(js ,element);
+	}
+	
 	/**
 	 * 输入
 	 * 
@@ -117,6 +129,7 @@ public class Action {
 	 */
 	public void type(WebElement element, String text, int second) {
 		this.element = element;
+		higthLight(element);
 		this.element.clear();
 		this.element.sendKeys(text);
 	}
@@ -128,6 +141,7 @@ public class Action {
 	 */
 	public void click(WebElement element, Object... objects) {
 		this.element = element;
+		//higthLight(element);
 		this.element.click();
 		//this.pause(second);
 	}
@@ -142,8 +156,10 @@ public class Action {
 	public void click(WebElement element) {
 		waitForPageLoad(driver);
 		this.element = element;
+		higthLight(element);
 		this.element.click();
-		this.pause(second);
+
+		//this.pause(second);
 	}
 
 	/**
@@ -628,7 +644,9 @@ public class Action {
 		}
 
 	}
-	
+	/**
+	 * 截图操作
+	 */
 	public void snapshot(){
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 		String mDateTime = formatter.format(new Date());

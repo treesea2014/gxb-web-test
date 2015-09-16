@@ -16,8 +16,8 @@
 package com.kkb.test.util.reporter;
 
 import java.util.Comparator;
+
 import org.testng.ITestNGMethod;
-import org.testng.ITestResult;
 
 /**
  * Comparator for sorting TestNG test methods.  Sorts method alphabeticaly

@@ -17,19 +17,29 @@
 package com.kkb.test.util.reporter;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.channels.FileChannel;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.ResourceBundle;
 import java.util.SortedMap;
 import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
+
 import org.apache.velocity.VelocityContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.IClass;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -38,6 +48,8 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.xml.XmlSuite;
+
+import com.kkb.test.util.mail.HtmlMail;
 
 /**
  * Enhanced HTML reporter for TestNG that uses Velocity templates to generate its
@@ -70,6 +82,7 @@ public class HTMLReporter extends AbstractReporter
     private static final String ONLY_FAILURES_KEY = "onlyReportFailures";
 
     private static final String REPORT_DIRECTORY = "html";
+    protected static final Logger logger = LoggerFactory.getLogger(HTMLReporter.class);
 
     private static final Comparator<ITestNGMethod> METHOD_COMPARATOR = new TestMethodComparator();
     private static final Comparator<ITestResult> RESULT_COMPARATOR = new TestResultComparator();
@@ -112,6 +125,14 @@ public class HTMLReporter extends AbstractReporter
             createResults(suites, outputDirectory, onlyFailures);
             createLog(outputDirectory, onlyFailures);
             copyResources(outputDirectory);
+            
+            Date date = new Date();
+            String path = ResourceBundle.getBundle("mail").getString("tomcatPath");
+    		String current = new SimpleDateFormat("yyyyMMddHHmmss")
+    				.format(date);
+            copyFileRecursively(outputDirectory, new File(path+File.separator+current));
+			HtmlMail.generateMailHtml(suites,date);
+			System.out.println("测试报告部署完成");
         }
         catch (Exception ex)
         {
@@ -318,4 +339,95 @@ public class HTMLReporter extends AbstractReporter
             }
         }
     }
+    public static boolean copyFile(File srcFile, File destFile)
+ 		   throws IOException {
+ 		  if (!srcFile.exists() || !srcFile.isFile() || !srcFile.canRead()) {
+ 		   throw new FileNotFoundException(srcFile.getAbsolutePath());
+ 		  }
+ 		  if (!destFile.exists()) {
+ 		   if (destFile.getParentFile() != null) {
+ 		    destFile.getParentFile().mkdirs();
+ 		   }
+ 		   destFile.createNewFile();
+ 		  } else if (destFile.isDirectory()) {
+ 		   destFile = new File(destFile, srcFile.getName());
+ 		  }
+
+ 		  if (srcFile.equals(destFile)) {
+ 		   return false;
+ 		  }
+
+ 		  FileChannel src = null;
+ 		  FileChannel dst = null;
+
+ 		  try {
+ 		   src = new FileInputStream(srcFile).getChannel();
+ 		   dst = new FileOutputStream(destFile).getChannel();
+ 		   long total = src.size();
+ 		   long curr = 0L;
+ 		   do {
+ 		    // curr += src.transferTo(curr, total - curr, dst);
+ 		    curr += dst.transferFrom(src, curr, total - curr);
+ 		   } while (curr < total);
+ 		  } finally {
+ 		   if (src != null) {
+ 		    try {
+ 		     src.close();
+ 		    } catch (Exception e) {
+ 		    }
+ 		   }
+ 		   if (dst != null) {
+ 		    try {
+ 		     dst.close();
+ 		    } catch (Exception e) {
+ 		    }
+ 		   }
+ 		   destFile.setLastModified(srcFile.lastModified());
+ 		  }
+ 		  return true;
+ 		 }
+
+ 		 public static void copyFileRecursively(File src, File dst)
+ 		   throws IOException {
+ 		  if (src == null) {
+ 		   throw new IllegalArgumentException("src null");
+ 		  }
+
+ 		  if (dst == null) {
+ 		   throw new IllegalArgumentException("dst null");
+ 		  }
+
+ 		  if (src.equals(dst)) {
+ 		   return;
+ 		  }
+
+ 		  if (!src.exists() || !src.canRead()) {
+ 		   throw new IllegalStateException("File: " + src.getAbsolutePath()
+ 		     + " can't read or exist");
+ 		  }
+
+ 		  if (src.isDirectory() && dst.isFile()) {
+ 		   throw new IllegalStateException("File: " + src.getAbsolutePath()
+ 		     + " is directory while File: " + dst.getAbsolutePath()
+ 		     + " is file");
+ 		  }
+
+ 		  if (!dst.exists() && dst.isDirectory()) {
+ 		   logger.info("create dst >>> " + dst.getAbsolutePath());
+ 		   dst.getParentFile().mkdirs();
+ 		   dst.mkdir();
+ 		  }
+
+ 		  if (src.isDirectory()) {
+ 		   File[] files = src.listFiles();
+ 		   for (File file : files) {
+ 		    copyFileRecursively(file, new File(dst, file.getName()));
+ 		   }
+ 		  } else {
+ 		   logger.info("copy from {" + src.getAbsolutePath() + " to "
+ 		     + dst.getAbsolutePath() + "}");
+ 		   copyFile(src, dst);
+ 		  }
+ 		 }
+ 		
 }

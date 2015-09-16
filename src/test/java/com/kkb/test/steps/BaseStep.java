@@ -36,7 +36,7 @@ public class BaseStep {
 
 
 
-	protected Properties p;
+	public static Properties p;
 
 	/**
 	 * WebDriver
