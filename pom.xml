@@ -1,11 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>kkb.kkn.test.web</groupId>
-	<artifactId>kkb-web-test</artifactId>
-	<version>1.0</version>
+	<groupId>gxb.test.web</groupId>
+	<artifactId>gxb-web-test</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
-
+	<properties>
+		<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+	</properties>
 	<dependencies>
 		<!-- logback -->
 		<dependency>
@@ -28,12 +30,12 @@
 			<artifactId>logback-classic</artifactId>
 			<version>1.1.2</version>
 		</dependency>
-		<!-- reportNG -->
+		<!-- reportNG 已重🐶🐶🐶🐶🐶🐶
 		<dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
@@ -45,16 +47,23 @@
 			<version>1.4</version>
 		</dependency>
 		
-		
+		<!-- testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.9.4</version>
 		</dependency>
+		<!-- selenium po -->
 		<dependency>
 			<groupId>ru.stqa.selenium</groupId>
 			<artifactId>webdriver-factory</artifactId>
 			<version>1.1.46</version>
+		</dependency>
+		<!-- 邮件 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.3.3</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -74,7 +83,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
-				<version>2.7</version>
+				<version>2.6</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -84,11 +93,8 @@
 				<version>2.18.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
-					<systemPropertyVariables>
-						<application.properties>/application.properties</application.properties>
-					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -101,97 +107,19 @@
 			</plugin>
 		</plugins>
 	</build>
-	<!-- profiles -->
-	<profiles>
-		<!-- browsers -->
-		<profile>
-			<id>firefox</id>
-			<properties>
-				<capabilities>/firefox.capabilities</capabilities>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-		<profile>
-			<id>chrome</id>
-			<properties>
-				<capabilities>/chrome.capabilities</capabilities>
-			</properties>
-		</profile>
-		<profile>
-			<id>ie</id>
-			<properties>
-				<capabilities>/ie.capabilities</capabilities>
-			</properties>
-		</profile>
-		<profile>
-			<id>safari</id>
-			<properties>
-				<capabilities>/safari.capabilities</capabilities>
-			</properties>
-		</profile>
-		<profile>
-			<id>phantomjs</id>
-			<properties>
-				<capabilities>/phantomjs.capabilities</capabilities>
-			</properties>
-		</profile>
-		<profile>
-			<id>opera</id>
-			<properties>
-				<capabilities>/opera.capabilities</capabilities>
-			</properties>
-		</profile>
-		<profile>
-			<id>htmlunit</id>
-			<properties>
-				<capabilities>/htmlunit.capabilities</capabilities>
-			</properties>
-		</profile>
-		<!-- environments -->
-		<profile>
-			<id>localhost</id>
-			<properties>
-				<site.url>http://localhost/</site.url>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-		<profile>
-			<id>devhost</id>
-			<properties>
-				<site.url>http://devhost/</site.url>
-			</properties>
-		</profile>
-		<profile>
-			<id>testhost</id>
-			<properties>
-				<site.url>http://testhost/</site.url>
-			</properties>
-		</profile>
-		<profile>
-			<id>prodhost</id>
-			<properties>
-				<site.url>http://prodhost.com/</site.url>
-			</properties>
-		</profile>
-		<!-- grid -->
-		<profile>
-			<id>nogrid</id>
-			<properties>
-				<grid.url></grid.url>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-		<profile>
-			<id>grid</id>
-			<properties>
-				<grid.url>http://localhost:4444/wd/hub/</grid.url>
-			</properties>
-		</profile>
-	</profiles>
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://api-stg.kaikeba.com:8080/nexus-2.9.1-02/content/groups/public/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://api-stg.kaikeba.com:8080/nexus-2.9.1-02/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
