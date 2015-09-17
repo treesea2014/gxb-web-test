@@ -200,6 +200,10 @@ public class HtmlMail {
 				}
 				lineCount++;
 			}
+			if(passed + fail + skip == 0){
+				logger.error("testcases don't execute~");
+				return ;
+			}
 			String per = "<div style=\"height:20px;width:400px;\">" +
 				"<div style=\"height:20px;width:"+(passed * 100 / (passed + fail + skip))+"%;background-color:green;float:left\"></div>"+
 				"<div style=\"height:20px;width:"+(skip * 100 / (passed + fail + skip))+"%;background-color:yellow;float:left\"></div>"+
