@@ -513,7 +513,7 @@ public class Action {
 	 */
 	public void quit() {
 		try {
-			driver.close();
+			//driver.close();
 			driver.quit();
 			logger.info("quite browser!");
 		} catch (WebDriverException e) {
@@ -631,7 +631,7 @@ public class Action {
 	 * @param desc
 	 *            截图名称描述
 	 */
-	public void failScreenShot(String desc) {
+	/*public void failScreenShot(String desc) {
 		File scrFile = ((TakesScreenshot) driver)
 				.getScreenshotAs(OutputType.FILE);
 		logger.info("开始截图，名称{}", desc + ".jpg");
@@ -643,7 +643,7 @@ public class Action {
 			logger.error("截图操作失败" + e.getMessage());
 		}
 
-	}
+	}*/
 	/**
 	 * 截图操作
 	 */
