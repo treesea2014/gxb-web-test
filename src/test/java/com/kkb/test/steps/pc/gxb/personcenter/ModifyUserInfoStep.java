@@ -35,17 +35,13 @@ public class ModifyUserInfoStep extends LoginStep {
 			personCenterAct = new PersonCenterAct(driver);
 			personCenterAct.clickPersonCenter();
 			personCenterAct.clickUserInfoEdit();
-
-
-			personCenterAct.switchToWindow(driver.getWindowHandle());
+			personCenterAct.switchToWindow(driver.getTitle());
 			personCenterAct.clickUserInfo();
 			logger.info("高校帮-个人中心-个人信息设置-测试用例执行结束！");
 		} catch (AssertionError e) {
 			logger.error("testCurrencyAdd  failed ", e);
-			personCenterAct.failScreenShot(getClass().getName());
 			Assert.fail("testCurrencyAdd  failed  >> " + e.getMessage());
 		} catch (Exception e) {
-			personCenterAct.failScreenShot(getClass().getName());
 			logger.error("testCurrencyAdd  failed ", e);
 			throw new Exception("testCurrencyAdd  failed  >> "
 					+ e.getMessage(), e);
@@ -61,10 +57,8 @@ public class ModifyUserInfoStep extends LoginStep {
 			logger.info("高校帮-个人中心-个人信息设置-测试用例执行结束！");
 		} catch (AssertionError e) {
 			logger.error("testCurrencyAdd  failed ", e);
-			personCenterAct.failScreenShot(getClass().getName());
 			Assert.fail("testCurrencyAdd  failed  >> " + e.getMessage());
 		} catch (Exception e) {
-			personCenterAct.failScreenShot(getClass().getName());
 			logger.error("testCurrencyAdd  failed ", e);
 			throw new Exception("testCurrencyAdd  failed  >> "
 					+ e.getMessage(), e);
