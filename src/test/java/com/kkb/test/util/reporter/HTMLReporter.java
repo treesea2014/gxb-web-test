@@ -130,9 +130,9 @@ public class HTMLReporter extends AbstractReporter
             String path = ResourceBundle.getBundle("mail").getString("tomcatPath");
     		String current = new SimpleDateFormat("yyyyMMddHHmmss")
     				.format(date);
-    		//copyFileRecursively(outputDirectory,new File(path+File.separator+current)); 
+    		copyFileRecursively(outputDirectory,new File(path+File.separator+current)); 
     		//mvn 运行 target 里的文件，由于截图存放在test-out里，需要从test-out里copy截图文件夹
-            copyFileRecursively(new File(System.getProperty("user.dir")+"/test-output/html"), new File(path+File.separator+current));
+            copyFileRecursively(new File(System.getProperty("user.dir")+"/test-output/html/screenshot"), new File(path+File.separator+current+File.separator+"screenshot"));
 			HtmlMail.generateMailHtml(suites,date);
 			System.out.println("测试报告部署完成");
         }
