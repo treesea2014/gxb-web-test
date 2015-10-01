@@ -7,6 +7,8 @@ import java.util.Map;
 
 public class Constant {
 	public static String GXB = "gaoxiaobang";
+	public static String GCU = "gcu";//华南理工大学|广州学院
+
 
 	public static Map<String, String> MAP = new HashMap<String, String>();
 	public static ArrayList<String> suites = new ArrayList<String>();

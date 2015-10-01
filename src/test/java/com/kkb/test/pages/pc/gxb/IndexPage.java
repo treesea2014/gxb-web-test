@@ -1,5 +1,7 @@
 package com.kkb.test.pages.pc.gxb;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,18 +33,60 @@ public class IndexPage extends Page {
 
 	@FindBy(linkText = "登录/注册")
 	public WebElement tologinBtn;
-
-	@FindBy(id = "username")
-	public WebElement username;
-
-	@FindBy(id = "password")
-	public WebElement password;
-
+	
 	/**
-	 * 登陆按钮
+	 * 首页轮播图
 	 */
-	@FindBy(id = "login-submit")
-	public WebElement loginBtn;
+	@FindBy(className = "imgContent")
+	public WebElement imgContent;
+	/**
+	 * 学院名称
+	 */
+	@FindBy(xpath = "//div[@class='schoolIntroduce']/h1")
+	public WebElement introduceTitle;
+	/**
+	 * 学院名称详细
+	 */
+	@FindBy(xpath = "//div[@class='schoolIntroduce']/p")
+	public WebElement introduceDetails;
+	
+	/**
+	 * 公告标题
+	 */
+	@FindBy(xpath = "//div[@class='layout-row02']/div/ul/li[2]/h1/a")
+	public List<WebElement> noticeTitle;
+	
+	/**
+	 * 精品课程
+	 */
+	@FindBy(xpath = "//div[@class='listenContent']")
+	public List<WebElement> perfectCourse;
+	
+	/**
+	 * 教师风采
+	 */
+	@FindBy(xpath = "//div[@class='teacher']/ul/li")
+	public List<WebElement> teachersInfo;
+	
+	/**
+	 * 学院介绍
+	 */
+	@FindBy(xpath = "//div[@class='introduce']")
+	public WebElement introduce;
+	
+	/**
+	 * 学院照片
+	 */
+	@FindBy(xpath = "//div[@class='teacher']/ul/li")
+	public List<WebElement> demeanour;
+	
+	/**
+	 * 学院新闻动态
+	 */
+	@FindBy(xpath = "//div[@class='introduce']")
+	public WebElement news;
+	
+	
 
 	/**
 	 * 用户信息 用于判断是否登录

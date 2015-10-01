@@ -663,7 +663,7 @@ public class Action {
 		}
 		//Reporter.log(imgUrl+"\n");
 		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
-		Reporter.log("<img height=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
+		Reporter.log("<img height=\"200px\" width=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
 	}
 
 	/**

@@ -3,9 +3,11 @@ package com.kkb.test.steps.pc.gxb.personcenter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.kkb.test.actions.pc.gxb.personcenter.PersonCenterAct;
+import com.kkb.test.constants.Constant;
 import com.kkb.test.steps.pc.gxb.LoginStep;
 
 /**
@@ -24,6 +26,10 @@ public class ModifyUserInfoStep extends LoginStep {
 	//个人中心页面动作
 	private PersonCenterAct personCenterAct;
 
+	@BeforeClass
+	public void beforeSuite(){
+		beforeSuite(Constant.GXB);
+	}
 	/**
 	 * 高校帮-个人中心-个人信息设置
 	 * 

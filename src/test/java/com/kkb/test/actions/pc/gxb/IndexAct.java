@@ -66,50 +66,5 @@ public class IndexAct  extends Action{
 		this.click(loginPage.adminLogin);
 	}
 	
-	/**
-	 *点击去登陆/注册按钮
-	 */
-	public  void clickToLogin() {
-		logger.info("点击去登陆按钮：");
-		this.click(loginPage.tologinBtn);
-	}
 	
-	/**
-	 *输入用户
-	 */
-	public  void inputUserName(String text) {
-		logger.info("输入用户名：{}",text );
-		this.type(loginPage.username,text);
-	}
-	
-	/**
-	 *输入密码
-	 */
-	public  void inputPassword(String text) {
-		logger.info("输入密码：{}",text );
-		this.type(loginPage.password,text);
-	}
-	
-	
-	/**
-	 *点击登陆按钮
-	 */
-	public  void clickLogin() {
-		logger.info("点击登陆按钮：");
-		this.click(loginPage.loginBtn);
-	}
-	
-
-	/**
-	 *检查是否登陆
-	 * @return 
-	 */
-	public  boolean checkLogin() {
-		String loginInfo = loginPage.loginInfo.getText();
-		logger.info("登陆信息：{}",loginInfo);
-		if("登录/注册".equals(loginInfo)){
-			return false;
-		}
-		return true;
-	}
 }

@@ -79,7 +79,7 @@ public class TestngListener  extends TestListenerAdapter {
 		Reporter.setCurrentTestResult(tr);
 		//Reporter.log(imgUrl+"\n");
 		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
-		Reporter.log("<img height=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
+		Reporter.log("<img height=\"200px\" width=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
 
 
 	}
