@@ -129,6 +129,9 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			allChapters(courseName,errorCourse);
 			this.clickCourseBar();
 			this.clickCourseBar();
+			logger.info("下一页");
+			click(driver.findElement(By.xpath("//span[text()='下一页']")));
+			pause(3);
 
 		}
 		//点击第一门课程
@@ -178,7 +181,11 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			allChapters(courseName,errorCourse);
 			this.clickCourseBar();
 			this.clickCourseBar();
-
+			logger.info("下一页");
+			click(driver.findElement(By.xpath("//span[text()='下一页']")));
+			pause(3);
+			click(driver.findElement(By.xpath("//span[text()='下一页']")));
+			pause(3);
 		}
 		//点击第一门课程
 	
