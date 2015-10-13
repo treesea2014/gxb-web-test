@@ -9,21 +9,10 @@
 </listeners>
 
   
-  <test name="厦门海洋大学-视频播放1">
-	    <classes>
-	      <class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/>
-	            
-	    </classes>
-	  </test>
-	    <test name="厦门海洋大学-视频播放2">
-	    <classes>
-	      <class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/>
-	            
-	    </classes>
-	  </test>
+
 	    <test name="厦门海洋大学-视频播放3">
 	    <classes>
-	      <class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/>
+	      <class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep3"/>
 	            
 	    </classes>
 	  </test>
