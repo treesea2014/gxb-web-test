@@ -30,7 +30,11 @@ public class CoursePage extends Page {
 	 */
 	@FindBy(xpath = "//div[@class='caption guide']/div/h4")
 	public List<WebElement> courseNameList;
-
+	/**
+	 * 下一页
+	 */
+	@FindBy(xpath = "//span[text()='下一页']")
+	public WebElement nextPage;
 	/**
 	 * 课程类型
 	 */

@@ -92,7 +92,10 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	}
 	
 	public  String clickCourse2() {
-		driver.findElement(By.xpath("//*[@id='context-container']/div/div[1]/div[3]/nav/ul/li[5]/a/span")).click();
+		logger.info("下一页");
+		pause(3);
+		click(coursePage.nextPage);
+		pause(3);
 		List<WebElement> courseNameList = coursePage.courseNameList ;
 		StringBuilder errorCourse = new StringBuilder("");
 		for(int i = 0 ;i<courseNameList.size() ; i++){
@@ -135,9 +138,13 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	}
 	
 	public  String clickCourse3() {
-		driver.findElement(By.xpath("//*[@id='context-container']/div/div[1]/div[3]/nav/ul/li[5]/a/span")).click();
-		driver.findElement(By.xpath("//*[@id='context-container']/div/div[1]/div[3]/nav/ul/li[5]/a/span")).click();
+		logger.info("下一页");
+		pause(3);
+		click(coursePage.nextPage);
+		pause(3);
 
+		click(coursePage.nextPage);
+		pause(3);
 		List<WebElement> courseNameList = coursePage.courseNameList ;
 		StringBuilder errorCourse = new StringBuilder("");
 		for(int i = 0 ;i<courseNameList.size() ; i++){
