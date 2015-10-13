@@ -63,7 +63,8 @@ public abstract class AbstractStep extends BaseStep {
 	 */
 	@AfterTest(alwaysRun = true)
 	public void afterTest() {
-
+		//System.out.println("关闭");
+		//driver.quit();
 	}
 
 	/**
@@ -80,7 +81,8 @@ public abstract class AbstractStep extends BaseStep {
 	 */
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-
+		//System.out.println("关闭");
+		//driver.quit();
 	}
 
 	/**
@@ -95,7 +97,7 @@ public abstract class AbstractStep extends BaseStep {
 	 */
 	@AfterMethod
 	public void afterMethod() {
-	
+
 	}
 
 }

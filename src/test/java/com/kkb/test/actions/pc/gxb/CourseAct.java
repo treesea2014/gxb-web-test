@@ -44,17 +44,17 @@ public class CourseAct  extends IndexAct{
 	public  String clickFirstCourse() {
 		List<WebElement> courseNameList = coursePage.courseNameList ;
 		for(int i = 0 ;i<courseNameList.size() ; i++){
-			logger.info("*********{}********",i);
-			logger.info("课程名称:{}",getText(courseNameList.get(i)));
-			logger.info("课程类型:{}",getText(coursePage.courseType.get(i)));
+			//logger.info("*********{}********",i);
+			//logger.info("课程名称:{}",getText(courseNameList.get(i)));
+			/*logger.info("课程类型:{}",getText(coursePage.courseType.get(i)));
 			logger.info("课程信息:{}",getText(coursePage.bodyCourseInfo.get(i)));
 			logger.info("课程简介:{}",getText(coursePage.bodyCoursentro.get(i)));
 			logger.info("课程星级评价:{}",getText(coursePage.bodyCourseStars.get(i)));
-			logger.info("参与人数:{}",getText(coursePage.bodyCoursePeoples.get(i)));
+			logger.info("参与人数:{}",getText(coursePage.bodyCoursePeoples.get(i)));*/
 		}
 		//点击第一门课程
-		String firstCourse = getText(courseNameList.get(0));
-		click(courseNameList.get(0));
+		String firstCourse = getText(courseNameList.get(1));
+		click(courseNameList.get(1));
 		return firstCourse ;
 	}
 	

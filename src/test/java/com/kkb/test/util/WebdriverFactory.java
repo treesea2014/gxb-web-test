@@ -66,6 +66,8 @@ public class WebdriverFactory {
 	public WebDriver newInstanceOf(String browser , Properties p) {
 		props = p;
 		classpath = ClassLoader.getSystemResource("").getPath();
+		//classpath = System.getProperty("usr.dir");
+
 		WebDriver webDriver;
 		if (FIRFOX_DRIVER.equals(browser)) {
 			webDriver = firefoxBrowserInstance(classpath);

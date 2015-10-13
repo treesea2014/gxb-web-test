@@ -3,6 +3,7 @@
  */
 package com.kkb.test.steps.pc.gxb;
 
+import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
@@ -41,53 +42,6 @@ public class LoginStep extends AbstractStep {
 	}
 
 	/**
-	 * 
-	 */
-	@BeforeTest
-	public void beforeTest() {
-
-	}
-	/**
-	 * 
-	 */
-	@AfterTest(alwaysRun = true)
-	public void afterTest() {
-
-	}
-	
-	/**
-	 * 
-	 * @param sys
-	 */
-	@BeforeClass
-	public void beforeClass() {
-
-	}
-
-	/**
-	 * 
-	 */
-	@AfterClass(alwaysRun = true)
-	public void afterClass() {
-
-	}
-
-	/**
-	 * 
-	 */
-	@BeforeMethod
-	public void beforeMethod() {
-		
-	}
-
-	/**
-	 * 
-	 */
-	@AfterMethod
-	public void afterMethod() {
-	
-	}
-	/**
 	 * gxb 用户登录
 	 */
 	public void userLogin(){
@@ -100,6 +54,7 @@ public class LoginStep extends AbstractStep {
 				l.inputUserName(loginName);
 				l.inputPassword(password);
 				l.clickLogin();
+				driver.findElement(By.linkText("跳过")).click();
 				i++;
 			}
 		} catch (Exception e) {

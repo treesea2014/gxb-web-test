@@ -43,6 +43,15 @@ public class CommonCourseDetailsAct  extends CourseAct{
 			logger.info(getText(chapter));
 		}
 	}
+	
+	/**
+	 * 点击开始/继续学习
+	 */
+	public  void clickStartStudy() {
+		logger.info("点击开始/继续学习");
+		click(courseDetialsPage.startStudy);
+	}
+	
 	/**
 	 * 点击预览 
 	 */

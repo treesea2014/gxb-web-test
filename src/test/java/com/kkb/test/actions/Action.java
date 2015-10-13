@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.Reporter;
 
 import com.google.common.base.Function;
+import com.jayway.restassured.RestAssured;
 
 /**
  * @author treesa888@icloud.com
@@ -154,7 +155,7 @@ public class Action {
 	 */
 
 	public void click(WebElement element) {
-		waitForPageLoad(driver);
+		//waitForPageLoad(driver);
 		this.element = element;
 		higthLight(element);
 		this.element.click();
@@ -665,7 +666,27 @@ public class Action {
 		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
 		Reporter.log("<img height=\"200px\" width=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
 	}
-
+	/**
+	 * 截图操作
+	 */
+	public void snapshot(String title){
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+		String mDateTime = formatter.format(new Date());
+		String fileName = mDateTime ;
+		//
+		String imgUrl = "screenshot" + File.separator + fileName + ".jpg";
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File screenshot = new File("test-output/html" + File.separator
+				+ imgUrl);
+		try {
+			FileUtils.copyFile(scrFile, screenshot);
+		} catch (IOException e) {
+			logger.error("截图操作失败" + e.getMessage());
+		}
+		Reporter.log(title);
+		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
+		Reporter.log("<img height=\"200px\" width=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
+	}
 	/**
 	 * 通过Xpath查找元素集合
 	 * 
@@ -771,4 +792,12 @@ public class Action {
 		logger.info("点击返回上一步");
 	}
 	
+	/**
+	 * 测试API
+	 */
+	public void setUp() {
+	    RestAssured.baseURI= "http://10.46.28.193";
+	    RestAssured.port = 8080;
+	    RestAssured.basePath = "/service/v1";
+	}
 }

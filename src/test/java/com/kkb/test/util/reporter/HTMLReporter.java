@@ -415,7 +415,7 @@ public class HTMLReporter extends AbstractReporter
  		  }
 
  		  if (!dst.exists() && dst.isDirectory()) {
- 		   logger.info("create dst >>> " + dst.getAbsolutePath());
+ 		   logger.debug("create dst >>> " + dst.getAbsolutePath());
  		   dst.getParentFile().mkdirs();
  		   dst.mkdir();
  		  }
@@ -426,7 +426,7 @@ public class HTMLReporter extends AbstractReporter
  		    copyFileRecursively(file, new File(dst, file.getName()));
  		   }
  		  } else {
- 		   logger.info("copy from {" + src.getAbsolutePath() + " to "
+ 		   logger.debug("copy from {" + src.getAbsolutePath() + " to "
  		     + dst.getAbsolutePath() + "}");
  		   copyFile(src, dst);
  		  }
