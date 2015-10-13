@@ -71,4 +71,22 @@ public class CoursePage extends Page {
 	@FindBy(xpath = "//div[@class='row']/div/a/div/div[2]")
 	public List<WebElement> cooperationCourse;
 	
+	/**
+	 * 课程查询输入框
+	 */
+	@FindBy(xpath = "//*[@id='keyword']")
+	public WebElement searchInput;
+	
+	/**
+	 * 查询
+	 */
+	@FindBy(xpath = "//*[@id='searchSubmitBtn']")
+	public WebElement searchBth;
+	
+	/**
+	 * 查询
+	 */
+	@FindBy(xpath = "//div[@class='course-content']/h1")
+	public WebElement searchResult;
+	
 }

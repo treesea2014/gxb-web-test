@@ -47,7 +47,6 @@ public class CoursePlayStep3 extends LoginStep {
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
 			commonCourseLearnAct.snapshot();
-			
 			//点击第一门课程
 			String errorVideo = commonCourseLearnAct.clickCourse3();
 

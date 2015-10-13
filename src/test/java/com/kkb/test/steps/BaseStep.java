@@ -33,6 +33,8 @@ public class BaseStep {
 	protected static String baseUrl = "baseurl";
 	protected static String loginName = "loginname";
 	protected static String password = "password";
+	protected static String courseids = "courseids";
+
 
 
 
@@ -60,6 +62,8 @@ public class BaseStep {
 		loginName = p.getProperty(sys + ".loginname");
 		// 登录密码
 		password = p.getProperty(sys + ".password");
+		//获取课程编号
+		courseids = p.getProperty(sys + ".courseids");
 		//根据浏览器类型 初始化driver
 		driver = new WebdriverFactory().newInstanceOf(p.getProperty(BROWSER), p);
 		logger.info(p.toString());

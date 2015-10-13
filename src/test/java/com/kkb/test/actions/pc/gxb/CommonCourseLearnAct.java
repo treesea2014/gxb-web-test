@@ -1,6 +1,7 @@
 package com.kkb.test.actions.pc.gxb;
 
 import java.util.List;
+import java.util.TreeMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -48,6 +49,52 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		logger.info("点击left开始学习");
 		click(courseLearnPage.startLearn);
 	}
+	
+	
+	public  String clickCourse(String course) {
+		List<WebElement> courseNameList = coursePage.courseNameList ;
+		StringBuilder errorCourse = new StringBuilder("");
+		for(int i = 0 ;i<courseNameList.size() ; i++){
+			//logger.info("*********{}********",i);
+			//logger.info("课程名称:{}",getText(courseNameList.get(i)));
+			/*logger.info("课程类型:{}",getText(coursePage.courseType.get(i)));
+			logger.info("课程信息:{}",getText(coursePage.bodyCourseInfo.get(i)));
+			logger.info("课程简介:{}",getText(coursePage.bodyCoursentro.get(i)));
+			logger.info("课程星级评价:{}",getText(coursePage.bodyCourseStars.get(i)));
+			logger.info("参与人数:{}",getText(coursePage.bodyCoursePeoples.get(i)));*/
+			courseNameList = driver.findElements(By.xpath("//div[@class='caption guide']/div/h4"));
+			String courseName = courseNameList.get(i).getText();
+			if(courseName.contains("形势与政策")){
+				continue;
+			}
+			logger.info(courseName);
+			courseNameList.get(i).click();
+			//显示所有章节
+			//commonCourseLearnAct.dispalyAllChapter();
+			snapshot();
+			//点击开始/继续学习
+			clickStartStudy();
+			snapshot();
+			//等待30s
+			pause(10);
+			snapshot();
+			//点击左侧学习
+			clickStartLearn();
+			snapshot();
+			//获取所有章节
+			allChapters(courseName,errorCourse);
+			this.clickCourseBar();
+			this.clickCourseBar();
+
+		}
+		//点击第一门课程
+	
+		Reporter.log(errorCourse.toString());
+		return errorCourse.toString() ;
+	}
+	
+	
+	
 	
 	public  String clickCourse() {
 		List<WebElement> courseNameList = coursePage.courseNameList ;
@@ -211,11 +258,10 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 					String courseName =chapterTitle+"--"+ e.getText(); 
 					e.click();
 					if(!checkPlayError(courseName,errorCourse)){
-						
-	/*					pause(5);
+						pause(5);
 						clickVideoPlay();
 						pause(8);
-						clickVideoPause();*/
+						clickVideoPause();
 						logger.info(courseName+"  播放正常！");
 						clickVideoBack();
 					}else{
@@ -284,16 +330,25 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		logger.info(" 获取历史视频播放进度：{}",time);
 	}
 	 
+	
+	
+	public  void  all(){
+		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
+		TreeMap<String,String >  chapterMap = new TreeMap<String,String >();
+		String chapterTitle = "";
+		for(WebElement chapter : chapterList){
+			//获取章节名称
+			 chapterTitle = chapter.getText();
+			 chapter.click();
+		}
+
+	}
+	
 	/**
 	 * 判断视频是否播放出错
 	 * @param errorCourse 
 	 */
 	public boolean checkPlayError(String courseName, StringBuilder errorCourse ){
-		boolean re = isElementExist("//div[@class='vjs-error-display']/*", 5);
-		if(!re){
-			this.refresh();
-			pause(3);
-		}
 		String errorMsg = courseLearnPage.playError.getText();
 		if(null==errorMsg||"".equals(errorMsg))
 			return false;

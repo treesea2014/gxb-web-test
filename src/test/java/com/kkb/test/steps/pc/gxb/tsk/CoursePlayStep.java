@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.kkb.test.actions.pc.gxb.CommonCourseDetailsAct;
@@ -39,24 +40,42 @@ public class CoursePlayStep extends LoginStep {
 	 * 
 	 * @throws Exception
 	 */
+	@Parameters("courseName" )
 	@Test(description = "厦门海洋大学-查看视频播放 " , priority = 1)
-	public void testVideoPaly() throws Exception {
+	public void testVideoPaly(String courseName) throws Exception {
 		try {
 			commonCourseLearnAct = new CommonCourseLearnAct(driver);
-			//commonCourseLearnAct.snapshot();
+			
+			StringBuilder errorCourse = new StringBuilder("");
+
+			commonCourseLearnAct.snapshot();
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
-			//commonCourseLearnAct.snapshot();
-			
-			//点击第一门课程
-			String errorVideo = commonCourseLearnAct.clickCourse();
+			//搜索课程
+			commonCourseLearnAct.inputSearchContent(courseName);
+			commonCourseLearnAct.snapshot();
 
-			logger.info(errorVideo);
+			//点击第一门课程
+			//String errorVideo = commonCourseLearnAct.clickCourse(courseName);
+			
+			//点击开始/继续学习
+			commonCourseLearnAct.clickStartStudy();
+			commonCourseLearnAct.pause(10);
+			commonCourseLearnAct.snapshot();
+			//等待30s
+			//点击左侧学习
+			commonCourseLearnAct.clickStartLearn();
+			commonCourseLearnAct.snapshot();
+			//获取所有章节
+			commonCourseLearnAct.allChapters(courseName,errorCourse);
+			logger.info("出错的视频有：");
+			logger.info(errorCourse.toString());
+
 			logger.info("厦门海洋大学-查看视频播放-测试用例执行结束！");
 		
 		} catch (Exception e) {
-			logger.error("厦门海洋大学-查看视频播放", e);
-			throw new Exception("厦门海洋大学-查看视频播放  >> "
+			logger.error("厦门海洋大学-查看视频播放-"+courseName, e);
+			throw new Exception("厦门海洋大学-查看视频播放-"+courseName+"  >> "
 					+ e.getMessage(), e);
 		}
 

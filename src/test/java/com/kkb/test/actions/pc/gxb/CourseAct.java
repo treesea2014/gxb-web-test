@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 
 import com.kkb.test.pages.pc.gxb.CoursePage;
 
@@ -58,5 +59,17 @@ public class CourseAct  extends IndexAct{
 		return firstCourse ;
 	}
 	
+	public void inputSearchContent(String name){
+		logger.info("搜索框内输入课程名称：{}",name);
+		type(coursePage.searchInput,name);
+		logger.info("点击搜索",name);
+		click(coursePage.searchBth);
+		boolean flag = this.isElementExist("//div[@class='course-content']/h1", 5);
+		if(flag){
+			click(coursePage.searchResult);
+		}else{
+			Assert.fail("课程不存在：【"+name);
+		}
+	}
 
 }
