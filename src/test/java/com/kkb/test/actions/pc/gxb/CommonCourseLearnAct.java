@@ -263,10 +263,11 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 					WebElement e = driver.findElement(By.xpath("(//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')])["+(i+1)+"]"));
 					String courseName =chapterTitle+"--"+ e.getText(); 
 					e.click();
+					pause(5);
 					if(!checkPlayError(courseName,errorCourse)){
 						pause(5);
 						clickVideoPlay();
-						pause(8);
+						pause(5);
 						//clickVideoPause();
 						logger.info(courseName+"  播放正常！");
 						clickVideoBack();
@@ -355,29 +356,31 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * @param errorCourse 
 	 */
 	public boolean checkPlayError(String courseName, StringBuilder errorCourse ){
+		pause(5);
 		boolean f = this.isElementExist("//div[@class='vjs-error-display']/*", 5);
-		if(!f){
-			return false;
+		if(f){
+			String errorMsg = driver.findElement(By.xpath("//div[@class='vjs-error-display']/*")).getText();
+			/*		if(null==errorMsg||"".equals(errorMsg))
+						return false;
+					else{
+						logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
+						this.snapshot(courseName);
+						errorCourse.append(courseName+"\n");
+						return true;
+
+					}*/
+					if(null!=errorMsg&&errorMsg.length()>1){
+						logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
+						this.snapshot(courseName);
+						errorCourse.append(courseName+"\n");
+						return true;
+					}else{
+						return false;
+					}
+					
 		}
 		
-		String errorMsg = driver.findElement(By.xpath("//div[@class='vjs-error-display']/*")).getText();
-/*		if(null==errorMsg||"".equals(errorMsg))
-			return false;
-		else{
-			logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
-			this.snapshot(courseName);
-			errorCourse.append(courseName+"\n");
-			return true;
-
-		}*/
-		if(null!=errorMsg&&errorMsg.length()>1){
-			logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
-			this.snapshot(courseName);
-			errorCourse.append(courseName+"\n");
-			return true;
-		}else{
-			return false;
-		}
+	return false;
 			
 	}
 	
