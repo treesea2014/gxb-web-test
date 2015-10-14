@@ -157,7 +157,7 @@ public class Action {
 	public void click(WebElement element) {
 		//waitForPageLoad(driver);
 		this.element = element;
-		higthLight(element);
+		//higthLight(element);
 		this.element.click();
 
 		//this.pause(second);
