@@ -2,6 +2,7 @@ package com.kkb.test.steps.pc.gxb.tsk;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -68,8 +69,12 @@ public class CoursePlayStep extends LoginStep {
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
 			String errorCourseList = commonCourseLearnAct.allChapters(courseName,errorCourse).toString();
-			logger.info(courseName+"出错的视频有：");
-			logger.info(errorCourseList);
+			if(errorCourseList.length()>4){
+				logger.info(courseName+"出错的视频有：");
+				logger.info(errorCourseList);
+				Assert.fail(errorCourseList);
+			}
+			
 
 			logger.info("厦门海洋大学-查看视频播放-测试用例执行结束！");
 		
