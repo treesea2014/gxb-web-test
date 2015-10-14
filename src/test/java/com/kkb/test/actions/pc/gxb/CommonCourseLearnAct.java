@@ -267,7 +267,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 						pause(5);
 						clickVideoPlay();
 						pause(8);
-						clickVideoPause();
+						//clickVideoPause();
 						logger.info(courseName+"  播放正常！");
 						clickVideoBack();
 					}else{
