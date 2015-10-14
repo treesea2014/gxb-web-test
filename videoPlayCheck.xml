@@ -7,6 +7,11 @@
 	
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
+
+		<test name="形势与政策【新生必修】">
+	    	<parameter name="courseName" value="形势与政策【新生必修】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
 		 <!-- <test name="安全教育【厦门海洋】">
 	    	<parameter name="courseName" value="安全教育【厦门海洋】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
