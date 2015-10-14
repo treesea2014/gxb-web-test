@@ -263,6 +263,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 					WebElement e = driver.findElement(By.xpath("(//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')])["+(i+1)+"]"));
 					String courseName =chapterTitle+"--"+ e.getText(); 
 					e.click();
+
 					pause(5);
 					if(!checkPlayError(courseName,errorCourse)){
 						pause(5);
@@ -339,15 +340,31 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 
 	
 	
-	public  void  all(){
+	public  void  all(String course){
 		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
 		TreeMap<String,String >  chapterMap = new TreeMap<String,String >();
 		String chapterTitle = "";
 		for(WebElement chapter : chapterList){
 			//获取章节名称
-			 chapterTitle = chapter.getText();
+			 chapterTitle = course+"--"+chapter.getText();
 			 chapter.click();
+			 
+			 if(this.isElementExist("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]", 5)){
+				 List<WebElement> courseList = driver.findElements(By.xpath("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]"));
+					for(WebElement courseUrl : courseList){
+						String url = driver.getCurrentUrl().replace("#/units/index", "")+courseUrl.getAttribute("href");
+						String courseName =chapterTitle+"--"+ courseUrl.getText();
+						chapterMap.put(courseName, url);
+					}
+			 }
+			
 		}
+		
+		for(int i = 0;i<chapterMap.size() ;i++){
+			
+			this.open(chapterMap.get(i));
+		}
+		
 
 	}
 	
