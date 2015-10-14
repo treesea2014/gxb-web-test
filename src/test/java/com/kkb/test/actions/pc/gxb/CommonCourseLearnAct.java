@@ -293,7 +293,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * 点击视频返回按钮
 	 */
 	public void clickVideoBack(){
-		//logger.info("点击视频返回按钮");
+		logger.info("点击视频返回按钮");
 		click(courseLearnPage.videoBack);
 	}
 	
@@ -349,15 +349,23 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * @param errorCourse 
 	 */
 	public boolean checkPlayError(String courseName, StringBuilder errorCourse ){
-		String errorMsg = courseLearnPage.playError.getText();
-		if(null==errorMsg||"".equals(errorMsg))
+		String errorMsg = driver.findElement(By.xpath("//div[@class='vjs-error-display']/*")).getText();
+/*		if(null==errorMsg||"".equals(errorMsg))
 			return false;
 		else{
-			logger.error("{}，视频播放出错！-》{}",courseName,courseLearnPage.playError.getText());
+			logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
 			this.snapshot(courseName);
 			errorCourse.append(courseName+"\n");
 			return true;
 
+		}*/
+		if(null!=errorMsg&&errorMsg.length()>1){
+			logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
+			this.snapshot(courseName);
+			errorCourse.append(courseName+"\n");
+			return true;
+		}else{
+			return false;
 		}
 			
 	}
