@@ -355,6 +355,11 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * @param errorCourse 
 	 */
 	public boolean checkPlayError(String courseName, StringBuilder errorCourse ){
+		boolean f = this.isElementExist("//div[@class='vjs-error-display']/*", 5);
+		if(!f){
+			return false;
+		}
+		
 		String errorMsg = driver.findElement(By.xpath("//div[@class='vjs-error-display']/*")).getText();
 /*		if(null==errorMsg||"".equals(errorMsg))
 			return false;
