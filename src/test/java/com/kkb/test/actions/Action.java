@@ -683,7 +683,7 @@ public class Action {
 		} catch (IOException e) {
 			logger.error("截图操作失败" + e.getMessage());
 		}
-		Reporter.log(title);
+		Reporter.log(title+"【看后面截图】");
 		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
 		Reporter.log("<img height=\"200px\" width=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
 	}
