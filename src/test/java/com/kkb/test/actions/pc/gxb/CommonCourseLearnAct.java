@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.kkb.test.pages.pc.gxb.CourseDetailsPage;
@@ -46,8 +47,13 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * 开始学习
 	 */
 	public  void clickStartLearn() {
-		logger.info("点击left开始学习");
-		click(courseLearnPage.startLearn);
+		try {
+			logger.info("点击left开始学习");
+			click(courseLearnPage.startLearn);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			Assert.fail("点击开始学习后，等待超时！");
+		}
 	}
 	
 	
