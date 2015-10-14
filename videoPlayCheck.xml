@@ -7,12 +7,12 @@
 	
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
-		<test name="安全教育【厦门海洋】">
+		 <!-- <test name="安全教育【厦门海洋】">
 	    	<parameter name="courseName" value="安全教育【厦门海洋】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test>
 	   
-	   <!--  <test name="计算机数据库基础与应用【厦门海洋】">
+	   <test name="计算机数据库基础与应用【厦门海洋】">
 	    	<parameter name="courseName" value="计算机数据库基础与应用【厦门海洋】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test> 
@@ -26,7 +26,21 @@
 	    	<parameter name="courseName" value="计算机网络与网页制作【厦门海洋】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test> --> 
+	   <test name="魅力高效沟通实战技巧【厦门海洋】">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧【厦门海洋】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
+
+	    <test name="演讲口才与公众表达【厦门海洋】">
+	    	<parameter name="courseName" value="演讲口才与公众表达【厦门海洋】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
 	   
+	    <test name="商务办公软件应用与实践【厦门海洋】">
+	    	<parameter name="courseName" value="商务办公软件应用与实践【厦门海洋】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
+	  
 	   
 </suite>
 
