@@ -7,8 +7,22 @@
 	
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
+	   <test name="计算机网络与网页制作【厦门海洋】">
+	    	<parameter name="courseName" value="计算机网络与网页制作【厦门海洋】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
+	   
+</suite>
 
-	    <test name="安全教育【厦门海洋】">
+
+
+
+
+
+
+
+<!-- 
+  <test name="安全教育【厦门海洋】">
 	    	<parameter name="courseName" value="安全教育【厦门海洋】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test>
@@ -124,25 +138,5 @@
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test>
 	   
-	   
-</suite>
-
-
-
-
-
-
-
-
- <!-- Suite 别动 -->
-<!-- 	<test name="华南理工大学|广州学院-视频播放">
-	    <classes>
-	      <class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep"/>
-	    </classes>
-	  </test> 
-
-  <test name="个人信息浏览">
-    <classes>
-      <class name="com.kkb.test.steps.pc.gxb.personcenter.ModifyUserInfoStep"/>
-    </classes>
-  </test>  -->
+	    -->
+ 
