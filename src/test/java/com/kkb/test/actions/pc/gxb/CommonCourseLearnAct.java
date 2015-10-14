@@ -244,7 +244,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * @param errorCourse 
 	 * @return 
 	 */
-	public List<WebElement> allChapters(String course, StringBuilder errorCourse){
+	public StringBuilder allChapters(String course, StringBuilder errorCourse){
 		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
 		for(int j = 0; j < chapterList.size(); j++){
 			WebElement chapter = driver.findElement(By.xpath("(//*[@id='units_list']/div/div/h4/span[2])["+(j+1)+"]"));
@@ -274,7 +274,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			click(chapter);
 
 		}
-		return chapterList;
+		return errorCourse;
 	}
 	
 	/**

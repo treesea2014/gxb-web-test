@@ -67,9 +67,9 @@ public class CoursePlayStep extends LoginStep {
 			commonCourseLearnAct.clickStartLearn();
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
-			commonCourseLearnAct.allChapters(courseName,errorCourse);
-			logger.info("出错的视频有：");
-			logger.info(errorCourse.toString());
+			String errorCourseList = commonCourseLearnAct.allChapters(courseName,errorCourse).toString();
+			logger.info(courseName+"出错的视频有：");
+			logger.info(errorCourseList);
 
 			logger.info("厦门海洋大学-查看视频播放-测试用例执行结束！");
 		
