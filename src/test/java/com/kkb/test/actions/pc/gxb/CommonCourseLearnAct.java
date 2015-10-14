@@ -257,7 +257,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			String chapterTitle = course+"--"+getText(chapter);
 			logger.info(chapterTitle);
 			click(chapter);
-			if(this.isElementExist("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]", 3)){
+			if(this.isElementExist("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]", 5)){
 				List<WebElement> courseList = driver.findElements(By.xpath("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]"));;
 				for(int i = 0 ; i < courseList.size() ; i++){
 					WebElement e = driver.findElement(By.xpath("(//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')])["+(i+1)+"]"));
