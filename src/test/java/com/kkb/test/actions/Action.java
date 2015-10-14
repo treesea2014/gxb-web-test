@@ -130,7 +130,7 @@ public class Action {
 	 */
 	public void type(WebElement element, String text, int second) {
 		this.element = element;
-		higthLight(element);
+		//higthLight(element);
 		this.element.clear();
 		this.element.sendKeys(text);
 	}
