@@ -379,7 +379,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			pause(5);
 			if(!checkPlayError(chapterMap.get(i)[0],errorVideo)){
 				//logger.info(chapterMap.get(i)[0]+"  播放正常！");
-				pause(5);
+				pause(3);
 				//driver.switchTo().window(driver.getTitle());
 			//	if(this.isElementExist("//*[@id='home_video']/div[5]", 3))
 				//	clickVideoPlay();
@@ -400,7 +400,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			    robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
 
 			    robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
-				pause(5);
+				pause(10);
 				//clickVideoPause();
 				logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				//clickVideoBack();
