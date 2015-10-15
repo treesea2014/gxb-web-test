@@ -395,11 +395,11 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 
 			    robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
 
-			    robot.delay(100);//停顿100毫秒,即0.1秒
+			   // robot.delay(100);//停顿100毫秒,即0.1秒
 
-			    robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
-
-			    robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
+			    //robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
+//
+			    //robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
 				pause(10);
 				//clickVideoPause();
 				logger.info(chapterMap.get(i)[0]+"  播放正常！");
