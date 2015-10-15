@@ -373,6 +373,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		
 		for(int i = 0;i<chapterMap.size() ;i++){
 			//System.out.println(chapterMap.get(i)[0]);
+		clickStartLearn();
 			driver.navigate().to(chapterMap.get(i)[1]);
 			//driver.switchTo().window(driver.getTitle());
 
