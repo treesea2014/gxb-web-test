@@ -55,13 +55,18 @@ public class CoursePlayStep extends LoginStep {
 			//搜索课程
 			commonCourseLearnAct.inputSearchContent(courseName);
 			commonCourseLearnAct.snapshot();
-
+			System.out.println(driver.getCurrentUrl());
 			//点击第一门课程
 			//String errorVideo = commonCourseLearnAct.clickCourse(courseName);
 			
 			//点击开始/继续学习
-			commonCourseLearnAct.clickStartStudy();
-			commonCourseLearnAct.pause(10);
+			//commonCourseLearnAct.clickStartStudy();
+			int begin = driver.getCurrentUrl().indexOf("classes/")+7;
+			int over = driver.getCurrentUrl().indexOf("?");
+
+			String classid = driver.getCurrentUrl().substring(begin, over);
+			driver.navigate().to("http://xmoc.class.gaoxiaobang.com/classes/"+classid+"#/announcements/index");
+			commonCourseLearnAct.pause(5);
 			commonCourseLearnAct.snapshot();
 			//等待30s
 			//点击左侧学习

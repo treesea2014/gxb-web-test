@@ -1,5 +1,8 @@
 package com.kkb.test.actions.pc.gxb;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
@@ -7,6 +10,7 @@ import java.util.TreeMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -341,7 +345,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 
 	
 	
-	public  String  all(StringBuilder errorVideo,String course){
+	public  String  all(StringBuilder errorVideo,String course) throws AWTException{
 		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
 		TreeMap<Integer,String[] >  chapterMap = new TreeMap<Integer,String[] >();
 		String chapterTitle = "";
@@ -365,6 +369,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			 chapter.click();
 
 		}
+		Robot robot;
 		
 		for(int i = 0;i<chapterMap.size() ;i++){
 			//System.out.println(chapterMap.get(i)[0]);
@@ -376,9 +381,25 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				//logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				pause(5);
 				//driver.switchTo().window(driver.getTitle());
-				//clickVideoPlay();
+			//	if(this.isElementExist("//*[@id='home_video']/div[5]", 3))
+				//	clickVideoPlay();
+				//Action a =new Action(driver);
 				//System.out.println(driver.getPageSource());
 				driver.findElement(By.xpath("//*[@id='home_video']")).click();
+				int x= driver.findElement(By.xpath("//*[@id='home_video']")).getLocation().getX();
+				int y= driver.findElement(By.xpath("//*[@id='home_video']")).getLocation().getY();
+
+				 robot = new Robot();
+				robot.mouseMove(x+200, y+200);
+				robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
+
+			    robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
+
+			    robot.delay(100);//停顿100毫秒,即0.1秒
+
+			    robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
+
+			    robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
 				pause(5);
 				//clickVideoPause();
 				logger.info(chapterMap.get(i)[0]+"  播放正常！");
