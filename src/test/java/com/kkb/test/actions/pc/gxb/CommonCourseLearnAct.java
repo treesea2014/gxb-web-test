@@ -346,7 +346,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		TreeMap<Integer,String[] >  chapterMap = new TreeMap<Integer,String[] >();
 		String chapterTitle = "";
 		 int key = 0;
-		 String learnPage = driver.getWindowHandle();
+		// String learnPage = driver.getWindowHandle();
 		for(WebElement chapter : chapterList){
 			//获取章节名称
 			 chapterTitle = course+"--"+chapter.getText();
@@ -378,7 +378,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				//clickVideoBack();
 			}else{
-				
+				logger.error(chapterMap.get(i)[0]);
 				//clickVideoBack();
 			}
 			
