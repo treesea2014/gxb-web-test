@@ -1,6 +1,7 @@
 package com.kkb.test.actions.pc.gxb;
 
 import java.util.List;
+import java.util.Set;
 import java.util.TreeMap;
 
 import org.openqa.selenium.By;
@@ -340,31 +341,62 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 
 	
 	
-	public  void  all(String course){
+	public  String  all(StringBuilder errorVideo,String course){
 		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
-		TreeMap<String,String >  chapterMap = new TreeMap<String,String >();
+		TreeMap<Integer,String[] >  chapterMap = new TreeMap<Integer,String[] >();
 		String chapterTitle = "";
+		 int key = 0;
+		 String learnPage = driver.getWindowHandle();
 		for(WebElement chapter : chapterList){
 			//获取章节名称
 			 chapterTitle = course+"--"+chapter.getText();
 			 chapter.click();
-			 
+			 pause(3);
 			 if(this.isElementExist("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]", 5)){
 				 List<WebElement> courseList = driver.findElements(By.xpath("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]"));
 					for(WebElement courseUrl : courseList){
-						String url = driver.getCurrentUrl().replace("#/units/index", "")+courseUrl.getAttribute("href");
-						String courseName =chapterTitle+"--"+ courseUrl.getText();
-						chapterMap.put(courseName, url);
+					
+						String [] urlInfo = new String[3];
+						urlInfo[0] = chapterTitle+"--"+ courseUrl.getText();
+						urlInfo[1] = courseUrl.getAttribute("href");
+						chapterMap.put(key++, urlInfo);
 					}
 			 }
-			
+			 chapter.click();
+
 		}
 		
 		for(int i = 0;i<chapterMap.size() ;i++){
+			System.out.println(chapterMap.get(i)[0]);
+			driver.navigate().to(chapterMap.get(i)[1]);
+			pause(5);
+			if(!checkPlayError(chapterMap.get(i)[0],errorVideo)){
+				pause(5);
+				clickVideoPlay();
+				pause(5);
+				//clickVideoPause();
+				logger.info(chapterMap.get(i)[0]+"  播放正常！");
+				//clickVideoBack();
+			}else{
+				
+				//clickVideoBack();
+			}
 			
-			this.open(chapterMap.get(i));
+			
+			/*Set<String> handles = 	driver.getWindowHandles();
+			for(String s :handles){
+				if(!s.equals(learnPage)){
+					driver.switchTo().window(s);
+					driver.close();
+				}
+				
+			}*/
+			
+			//driver.getWindowHandles();
+			//driver.navigate().back();
+			//this.switchToWindow(learnPage);
 		}
-		
+		return errorVideo.toString();
 
 	}
 	
