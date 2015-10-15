@@ -47,7 +47,7 @@ public class CourseLearnPage extends Page {
 	/**
 	 * 视频-播放按钮
 	 */
-	@FindBy(xpath = "//*[@id='home_video']/div[5]")
+	@FindBy(xpath = "//*[@id='home_video']/*")
 	public WebElement videoPlayBtn;
 	/**
 	 * 视频-暂停按钮
