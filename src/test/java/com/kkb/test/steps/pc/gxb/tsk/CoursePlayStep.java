@@ -68,7 +68,7 @@ public class CoursePlayStep extends LoginStep {
 			commonCourseLearnAct.clickStartLearn();
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
-			String errorCourseList = commonCourseLearnAct.allChapters(courseName,errorCourse).toString();
+			String errorCourseList = commonCourseLearnAct.all(errorCourse,courseName);
 			if(errorCourseList.length()>4){
 				logger.info(courseName+"出错的视频有：");
 				logger.info(errorCourseList);
