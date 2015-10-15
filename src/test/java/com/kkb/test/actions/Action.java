@@ -426,7 +426,7 @@ public class Action {
 			driver.findElement(By.xpath(xpath));
 			return true;
 		} catch (NoSuchElementException e) {
-			logger.info("在规定时间{}s内，未找到该元素:{}", time, xpath);
+			logger.debug("在规定时间{}s内，未找到该元素:{}", time, xpath);
 			return false;
 		}
 	}
