@@ -369,16 +369,22 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		for(int i = 0;i<chapterMap.size() ;i++){
 			//System.out.println(chapterMap.get(i)[0]);
 			driver.navigate().to(chapterMap.get(i)[1]);
+			//driver.switchTo().window(driver.getTitle());
+
 			pause(5);
 			if(!checkPlayError(chapterMap.get(i)[0],errorVideo)){
+				//logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				pause(5);
-				clickVideoPlay();
+				//driver.switchTo().window(driver.getTitle());
+				//clickVideoPlay();
+				//System.out.println(driver.getPageSource());
+				driver.findElement(By.xpath("//*[@id='home_video']")).click();
 				pause(5);
 				//clickVideoPause();
 				logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				//clickVideoBack();
 			}else{
-				logger.error(chapterMap.get(i)[0]);
+				//logger.error(chapterMap.get(i)[0]);
 				//clickVideoBack();
 			}
 			
