@@ -8,7 +8,26 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
- 
+  <test name="商务礼仪【厦门海洋】">
+	    	<parameter name="courseName" value="商务礼仪【厦门海洋】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
+	   
+	       <test name="形势与政策（仅提交作业）">
+	    	<parameter name="courseName" value="形势与政策（仅提交作业）"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
+	   
+	       <test name="形势与政策（补修+作业）">
+	    	<parameter name="courseName" value="形势与政策（补修+作业）"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
+	   </test>
+	   
+	   
+	   
+	   
+	   
+	   
 	       <test name="就业指导——就业，亮出你自己【厦门海洋】">
 	    	<parameter name="courseName" value="就业指导——就业，亮出你自己【厦门海洋】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
