@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="集美大学诚毅学院视频播放" parallel="tests" preserve-order="true" thread-count="1">
+<listeners>     
+	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+	
+	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
+</listeners>
+				<!-- 依次为课程首页，用户名  密码 -->
+	   	    	<parameter name="baseUrl" value="http://chengyi.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="gxb0000"/>
+	   	    	<parameter name="password" value="123456"/>
+	  			 <!-- 依次为课程首页，用户名  密码 -->
+	     
+	     
+	     
+	      <test name="计算机文化基础【诚毅学院】">
+	    	<parameter name="courseName" value="计算机文化基础【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	      
+	      <test name="口才与人际交往【诚毅学院】">
+	    	<parameter name="courseName" value="口才与人际交往【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	   <test name="创新创业启蒙【诚毅学院】">
+	    	<parameter name="courseName" value="创新创业启蒙【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	         <test name="国学智慧与应用【诚毅学院】">
+	    	<parameter name="courseName" value="国学智慧与应用【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	   <test name="商务办公软件应用与实践【诚毅学院】">
+	    	<parameter name="courseName" value="商务办公软件应用与实践【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	         <test name="创业基本功与精益创业方法论【诚毅学院】">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	         <test name="互联网营销概论【诚毅学院】">
+	    	<parameter name="courseName" value="互联网营销概论【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	
+	    <test name="职业素养与竞争力【诚毅学院】">
+	    	<parameter name="courseName" value="职业素养与竞争力【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	   
+	       <test name="计算思维【诚毅学院】">
+	    	<parameter name="courseName" value="计算思维【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	   
+	       <test name="自我发展与创业指导【诚毅学院】">
+	    	<parameter name="courseName" value="自我发展与创业指导【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	       <test name="团队建设与高效管理【诚毅学院】">
+	    	<parameter name="courseName" value="团队建设与高效管理【诚毅学院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+</suite>
+
+
