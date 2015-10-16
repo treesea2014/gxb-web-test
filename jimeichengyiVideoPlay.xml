@@ -15,25 +15,25 @@
 	     
 	     
 	     
-	      <test name="计算机文化基础【诚毅学院】">
+	     <!-- <test name="计算机文化基础【诚毅学院】">
 	    	<parameter name="courseName" value="计算机文化基础【诚毅学院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
+	     </test> --> 
 	      
 	      <test name="口才与人际交往【诚毅学院】">
 	    	<parameter name="courseName" value="口才与人际交往【诚毅学院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   
-	   <test name="创新创业启蒙【诚毅学院】">
+	    <!-- <test name="创新创业启蒙【诚毅学院】">
 	    	<parameter name="courseName" value="创新创业启蒙【诚毅学院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   </test>--> 
 	   
-	         <test name="国学智慧与应用【诚毅学院】">
+	       <!--   <test name="国学智慧与应用【诚毅学院】">
 	    	<parameter name="courseName" value="国学智慧与应用【诚毅学院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   </test>--> 
 	   
 	   <test name="商务办公软件应用与实践【诚毅学院】">
 	    	<parameter name="courseName" value="商务办公软件应用与实践【诚毅学院】"/>
