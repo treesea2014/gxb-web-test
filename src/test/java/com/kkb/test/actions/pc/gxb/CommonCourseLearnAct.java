@@ -374,11 +374,17 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		for(int i = 0;i<chapterMap.size() ;i++){
 			//System.out.println(chapterMap.get(i)[0]);
 			clickStartLearn();
-			pause(2);
+			//driver.findElement(By.linkText("帮助"));
+			pause(3);
 			driver.navigate().to(chapterMap.get(i)[1]);
 			//driver.switchTo().window(driver.getTitle());
 
 			pause(5);
+			if(!this.isElementExist("//*[@id='home_video']", 4)){
+				this.refresh();
+				driver.navigate().to(chapterMap.get(i)[1]);
+
+			}
 			if(!checkPlayError(chapterMap.get(i)[0],errorVideo)){
 				//logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				pause(3);
@@ -387,6 +393,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				//	clickVideoPlay();
 				//Action a =new Action(driver);
 				//System.out.println(driver.getPageSource());
+				
 				driver.findElement(By.xpath("//*[@id='home_video']")).click();
 				int x= driver.findElement(By.xpath("//*[@id='home_video']")).getLocation().getX();
 				int y= driver.findElement(By.xpath("//*[@id='home_video']")).getLocation().getY();
@@ -435,6 +442,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 */
 	public boolean checkPlayError(String courseName, StringBuilder errorCourse ){
 		pause(5);
+	
 		boolean f = this.isElementExist("//div[@class='vjs-error-display']/*", 5);
 		if(f){
 			String errorMsg = driver.findElement(By.xpath("//div[@class='vjs-error-display']/*")).getText();
