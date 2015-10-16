@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="厦门海洋大学视频播放" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="泉州师范视频播放" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,54 +8,14 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-  <test name="商务礼仪【厦门海洋】">
-	    	<parameter name="courseName" value="商务礼仪【厦门海洋】"/>
+	   
+	       <test name="大学生心理健康【泉州师范】">
+	    	<parameter name="courseName" value="大学生心理健康【泉州师范】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test>
 	   
-	       <test name="形势与政策（仅提交作业）">
-	    	<parameter name="courseName" value="形势与政策（仅提交作业）"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-	       <test name="形势与政策（补修+作业）">
-	    	<parameter name="courseName" value="形势与政策（补修+作业）"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-	   
-	   
-	   
-	   
-	   
-	       <test name="就业指导——就业，亮出你自己【厦门海洋】">
-	    	<parameter name="courseName" value="就业指导——就业，亮出你自己【厦门海洋】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-   
-	    <test name="搜索引擎、微信与口碑营销【厦门海洋】">
-	    	<parameter name="courseName" value="搜索引擎、微信与口碑营销【厦门海洋】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-	       <test name="国学素养【厦门海洋】">
-	    	<parameter name="courseName" value="国学素养【厦门海洋】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-	       <test name="职业素养【厦门海洋】">
-	    	<parameter name="courseName" value="职业素养【厦门海洋】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-	       <test name="团队建设与高效管理【厦门海洋">
-	    	<parameter name="courseName" value="团队建设与高效管理【厦门海洋"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>
-	   
-	     <test name="自我发展与创业指导【厦门海洋】">
-	    	<parameter name="courseName" value="自我发展与创业指导【厦门海洋】"/>
+	       <test name="形势与政策【泉州师范全校必修】">
+	    	<parameter name="courseName" value="形势与政策【泉州师范全校必修】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
 	   </test>
 	  
