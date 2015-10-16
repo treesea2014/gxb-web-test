@@ -35,7 +35,7 @@ public abstract class AbstractStep extends BaseStep {
 
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void afterSuite() {
 		Set<String> handles = 	driver.getWindowHandles();
 		for(String s :handles){
