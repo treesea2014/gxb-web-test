@@ -55,8 +55,11 @@ public class LoginStep extends AbstractStep {
 				l.inputUserName(loginName);
 				l.inputPassword(password);
 				l.clickLogin();
+				l.pause(3);
 				if(driver.getPageSource().contains("跳过")){
 				driver.findElement(By.linkText("跳过")).click();}
+				if(driver.getPageSource().contains("跳过")){
+					driver.findElement(By.linkText("跳过")).click();}
 				i++;
 			}
 		} catch (Exception e) {

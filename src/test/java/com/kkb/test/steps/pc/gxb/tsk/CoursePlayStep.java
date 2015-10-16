@@ -42,7 +42,7 @@ public class CoursePlayStep extends LoginStep {
 	 * @throws Exception
 	 */
 	@Parameters("courseName" )
-	@Test(description = "厦门海洋大学-查看视频播放 " , priority = 1)
+	@Test(description = "查看视频播放 " , priority = 1)
 	public void testVideoPaly(String courseName) throws Exception {
 		try {
 			commonCourseLearnAct = new CommonCourseLearnAct(driver);
@@ -62,10 +62,13 @@ public class CoursePlayStep extends LoginStep {
 			//点击开始/继续学习
 			//commonCourseLearnAct.clickStartStudy();
 			int begin = driver.getCurrentUrl().indexOf("classes/")+7;
+			int gao = driver.getCurrentUrl().indexOf("gaoxiaobang");
 			int over = driver.getCurrentUrl().indexOf("?");
 
 			String classid = driver.getCurrentUrl().substring(begin, over);
-			driver.navigate().to("http://xmoc.class.gaoxiaobang.com/classes/"+classid+"#/announcements/index");
+			String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/announcements/index";
+			System.out.println(url);
+			driver.navigate().to(url);
 			commonCourseLearnAct.pause(5);
 			commonCourseLearnAct.snapshot();
 			//等待30s
@@ -81,11 +84,11 @@ public class CoursePlayStep extends LoginStep {
 			}
 			
 
-			logger.info("厦门海洋大学-查看视频播放-测试用例执行结束！");
+			logger.info("查看视频播放-测试用例执行结束！");
 		
 		} catch (Exception e) {
-			logger.error("厦门海洋大学-查看视频播放-"+courseName, e);
-			throw new Exception("厦门海洋大学-查看视频播放-"+courseName+"  >> "
+			logger.error("查看视频播放-"+courseName, e);
+			throw new Exception("查看视频播放-"+courseName+"  >> "
 					+ e.getMessage(), e);
 		}
 
