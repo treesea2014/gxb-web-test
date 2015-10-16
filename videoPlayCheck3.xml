@@ -9,10 +9,10 @@
 </listeners>
 
 	   
-	       <!--<test name="大学生心理健康【泉州师范】">
+	      <test name="大学生心理健康【泉州师范】">
 	    	<parameter name="courseName" value="大学生心理健康【泉州师范】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.tsk.CoursePlayStep"/></classes>
-	   </test>-->
+	   </test>
 	   
 	       <test name="形势与政策【泉州师范全校必修】">
 	    	<parameter name="courseName" value="形势与政策【泉州师范全校必修】"/>
