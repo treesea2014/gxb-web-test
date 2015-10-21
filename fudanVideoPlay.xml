@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="泉州师范视频播放" parallel="tests" preserve-order="true" thread-count="1">
+<listeners>     
+	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+	
+	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
+</listeners>
+				<!-- 依次为课程首页，用户名  密码 -->
+	   	    	<parameter name="baseUrl" value="http://fudan.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13110240020"/>
+	   	    	<parameter name="password" value="13110240020"/>
+	  			 <!-- 依次为课程首页，用户名  密码 -->
+	     
+	     
+	     
+	      <test name="计算机多媒体应用基础【复旦同步】">
+	    	<parameter name="courseName" value="计算机多媒体应用基础【复旦同步】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test>
+		
+		 <test name="计算机办公自动化【复旦大学】">
+	    	<parameter name="courseName" value="计算机办公自动化【复旦大学】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test>
+	     
+	      <test name="计算机网络与网页制作【复旦线上】">
+	    	<parameter name="courseName" value="计算机网络与网页制作【复旦线上】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test>
+	     
+	      <!-- <test name="计算机数据库基础与应用【复旦线上">
+	    	<parameter name="courseName" value="计算机数据库基础与应用【复旦线上"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test>
+	     
+	      <test name="FCT考试系统演示【复旦】">
+	    	<parameter name="courseName" value="FCT考试系统演示【复旦】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test>
+	     
+	      <test name="计算机多媒体应用基础【复旦线上】">
+	    	<parameter name="courseName" value="计算机多媒体应用基础【复旦线上】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test>
+	     
+	      <test name="计算思维【复旦】">
+	    	<parameter name="courseName" value="计算思维【复旦】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
+	     </test> -->
+	  
+	   
+</suite>
+
+
