@@ -30,7 +30,7 @@
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
 	     </test>
 	     
-	      <!-- <test name="计算机数据库基础与应用【复旦线上">
+	       <test name="计算机数据库基础与应用【复旦线上">
 	    	<parameter name="courseName" value="计算机数据库基础与应用【复旦线上"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
 	     </test>
@@ -48,7 +48,7 @@
 	      <test name="计算思维【复旦】">
 	    	<parameter name="courseName" value="计算思维【复旦】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test> -->
+	     </test> 
 	  
 	   
 </suite>
