@@ -351,6 +351,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		String chapterTitle = "";
 		 int key = 0;
 		// String learnPage = driver.getWindowHandle();
+		
 		for(WebElement chapter : chapterList){
 			//获取章节名称
 			 chapterTitle = course+"--"+chapter.getText();
@@ -370,7 +371,9 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 
 		}
 		Robot robot;
-		
+		 if(chapterMap.size()==1){
+			 Assert.fail("点击左侧开始学习，打不开课程列表");
+		 }
 		for(int i = 0;i<chapterMap.size() ;i++){
 			//System.out.println(chapterMap.get(i)[0]);
 			clickStartLearn();
