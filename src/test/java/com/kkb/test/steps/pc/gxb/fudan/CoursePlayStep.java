@@ -71,6 +71,8 @@ public class CoursePlayStep extends AbstractStep {
 			//等待30s
 			//点击左侧学习
 			commonCourseLearnAct.clickStartLearn();
+			commonCourseLearnAct.clickStartLearn();
+
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
 			String errorCourseList = commonCourseLearnAct.all(errorCourse,courseName);
