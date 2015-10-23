@@ -371,7 +371,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 
 		}
 		Robot robot;
-		 if(chapterMap.size()==1){
+		 if(chapterMap.size()<1){
 			 Assert.fail("点击左侧开始学习，打不开课程列表");
 		 }
 		for(int i = 0;i<chapterMap.size() ;i++){
