@@ -63,8 +63,7 @@ public class CoursePlayStep extends AbstractStep {
 			//点击第一门课程
 			//String errorVideo = commonCourseLearnAct.clickCourse(courseName);
 			
-			//点击开始/继续学习
-			//commonCourseLearnAct.clickStartStudy();
+			
 			int begin = driver.getCurrentUrl().indexOf("classes/")+7;
 			int gao = driver.getCurrentUrl().indexOf("gaoxiaobang");
 			int over = driver.getCurrentUrl().indexOf("?");
@@ -72,6 +71,8 @@ public class CoursePlayStep extends AbstractStep {
 			String classid = driver.getCurrentUrl().substring(begin, over);
 			String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/announcements/index";
 			System.out.println(url);
+			//点击开始/继续学习
+			commonCourseLearnAct.clickStartStudy();
 			driver.navigate().to(url);
 			commonCourseLearnAct.pause(5);
 			commonCourseLearnAct.snapshot();
