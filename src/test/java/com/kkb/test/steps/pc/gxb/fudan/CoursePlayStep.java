@@ -65,7 +65,8 @@ public class CoursePlayStep extends AbstractStep {
 			String classid = driver.getCurrentUrl().substring(begin, over);
 			String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/units/index";
 			System.out.println(url);
-			driver.navigate().to(url);
+			//driver.navigate().to(url);
+			commonCourseLearnAct.clickStartStudy();
 			commonCourseLearnAct.pause(5);
 			commonCourseLearnAct.snapshot();
 			//等待30s
