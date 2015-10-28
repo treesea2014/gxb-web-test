@@ -256,19 +256,20 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	 * @return 
 	 */
 	public StringBuilder allChapters(String course, StringBuilder errorCourse){
-		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
+		//获取章节列表
+		List<WebElement> chapterList = courseLearnPage.chapterList;
 		for(int j = 0; j < chapterList.size(); j++){
-			WebElement chapter = driver.findElement(By.xpath("(//*[@id='units_list']/div/div/h4/span[2])["+(j+1)+"]"));
+			WebElement chapter = driver.findElement(By.xpath("("+courseLearnPage.chapterListXpath+")["+(j+1)+"]"));
 			String chapterTitle = course+"--"+getText(chapter);
 			logger.info(chapterTitle);
+			//点击章节 展开课程列表
 			click(chapter);
-			if(this.isElementExist("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]", 5)){
-				List<WebElement> courseList = driver.findElements(By.xpath("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')]"));;
+			if(this.isElementExist(courseLearnPage.courseListXpath, 5)){
+				List<WebElement> courseList = driver.findElements(By.xpath(courseLearnPage.courseListXpath));;
 				for(int i = 0 ; i < courseList.size() ; i++){
-					WebElement e = driver.findElement(By.xpath("(//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression'][contains(@href,'#/chapters')])["+(i+1)+"]"));
+					WebElement e = driver.findElement(By.xpath("("+courseLearnPage.courseListXpath+")["+(i+1)+"]"));
 					String courseName =chapterTitle+"--"+ e.getText(); 
 					e.click();
-
 					pause(5);
 					if(!checkPlayError(courseName,errorCourse)){
 						pause(5);
@@ -283,7 +284,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 					}
 				}
 			}
-			chapter = driver.findElement(By.xpath("(//*[@id='units_list']/div/div/h4/span[2])["+(j+1)+"]"));
+			chapter = driver.findElement(By.xpath("("+courseLearnPage.chapterListXpath+")["+(j+1)+"]"));
 			click(chapter);
 
 		}
@@ -346,73 +347,62 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	
 	
 	public  String  all(StringBuilder errorVideo,String course) throws AWTException{
-		List<WebElement> chapterList = driver.findElements(By.xpath("//*[@id='units_list']/div/div/h4/span[2]"));
+		List<WebElement> chapterList = courseLearnPage.chapterList;
 		TreeMap<Integer,String[] >  chapterMap = new TreeMap<Integer,String[] >();
 		String chapterTitle = "";
-		 int key = 0;
-		// String learnPage = driver.getWindowHandle();
-		
+		Robot robot;
+		//记录视频数量
+		int key = 0;
 		for(WebElement chapter : chapterList){
 			//获取章节名称
 			 chapterTitle = course+"--"+chapter.getText();
+			 //依次点击章节
 			 chapter.click();
 			 pause(3);
-			 if(this.isElementExist("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='study_progression learn_proggression'][contains(@href,'#/chapters')]", 5)){
-				 List<WebElement> courseList = driver.findElements(By.xpath("//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='study_progression learn_proggression'][contains(@href,'#/chapters')]"));
+			 //检查是否存在视频链接
+			 if(this.isElementExist(courseLearnPage.courseListXpath, 5)){
+				 List<WebElement> courseList = driver.findElements(By.xpath(courseLearnPage.courseListXpath));
 					for(WebElement courseUrl : courseList){
-					
 						String [] urlInfo = new String[3];
+						//存放视频名称  课程--章节--第N讲
 						urlInfo[0] = chapterTitle+"--"+ courseUrl.getText();
+						//存放视频连接
 						urlInfo[1] = courseUrl.getAttribute("href");
+						//视频信息存储在map，用于遍历播放
 						chapterMap.put(key++, urlInfo);
 					}
 			 }
+			 //点击章节名称，合上展开的列表，
 			 chapter.click();
 
 		}
-		Robot robot;
-		 if(chapterMap.size()<1){
-			 Assert.fail("点击左侧开始学习，打不开课程列表");
+		
+		 if(key<1){
+			 Assert.fail("点击左侧开始学习，打不开课程列表，或者该课程下没有视频课程。");
 		 }
+		 //遍历视频，检查error box 是否为空
 		for(int i = 0;i<chapterMap.size() ;i++){
-			//System.out.println(chapterMap.get(i)[0]);
+			//点击开始学习
 			clickStartLearn();
-			//driver.findElement(By.linkText("帮助"));
 			pause(3);
 			driver.navigate().to(chapterMap.get(i)[1]);
-			//driver.switchTo().window(driver.getTitle());
-
 			pause(5);
-			if(!this.isElementExist("//*[@id='home_video']", 4)){
+			if(!this.isElementExist(courseLearnPage.videoLocationXpath, 4)){
 				this.refresh();
 				driver.navigate().to(chapterMap.get(i)[1]);
 
 			}
 			if(!checkPlayError(chapterMap.get(i)[0],errorVideo)){
-				//logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				pause(3);
-				//driver.switchTo().window(driver.getTitle());
-			//	if(this.isElementExist("//*[@id='home_video']/div[5]", 3))
-				//	clickVideoPlay();
-				//Action a =new Action(driver);
-				//System.out.println(driver.getPageSource());
-				
-				driver.findElement(By.xpath("//*[@id='home_video']")).click();
-				int x= driver.findElement(By.xpath("//*[@id='home_video']")).getLocation().getX();
-				int y= driver.findElement(By.xpath("//*[@id='home_video']")).getLocation().getY();
-
-				 robot = new Robot();
+				//获取视频盒子坐标
+				driver.findElement(By.xpath(courseLearnPage.videoLocationXpath)).click();
+				int x= driver.findElement(By.xpath(courseLearnPage.videoLocationXpath)).getLocation().getX();
+				int y= driver.findElement(By.xpath(courseLearnPage.videoLocationXpath)).getLocation().getY();
+				robot = new Robot();
 				robot.mouseMove(x+200, y+200);
 				robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
-
 			    robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
-
-			   // robot.delay(100);//停顿100毫秒,即0.1秒
-
-			    //robot.mousePress(InputEvent.BUTTON1_MASK);//按下左键
-//
-			    //robot.mouseRelease(InputEvent.BUTTON1_MASK);//释放左键
-				pause(10);
+			    pause(10);
 				//clickVideoPause();
 				logger.info(chapterMap.get(i)[0]+"  播放正常！");
 				//clickVideoBack();
@@ -420,20 +410,6 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				//logger.error(chapterMap.get(i)[0]);
 				//clickVideoBack();
 			}
-			
-			
-			/*Set<String> handles = 	driver.getWindowHandles();
-			for(String s :handles){
-				if(!s.equals(learnPage)){
-					driver.switchTo().window(s);
-					driver.close();
-				}
-				
-			}*/
-			
-			//driver.getWindowHandles();
-			//driver.navigate().back();
-			//this.switchToWindow(learnPage);
 		}
 		return errorVideo.toString();
 
@@ -446,18 +422,9 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	public boolean checkPlayError(String courseName, StringBuilder errorCourse ){
 		pause(5);
 	
-		boolean f = this.isElementExist("//div[@class='vjs-error-display']/*", 5);
+		boolean f = this.isElementExist(courseLearnPage.playErrorXpath, 5);
 		if(f){
-			String errorMsg = driver.findElement(By.xpath("//div[@class='vjs-error-display']/*")).getText();
-			/*		if(null==errorMsg||"".equals(errorMsg))
-						return false;
-					else{
-						logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
-						this.snapshot(courseName);
-						errorCourse.append(courseName+"\n");
-						return true;
-
-					}*/
+			String errorMsg = driver.findElement(By.xpath(courseLearnPage.playErrorXpath)).getText();
 					if(null!=errorMsg&&errorMsg.length()>1){
 						logger.error("{}，视频播放出错！-》{}",courseName,errorMsg);
 						this.snapshot(courseName);
@@ -466,9 +433,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 					}else{
 						return false;
 					}
-					
 		}
-		
 	return false;
 			
 	}

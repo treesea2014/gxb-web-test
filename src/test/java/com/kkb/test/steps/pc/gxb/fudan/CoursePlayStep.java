@@ -42,39 +42,35 @@ public class CoursePlayStep extends AbstractStep {
 		try {
 			userLogin(baseUrl,loginName, password);
 			commonCourseLearnAct = new CommonCourseLearnAct(driver);
-			
-			
 			StringBuilder errorCourse = new StringBuilder("");
-
 			commonCourseLearnAct.snapshot();
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
 			//搜索课程
 			commonCourseLearnAct.inputSearchContent(courseName);
 			commonCourseLearnAct.snapshot();
-			System.out.println(driver.getCurrentUrl());
+			commonCourseLearnAct.refresh();
+
+			//System.out.println(driver.getCurrentUrl());
 			//点击第一门课程
 			//String errorVideo = commonCourseLearnAct.clickCourse(courseName);
 			
 			//点击开始/继续学习
 			//commonCourseLearnAct.clickStartStudy();
-			int begin = driver.getCurrentUrl().indexOf("classes/")+7;
-			int gao = driver.getCurrentUrl().indexOf("gaoxiaobang");
-			int over = driver.getCurrentUrl().indexOf("?");
+			//int begin = driver.getCurrentUrl().indexOf("classes/")+7;
+			//int gao = driver.getCurrentUrl().indexOf("gaoxiaobang");
+			//int over = driver.getCurrentUrl().indexOf("?");
 
-			String classid = driver.getCurrentUrl().substring(begin, over);
-			String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/units/index";
-			System.out.println(url);
+			//String classid = driver.getCurrentUrl().substring(begin, over);
+			//String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/units/index";
+			//System.out.println(url);
 			//driver.navigate().to(url);
+			//等待30s
+			//点击开始/继续学习clickStartStudy
 			commonCourseLearnAct.clickStartStudy();
 			commonCourseLearnAct.pause(5);
-			commonCourseLearnAct.snapshot();
-			//等待30s
-			//点击左侧学习
 			commonCourseLearnAct.clickStartLearn();
-			commonCourseLearnAct.pause(5);
-			commonCourseLearnAct.clickStartLearn();
-			commonCourseLearnAct.pause(5);
+			commonCourseLearnAct.refresh();
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
 			String errorCourseList = commonCourseLearnAct.all(errorCourse,courseName);
@@ -83,8 +79,6 @@ public class CoursePlayStep extends AbstractStep {
 				logger.info(errorCourseList);
 				Assert.fail(errorCourseList);
 			}
-			
-
 			logger.info("查看视频播放-测试用例执行结束！");
 		
 		} catch (Exception e) {

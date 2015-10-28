@@ -32,12 +32,18 @@ public class CourseLearnPage extends Page {
 	@FindBy(xpath = "//*[@id='units_list']/div/div/h4/span[2]")
 	public List<WebElement> chapterList;
 	
+	public String chapterListXpath = "//*[@id='units_list']/div/div/h4/span[2]";	
+	
 	/**
 	 * 所有章节下课程
 	 */
 	@FindBy(xpath = "//*[@class='panel active']/div[2]/div/div/ul/li/a[@class='learn_proggression study_progression']")
 	@CacheLookup
 	public List<WebElement> courseList;
+	/**
+	 * 所有章节下课程XPath
+	 */
+	public String courseListXpath = "//*[@class='panel active']/div[2]/div/div/ul/li/a[contains(@href,'#/chapters')][@data-type='Video']";
 	/**
 	 * 视频播放返回
 	 */
@@ -73,4 +79,13 @@ public class CourseLearnPage extends Page {
 	 */
 	@FindBy(xpath = "//div[@class='vjs-error-display']/*")
 	public WebElement playError;
+	/**
+	 * 视频-播放出错xpath
+	 */
+	public String playErrorXpath= "//div[@class='vjs-error-display']/*";
+	
+	/**
+	 * 视频坐标xpath
+	 */
+	public String videoLocationXpath = "//*[@id='home_video']";
 }

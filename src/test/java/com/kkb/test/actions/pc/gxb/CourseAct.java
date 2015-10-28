@@ -63,8 +63,9 @@ public class CourseAct  extends IndexAct{
 		logger.info("搜索框内输入课程名称：{}",name);
 		type(coursePage.searchInput,name);
 		logger.info("点击搜索",name);
+		this.pause(5);
 		click(coursePage.searchBth);
-		this.pause(10);
+		this.pause(5);
 		boolean flag = this.isElementExist("//div[@class='course-content']/h1", 5);
 		if(flag){
 			click(coursePage.searchResult);
