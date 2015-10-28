@@ -73,7 +73,7 @@ public class CoursePlayStep extends AbstractStep {
 			System.out.println(url);
 			//点击开始/继续学习
 			commonCourseLearnAct.clickStartStudy();
-			driver.navigate().to(url);
+			//driver.navigate().to(url);
 			commonCourseLearnAct.pause(5);
 			commonCourseLearnAct.snapshot();
 			//等待30s
