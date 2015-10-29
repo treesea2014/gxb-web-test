@@ -49,7 +49,7 @@ public class CoursePlayStep extends AbstractStep {
 			//搜索课程
 			commonCourseLearnAct.inputSearchContent(courseName);
 			commonCourseLearnAct.snapshot();
-			commonCourseLearnAct.refresh();
+			//commonCourseLearnAct.refresh();
 
 			//System.out.println(driver.getCurrentUrl());
 			//点击第一门课程
