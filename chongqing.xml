@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- 修改学校名称 -->
+<suite name="重庆邮电大学视频播放" parallel="tests" preserve-order="true"
+	thread-count="1">
+	<listeners>
+		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.TestngListener" />
+	</listeners>
+	
+	
+	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
+	<parameter name="baseUrl" value="http://cqupt.gaoxiaobang.com/" />
+	<parameter name="loginName" value="gxb0000" />
+	<parameter name="password" value="123456" />
+
+
+
+	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’， -->
+	<test name="商务办公软件应用与实践【重庆邮电】">
+		<parameter name="courseName" value="商务办公软件应用与实践【重庆邮电】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+    <!-- 课程名称2 后面依次类推 ，添加课程复制即可-->
+	<test name="创业启蒙与案例分享【重庆邮电】">
+		<parameter name="courseName" value="创业启蒙与案例分享【重庆邮电】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="互联网营销概论【重庆邮电】">
+		<parameter name="courseName" value="互联网营销概论【重庆邮电】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="搜索引擎营销【重庆邮电】">
+		<parameter name="courseName" value="搜索引擎营销【重庆邮电】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="大学生职业生涯规划【重庆邮电】">
+		<parameter name="courseName" value="大学生职业生涯规划【重庆邮电】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="计算思维【重庆邮电】">
+		<parameter name="courseName" value="计算思维【重庆邮电】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+
+</suite>
+
+
