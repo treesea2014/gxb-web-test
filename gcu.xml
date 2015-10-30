@@ -27,13 +27,20 @@
 		</classes>
 	</test>
 	
-    <!-- 课程名称2 后面依次类推 ，添加课程复制即可
-	<test name="口才与人际交往【诚毅学院】">
-		<parameter name="courseName" value="口才与人际交往【诚毅学院】" />
+    <!-- 课程名称2 后面依次类推 ，添加课程复制即可-->
+	<test name="创业基本功与精益创业方法论【华南理工大学广州学院】">
+		<parameter name="courseName" value="创业基本功与精益创业方法论【华南理工大学广州学院】" />
 		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
-	</test>-->
+	</test>
+	
+		<test name="创业启蒙与案例分享【华南理工大学广州学院】">
+		<parameter name="courseName" value="创业启蒙与案例分享【华南理工大学广州学院】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
+		</classes>
+	</test>
 
 	
 
