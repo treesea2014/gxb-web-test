@@ -89,7 +89,7 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<!--
+	
 	<test name="阿里云生态系统【华工】">
 		<parameter name="courseName" value="阿里云生态系统【华工】" />
 		<classes>
