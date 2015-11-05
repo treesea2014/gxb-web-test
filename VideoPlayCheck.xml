@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="华南理工-scut-视频播放" parallel="tests" preserve-order="true"
+<suite name="山东旅游职业sdts-视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,13 +13,76 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://jmu.gaoxiaobang.com/" />
-	<parameter name="loginName" value="jmugxb0000" />
+	<parameter name="baseUrl" value="http://sdts.gaoxiaobang.com/" />
+	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 
-
-
-	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’， -->
+	<test name="自我发展与创业指导【山东旅游】">
+		<parameter name="courseName" value="自我发展与创业指导【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="职业素养【山东旅游】">
+		<parameter name="courseName" value="职业素养【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="演讲口才与公众表达【山东旅游】">
+		<parameter name="courseName" value="演讲口才与公众表达【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="团队建设与高效管理【山东旅游】">
+		<parameter name="courseName" value="团队建设与高效管理【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="商务礼仪【山东旅游】">
+		<parameter name="courseName" value="商务礼仪【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="商务办公软件应用与实践【山东旅游】">
+		<parameter name="courseName" value="商务办公软件应用与实践【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="互联网营销概论【山东旅游】">
+		<parameter name="courseName" value="互联网营销概论【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="国学素养【山东旅游】">
+		<parameter name="courseName" value="国学素养【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="创业启蒙与案例分享【山东旅游】">
+		<parameter name="courseName" value="创业启蒙与案例分享【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="创业基本功与精益创业方法论【山东旅游】">
+		<parameter name="courseName" value="创业基本功与精益创业方法论【山东旅游】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’，
 	<test name="形势与政策【集美大学】">
 		<parameter name="courseName" value="形势与政策【集美大学】" />
 		<classes>
