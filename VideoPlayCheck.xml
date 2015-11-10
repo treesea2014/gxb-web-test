@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【创e+】视频播放" parallel="tests" preserve-order="true"
+<suite name="【凹凸课】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,11 +13,53 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://chuange.gaoxiaobang.com/" />
-	<parameter name="loginName" value="chuange-s " />
-	<parameter name="password" value="123456" />
+	<parameter name="baseUrl" value="http://aotuke.gaoxiaobang.com/" />
+	<parameter name="loginName" value="yhwu@kaikeba.com" />
+	<parameter name="password" value="yhwu123456" />
 	
 	<!--配置课程-->
+	<test name="职业化的态度，走向人生巅峰第一步【凹凸课】">
+		<parameter name="courseName" value="职业化的态度，走向人生巅峰第一步【凹凸课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="我和大学有个约会【凹凸课】">
+		<parameter name="courseName" value="我和大学有个约会【凹凸课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="学生社团管理【凹凸课】">
+		<parameter name="courseName" value="学生社团管理【凹凸课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="玩转课外活动 丰富大学生活【凹凸课】">
+		<parameter name="courseName" value="玩转课外活动 丰富大学生活【凹凸课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="逐梦象牙塔 赢在起跑线【凹凸课】">
+		<parameter name="courseName" value="逐梦象牙塔 赢在起跑线【凹凸课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="演讲修炼【凹凸课】">
+		<parameter name="courseName" value="演讲修炼【凹凸课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<!-- 
 	<test name="搜索引擎、微信与口碑营销【创e+】">
 		<parameter name="courseName" value="搜索引擎、微信与口碑营销【创e+】" />
 		<classes>
@@ -95,7 +137,7 @@
 		</classes>
 	</test>
 	
-	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’，
+	课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’，
 	<test name="职业素养【山东旅游】">
 		<parameter name="courseName" value="职业素养【山东旅游】" />
 		<classes>
