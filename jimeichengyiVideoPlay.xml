@@ -11,7 +11,7 @@
 	<!-- 依次为课程首页，用户名 密码 -->
 	<parameter name="baseUrl" value="http://lntlhc.gaoxiaobang.com/" />
 	<parameter name="loginName" value="lntlhc-s" />
-	<parameter name="password" value="1234567" />
+	<parameter name="password" value="123456" />
 	
 
 
