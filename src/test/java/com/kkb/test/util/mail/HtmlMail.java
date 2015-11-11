@@ -189,10 +189,10 @@ public class HtmlMail {
 							+ testContext.getSkippedTests().size();
 
 					 sb.append("<h3 style='margin-left:80px;'>" + "test 模块："
-					 + testContext.getName() + "\t总计：" + total + " \t通过："
-					 + testContext.getPassedTests().size() + " \t失败："
-					 + testContext.getFailedTests().size() + " \t跳过："
-					 + testContext.getSkippedTests().size() + " \t通过率："
+					 + testContext.getName() + "\t总计：" + total + " ,&nbsp;&nbsp通过："
+					 + testContext.getPassedTests().size() + " ,&nbsp;&nbsp失败："
+					 + testContext.getFailedTests().size() + " ,&nbsp;&nbsp跳过："
+					 + testContext.getSkippedTests().size() + " ,&nbsp;&nbsp通过率："
 					 + (testContext.getPassedTests().size() * 100 / total)
 					 + " %" + "</h3>");
 					/*sb.append("<h3 style='margin-left:80px;'>" + "test 模块："
@@ -211,9 +211,9 @@ public class HtmlMail {
 				"</div>";
 			html.append(
 					"<h4 style='color:red;'>" + env + "环境     结果统计："
-							+ (passed + fail + skip) + "\t通过:" + passed
-							+ "&nbsp;&nbsp;失败:" + fail + "&nbsp;&nbsp;跳过:" + skip
-							+ "&nbsp;&nbsp;通过率:"
+							+ (passed + fail + skip) + ",&nbsp;&nbsp;通过:" + passed
+							+ ",&nbsp;&nbsp;失败:" + fail + ",&nbsp;&nbsp;跳过:" + skip
+							+ ",&nbsp;&nbsp;通过率:"
 							+ (passed * 100 / (passed + fail + skip)) + " %</h4>").append(per)
 					.append(sb.toString()).append("</html>");
 
