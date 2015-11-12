@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【青岛大学】视频播放" parallel="tests" preserve-order="true"
+<suite name="【青岛大学、FIU联合训练营】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
