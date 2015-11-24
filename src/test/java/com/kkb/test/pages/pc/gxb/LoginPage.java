@@ -29,7 +29,7 @@ public class LoginPage extends Page {
 	/**
 	 * 登陆按钮
 	 */
-	@FindBy(id = "login-submit")
+	@FindBy(name = "submit")
 	public WebElement loginBtn;
 	
 	/**
