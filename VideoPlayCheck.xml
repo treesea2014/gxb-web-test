@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【贵州职业技术学院慧科软件学院】视频播放" parallel="tests" preserve-order="true"
+<suite name="【贵州轻工职业技术学院】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,11 +13,32 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://gzzyrj.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://gzqy.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
+	<test name="国学素养">
+		<parameter name="courseName" value="国学素养" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="魅力高效沟通实战技巧">
+		<parameter name="courseName" value="魅力高效沟通实战技巧" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="商务礼仪">
+		<parameter name="courseName" value="商务礼仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
 	<test name="演讲口才与公众表达">
 		<parameter name="courseName" value="演讲口才与公众表达" />
 		<classes>
@@ -25,22 +46,8 @@
 		</classes>
 	</test>
 	
-	<test name="大学生职业生涯规划">
-		<parameter name="courseName" value="大学生职业生涯规划" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="商务办公软件应用与实践">
-		<parameter name="courseName" value="商务办公软件应用与实践" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="移动互联网思维">
-		<parameter name="courseName" value="移动互联网思维" />
+	<test name="创业启蒙与案例分享">
+		<parameter name="courseName" value="创业启蒙与案例分享" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
