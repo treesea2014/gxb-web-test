@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【凹凸课】视频播放" parallel="tests" preserve-order="true"
+<suite name="【贵州职业技术学院慧科软件学院】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,53 +13,38 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://aotuke.gaoxiaobang.com/" />
-	<parameter name="loginName" value="yhwu@kaikeba.com" />
-	<parameter name="password" value="yhwu123456" />
+	<parameter name="baseUrl" value="http://gzzyrj.gaoxiaobang.com/" />
+	<parameter name="loginName" value="gxb0000" />
+	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
-	<test name="职业化的态度，走向人生巅峰第一步【凹凸课】">
-		<parameter name="courseName" value="职业化的态度，走向人生巅峰第一步【凹凸课】" />
+	<test name="演讲口才与公众表达">
+		<parameter name="courseName" value="演讲口才与公众表达" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="我和大学有个约会【凹凸课】">
-		<parameter name="courseName" value="我和大学有个约会【凹凸课】" />
+	<test name="大学生职业生涯规划">
+		<parameter name="courseName" value="大学生职业生涯规划" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="学生社团管理【凹凸课】">
-		<parameter name="courseName" value="学生社团管理【凹凸课】" />
+	<test name="商务办公软件应用与实践">
+		<parameter name="courseName" value="商务办公软件应用与实践" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="玩转课外活动 丰富大学生活【凹凸课】">
-		<parameter name="courseName" value="玩转课外活动 丰富大学生活【凹凸课】" />
+	<test name="移动互联网思维">
+		<parameter name="courseName" value="移动互联网思维" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	
-	<test name="逐梦象牙塔 赢在起跑线【凹凸课】">
-		<parameter name="courseName" value="逐梦象牙塔 赢在起跑线【凹凸课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="演讲修炼【凹凸课】">
-		<parameter name="courseName" value="演讲修炼【凹凸课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
 
 	
 
