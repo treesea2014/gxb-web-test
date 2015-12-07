@@ -653,7 +653,7 @@ public class Action {
 		String mDateTime = formatter.format(new Date());
 		String fileName = mDateTime ;
 		//
-		String imgUrl = "screenshot" + File.separator + fileName + ".jpg";
+		String imgUrl = "screenshot\\" + fileName + ".jpg";
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File screenshot = new File("test-output/html" + File.separator
 				+ imgUrl);
@@ -674,7 +674,7 @@ public class Action {
 		String mDateTime = formatter.format(new Date());
 		String fileName = mDateTime ;
 		//
-		String imgUrl = "screenshot" + File.separator + fileName + ".jpg";
+		String imgUrl = "screenshot\\" + fileName + ".jpg";
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File screenshot = new File("test-output/html" + File.separator
 				+ imgUrl);
