@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- 修改学校名称 -->
+<suite name="【贵州鸿皓科技职业学校】测验检查" parallel="tests" preserve-order="true"
+	thread-count="1">
+	<listeners>
+		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.TestngListener" />
+	</listeners>
+	
+	
+	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
+	<parameter name="baseUrl" value="http://hhe.gaoxiaobang.com/"/>
+	<parameter name="loginName" value="gxb0000" />
+	<parameter name="password" value="123456" />
+	
+	<test name="商务办公软件应用与实践">
+		<parameter name="courseName" value="商务办公软件应用与实践" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.QuizCheckStep" />
+		</classes>
+	</test>
+	
+<!--	<test name="阿里云服务器ECS产品介绍【体验版】">
+		<parameter name="courseName" value="阿里云服务器ECS产品介绍【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="阿里云及产品体系介绍【体验版】">
+		<parameter name="courseName" value="阿里云及产品体系介绍【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="阿里云生态系统【体验版】">
+		<parameter name="courseName" value="阿里云生态系统【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="负载均衡（SLB）产品介绍【体验版】">
+		<parameter name="courseName" value="负载均衡（SLB）产品介绍【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="阿里云数据库（RDS）产品介绍【体验版】">
+		<parameter name="courseName" value="阿里云数据库（RDS）产品介绍【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="开放存储服务（OSS）产品介绍【体验版】">
+		<parameter name="courseName" value="开放存储服务（OSS）产品介绍【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="互联网＋与阿里云【体验版】">
+		<parameter name="courseName" value="互联网＋与阿里云【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="企业级分布式海量数据分析平台【体验版】">
+		<parameter name="courseName" value="企业级分布式海量数据分析平台【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="大数据统计分析技术【体验版】">
+		<parameter name="courseName" value="大数据统计分析技术【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="大数据高级案例管理【体验版】">
+		<parameter name="courseName" value="大数据高级案例管理【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>	
+
+
+	
+	<test name="集成数据管理【体验版】">
+		<parameter name="courseName" value="集成数据管理【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="高级数据库管理【体验版】">
+		<parameter name="courseName" value="高级数据库管理【体验版】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+
+	<test name="移动互联网背景下的创新创业">
+		<parameter name="courseName" value="移动互联网背景下的创新创业" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="创业指导公开课">
+		<parameter name="courseName" value="创业指导公开课" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="创新创业与创意">
+		<parameter name="courseName" value="创新创业与创意" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="大咖谈创业">
+		<parameter name="courseName" value="大咖谈创业" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="传统行业与互联网行业的连接与转化">
+		<parameter name="courseName" value="传统行业与互联网行业的连接与转化" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="创业心态">
+		<parameter name="courseName" value="创业心态" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+		<test name="创业基本功与精益创业方法论">
+		<parameter name="courseName" value="创业基本功与精益创业方法论" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+		<test name="计算思维">
+		<parameter name="courseName" value="计算思维" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+			<test name="移动互联网思维">
+		<parameter name="courseName" value="移动互联网思维" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+			<test name="创业启蒙与案例分享">
+		<parameter name="courseName" value="创业启蒙与案例分享" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	-->
+
+</suite>
+
+
