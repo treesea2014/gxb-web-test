@@ -19,12 +19,39 @@ public class CourseLearnPage extends Page {
 	public CourseLearnPage(WebDriver webDriver) {
 		super(webDriver);
 	}
-
+	
+	/*******************************左侧边栏start******************************/
+	/**
+	 * 课程公告
+	 */
+	@FindBy(xpath = "//*[@id='menus_list']/li[2]/a/span[2]")
+	public WebElement announcements;
+	
 	/**
 	 * 开始学习
 	 */
 	@FindBy(xpath = "//*[@id='menus_list']/li[2]/a/span[2]")
 	public WebElement startLearn;
+	
+	/**
+	 * 测验
+	 */
+	@FindBy(xpath = "//*[@id='menus_list']/li[3]/a/span[2]")
+	public WebElement quizz;
+	
+	/**
+	 * 作业
+	 */
+	@FindBy(xpath = "//*[@id='menus_list']/li[4]/a/span[2]")
+	public WebElement assignments;
+	
+	/**
+	 * 讨论区
+	 */
+	@FindBy(xpath = "//*[@id='menus_list']/li[5]/a/span[2]")
+	public WebElement forums;
+
+	/*******************************左侧边栏end******************************/
 	
 	/**
 	 * 所有章节名称
@@ -88,4 +115,95 @@ public class CourseLearnPage extends Page {
 	 * 视频坐标xpath
 	 */
 	public String videoLocationXpath = "//*[@id='home_video']";
+	
+	/*********************************测验**********************/
+
+	/**
+	 * 前往测试按钮
+	 */
+	@FindBy(xpath = "//div[@class='panel active']/descendant::button")
+	public List<WebElement> goToTest;
+	/**
+	 * 前往测试的xpath
+	 */
+	public String goToTestXpath = "//div[@class='panel active']/descendant::button";
+	
+	/**
+	 * 开始测验按钮
+	 */
+	@FindBy(xpath = "//button[text()='开始测验']")
+	public WebElement startTest;
+	
+	/**
+	 * 取消
+	 */
+	@FindBy(xpath = "//button[text()='取消']")
+	public WebElement cancelTest;
+	
+	
+	/**
+	 * 测验名称
+	 */
+	@FindBy(xpath = "//div[@class='panel active']/descendant::span[2]")
+	public List<WebElement> quizName;
+	
+	/**
+	 * 测验名称XPath
+	 */
+	public String quizNameXpath = "//div[@class='panel active']/descendant::span[2]";
+	
+	/**
+	 * 测验名称
+	 */
+	@FindBy(xpath = "//*[@id='page-content']/div/div[1]/h3")
+	public WebElement quizTitle;
+	
+	
+	
+	/**
+	 * 选项A
+	 */
+	@FindBy(xpath = "//*[@id='quiz_questions_list']/div/ul/li[1]/p[1]/span")
+	public List<WebElement> option_A;
+	
+	/**
+	 * 选项B
+	 */
+	@FindBy(xpath = "//*[@id='quiz_questions_list']/div/ul/li[2]/p[1]/span")
+	public List<WebElement> option_B;
+	
+	/**
+	 * 选项C
+	 */
+	@FindBy(xpath = "//*[@id='quiz_questions_list']/div/ul/li[3]/p[1]/span")
+	public List<WebElement> option_C;
+	
+	/**
+	 * 选项D
+	 */
+	@FindBy(xpath = "//*[@id='quiz_questions_list']/div/ul/li[4]/p[1]/span")
+	public List<WebElement> option_D;
+	
+	/**
+	 * 测验保存按钮
+	 */
+	@FindBy(id = "save_quiz_submission")
+	public WebElement quizSave;
+	/**
+	 * 测验保存按钮xpath
+	 */
+	public String quizSaveXpath = "//*[@id='save_quiz_submission']";
+	
+	/**
+	 * 测验提交按钮
+	 */
+	@FindBy(id = "submit_quiz_submission")
+	public WebElement quizSubmit;
+	
+	/**
+	 * 保存成功提示
+	 */
+	@FindBy(className = "submit-job")
+	public WebElement submitTips;
+	
 }

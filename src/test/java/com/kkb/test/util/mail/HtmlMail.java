@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
+import org.testng.annotations.Test;
 
 import com.kkb.test.steps.BaseStep;
 
@@ -225,5 +226,10 @@ public class HtmlMail {
 					+ subject;
 			
 			HtmlMail.send(toMail, Subject, html.toString());
+		}
+		@Test
+		public void testMail(){
+			HtmlMail.send("724109409@qq.com", "测试邮件", "你好，这只是一封测试邮件");
+
 		}
 }
