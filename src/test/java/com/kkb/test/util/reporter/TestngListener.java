@@ -67,7 +67,7 @@ public class TestngListener  extends TestListenerAdapter {
 		String mDateTime = formatter.format(new Date());
 		String fileName = mDateTime + "_" +tr.getName();
 		//
-		String imgUrl = "screenshot\\" + fileName + ".jpg";
+		String imgUrl = "screenshot/" + fileName + ".jpg";
 		File scrFile = ((TakesScreenshot)(BaseStep.driver)).getScreenshotAs(OutputType.FILE);
 		File screenshot = new File("test-output/html" + File.separator
 				+ imgUrl);
