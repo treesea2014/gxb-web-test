@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【武汉东翼今天商贸有限公司（Today）】视频播放" parallel="tests" preserve-order="true"
+<suite name="【精品课-前8门】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,21 +13,68 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://today36524.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://jpk.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
 	
 	
-	<test name="创业启蒙与案例分享">
-		<parameter name="courseName" value="新员工培训课程" />
+	<test name="OpenStack云平台实践【精品课】">
+		<parameter name="courseName" value="OpenStack云平台实践【精品课】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
+	<test name="R语言建模与预测【精品课】">
+		<parameter name="courseName" value="R语言建模与预测【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 	
+	<test name="数据学的工具箱【精品课】">
+		<parameter name="courseName" value="数据学的工具箱【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="Spark集群环境部署与应用实践【精品课】">
+		<parameter name="courseName" value="Spark集群环境部署与应用实践【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="数据挖掘技术【精品课】">
+		<parameter name="courseName" value="数据挖掘技术【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="Android 平台移动云计算开发【精品课】">
+		<parameter name="courseName" value="Android 平台移动云计算开发【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="R语言编程技术【精品课】">
+		<parameter name="courseName" value="R语言编程技术【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+		
+	<test name="大数据概论【精品课】">
+		<parameter name="courseName" value="大数据概论【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 
 </suite>
 
