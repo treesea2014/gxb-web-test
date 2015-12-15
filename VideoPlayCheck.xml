@@ -20,7 +20,7 @@
 	<!--配置课程-->
 	
 	
-	<test name="OpenStack云平台实践【精品课】">
+	<!--<test name="OpenStack云平台实践【精品课】">
 		<parameter name="courseName" value="OpenStack云平台实践【精品课】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
@@ -71,6 +71,61 @@
 		
 	<test name="大数据概论【精品课】">
 		<parameter name="courseName" value="大数据概论【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>-->
+	<test name="搜索引擎优化技术【精品课】">
+		<parameter name="courseName" value="搜索引擎优化技术【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="百度凤巢沙盒系统实习【精品课】">
+		<parameter name="courseName" value="百度凤巢沙盒系统实习【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="百度凤巢沙盒系统营销实践【精品课】">
+		<parameter name="courseName" value="百度凤巢沙盒系统营销实践【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="数据结构【精品课】">
+		<parameter name="courseName" value="数据结构【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="编程算法【精品课】">
+		<parameter name="courseName" value="编程算法【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="MySQL数据库高级技术【精品课】">
+		<parameter name="courseName" value="MySQL数据库高级技术【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="ThinkPHP框架技术【精品课】">
+		<parameter name="courseName" value="ThinkPHP框架技术【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+		
+	<test name="PHP语言程序设计【精品课】">
+		<parameter name="courseName" value="PHP语言程序设计【精品课】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
