@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【精品课-前8门】视频播放" parallel="tests" preserve-order="true"
+<suite name="【精品课-16-25门】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
