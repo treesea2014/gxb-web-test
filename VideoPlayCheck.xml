@@ -74,7 +74,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>-->
+	</test>
 	<test name="搜索引擎优化技术【精品课】">
 		<parameter name="courseName" value="搜索引擎优化技术【精品课】" />
 		<classes>
@@ -122,10 +122,73 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>
+	</test>	-->
 		
 	<test name="PHP语言程序设计【精品课】">
 		<parameter name="courseName" value="PHP语言程序设计【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="CompTIA Cloud Essentials">
+		<parameter name="courseName" value="CompTIA Cloud Essentials" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="数理统计【精品课】">
+		<parameter name="courseName" value="数理统计【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="静态网页技术【精品课】">
+		<parameter name="courseName" value="静态网页技术【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="搜索引擎营销【精品课】">
+		<parameter name="courseName" value="搜索引擎营销【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="互联网营销概论【精品课】">
+		<parameter name="courseName" value="互联网营销概论【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="社会化媒体营销【精品课】">
+		<parameter name="courseName" value="社会化媒体营销【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="Objective-C面向对象程序设计【精品课】">
+		<parameter name="courseName" value="Objective-C面向对象程序设计【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+		
+	<test name="MySQL数据库基础【精品课】">
+		<parameter name="courseName" value="MySQL数据库基础【精品课】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="高级编程语言【精品课】">
+		<parameter name="courseName" value="高级编程语言【精品课】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
