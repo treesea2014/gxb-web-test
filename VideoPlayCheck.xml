@@ -122,7 +122,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>	-->
+	</test>	
 		
 	<test name="PHP语言程序设计【精品课】">
 		<parameter name="courseName" value="PHP语言程序设计【精品课】" />
@@ -193,6 +193,19 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-
+-->
+	<test name="创业启蒙与案例分享">
+		<parameter name="courseName" value="创业启蒙与案例分享" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="创业基本功与精益创业方法论">
+		<parameter name="courseName" value="创业基本功与精益创业方法论" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 </suite>
 
