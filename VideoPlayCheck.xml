@@ -193,7 +193,7 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
--->
+
 	<test name="演讲口才与公众表达">
 		<parameter name="courseName" value="演讲口才与公众表达" />
 		<classes>
@@ -216,6 +216,66 @@
 	
 	<test name="安全教育">
 		<parameter name="courseName" value="安全教育" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>-->
+	<test name="奥美之路公司10年回顾">
+		<parameter name="courseName" value="奥美之路公司10年回顾" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质与健康评价">
+		<parameter name="courseName" value="体质与健康评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="客户项目系统穿越">
+		<parameter name="courseName" value="客户项目系统穿越" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="营销产品系统穿越">
+		<parameter name="courseName" value="营销产品系统穿越" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="销售中心2015年培训">
+		<parameter name="courseName" value="销售中心2015年培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="行业和案例培训">
+		<parameter name="courseName" value="行业和案例培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动营养与健康">
+		<parameter name="courseName" value="运动营养与健康" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="德国肌肉力量测试及脊柱形态功能分析产品">
+		<parameter name="courseName" value="德国肌肉力量测试及脊柱形态功能分析产品" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="心肺功能评价与健康促进">
+		<parameter name="courseName" value="心肺功能评价与健康促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动与身体成分控制">
+		<parameter name="courseName" value="运动与身体成分控制" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
