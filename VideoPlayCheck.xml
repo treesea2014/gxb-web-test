@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【奥美 · 云教育1-10】视频播放" parallel="tests" preserve-order="true"
+<suite name="【奥美 · 云教育11-25】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -20,207 +20,7 @@
 	<!--配置课程-->
 	
 	
-	<!--<test name="OpenStack云平台实践【精品课】">
-		<parameter name="courseName" value="OpenStack云平台实践【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="R语言建模与预测【精品课】">
-		<parameter name="courseName" value="R语言建模与预测【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="数据学的工具箱【精品课】">
-		<parameter name="courseName" value="数据学的工具箱【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="Spark集群环境部署与应用实践【精品课】">
-		<parameter name="courseName" value="Spark集群环境部署与应用实践【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="数据挖掘技术【精品课】">
-		<parameter name="courseName" value="数据挖掘技术【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="Android 平台移动云计算开发【精品课】">
-		<parameter name="courseName" value="Android 平台移动云计算开发【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="R语言编程技术【精品课】">
-		<parameter name="courseName" value="R语言编程技术【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-		
-	<test name="大数据概论【精品课】">
-		<parameter name="courseName" value="大数据概论【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	<test name="搜索引擎优化技术【精品课】">
-		<parameter name="courseName" value="搜索引擎优化技术【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="百度凤巢沙盒系统实习【精品课】">
-		<parameter name="courseName" value="百度凤巢沙盒系统实习【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="百度凤巢沙盒系统营销实践【精品课】">
-		<parameter name="courseName" value="百度凤巢沙盒系统营销实践【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="数据结构【精品课】">
-		<parameter name="courseName" value="数据结构【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="编程算法【精品课】">
-		<parameter name="courseName" value="编程算法【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="MySQL数据库高级技术【精品课】">
-		<parameter name="courseName" value="MySQL数据库高级技术【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="ThinkPHP框架技术【精品课】">
-		<parameter name="courseName" value="ThinkPHP框架技术【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>	
-		
-	<test name="PHP语言程序设计【精品课】">
-		<parameter name="courseName" value="PHP语言程序设计【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-
-	<test name="CompTIA Cloud Essentials">
-		<parameter name="courseName" value="CompTIA Cloud Essentials" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="数理统计【精品课】">
-		<parameter name="courseName" value="数理统计【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="静态网页技术【精品课】">
-		<parameter name="courseName" value="静态网页技术【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="搜索引擎营销【精品课】">
-		<parameter name="courseName" value="搜索引擎营销【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="互联网营销概论【精品课】">
-		<parameter name="courseName" value="互联网营销概论【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="社会化媒体营销【精品课】">
-		<parameter name="courseName" value="社会化媒体营销【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="Objective-C面向对象程序设计【精品课】">
-		<parameter name="courseName" value="Objective-C面向对象程序设计【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-		
-	<test name="MySQL数据库基础【精品课】">
-		<parameter name="courseName" value="MySQL数据库基础【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="高级编程语言【精品课】">
-		<parameter name="courseName" value="高级编程语言【精品课】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-
-	<test name="演讲口才与公众表达">
-		<parameter name="courseName" value="演讲口才与公众表达" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="形势与政策">
-		<parameter name="courseName" value="形势与政策" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	<test name="国学素养">
-		<parameter name="courseName" value="国学素养" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="安全教育">
-		<parameter name="courseName" value="安全教育" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>-->
-	<test name="奥美之路公司10年回顾">
+	<!--	<test name="奥美之路公司10年回顾">
 		<parameter name="courseName" value="奥美之路公司10年回顾" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
@@ -279,6 +79,97 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
+	</test>-->
+	<test name="青少年生长发育与骨龄判读">
+		<parameter name="courseName" value="青少年生长发育与骨龄判读" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
 	</test>
+	<test name="运动处方原理与应用">
+		<parameter name="courseName" value="运动处方原理与应用" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动康复理论与实用技术">
+		<parameter name="courseName" value="运动康复理论与实用技术" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="国民体质测定与指标的解读">
+		<parameter name="courseName" value="国民体质测定与指标的解读" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="超声体成分培训">
+		<parameter name="courseName" value="超声体成分培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="动脉硬化 平衡仪">
+		<parameter name="courseName" value="动脉硬化 平衡仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="动脉硬化及运动防止效果评价">
+		<parameter name="courseName" value="动脉硬化及运动防止效果评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质测定与科学健身指导中心的管理与运营">
+		<parameter name="courseName" value="体质测定与科学健身指导中心的管理与运营" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="心肺功能、身体成分、骨密度、动脉硬化等指标测评的价值及报告解读（健康体适能）">
+		<parameter name="courseName" value="心肺功能、身体成分、骨密度、动脉硬化等指标测评的价值及报告解读（健康体适能）" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="成都市第二届全民健身运动会">
+		<parameter name="courseName" value="成都市第二届全民健身运动会" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动-体质测定与健身指导">
+		<parameter name="courseName" value="运动-体质测定与健身指导" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="颈椎保健及运动康复">
+		<parameter name="courseName" value="颈椎保健及运动康复" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="悬吊系统">
+		<parameter name="courseName" value="悬吊系统" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="减肥培训">
+		<parameter name="courseName" value="减肥培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="非人力资源经理的人力资源管理">
+		<parameter name="courseName" value="非人力资源经理的人力资源管理" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
 </suite>
 
