@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【奥美 · 云教育11-25】视频播放" parallel="tests" preserve-order="true"
+<suite name="【奥美 · 云教育26-45】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
