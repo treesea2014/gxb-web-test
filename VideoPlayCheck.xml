@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【奥美 · 云教育26-45】视频播放" parallel="tests" preserve-order="true"
+<suite name="【南京大学】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,12 +13,17 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://acmeway.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://nju.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
-	
+	<test name="Linux操作系统应用【南通南大】">
+		<parameter name="courseName" value="Linux操作系统应用【南通南大】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 	
 	<!--	<test name="奥美之路公司10年回顾">
 		<parameter name="courseName" value="奥美之路公司10年回顾" />
@@ -169,7 +174,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>-->
+	</test>
 	<test name="骨密度的检测方法与评价">
 		<parameter name="courseName" value="骨密度的检测方法与评价" />
 		<classes>
@@ -291,7 +296,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>
+	</test>-->
 
 </suite>
 
