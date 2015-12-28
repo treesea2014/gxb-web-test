@@ -79,7 +79,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>-->
+	</test>
 	<test name="青少年生长发育与骨龄判读">
 		<parameter name="courseName" value="青少年生长发育与骨龄判读" />
 		<classes>
@@ -166,6 +166,128 @@
 	</test>
 	<test name="非人力资源经理的人力资源管理">
 		<parameter name="courseName" value="非人力资源经理的人力资源管理" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>-->
+	<test name="骨密度的检测方法与评价">
+		<parameter name="courseName" value="骨密度的检测方法与评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动让生命更精彩健康专题讲座">
+		<parameter name="courseName" value="运动让生命更精彩健康专题讲座" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="安徽省国民体质网站系统的使用操作及奥美信息化管理系统">
+		<parameter name="courseName" value="安徽省国民体质网站系统的使用操作及奥美信息化管理系统" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="2013体质测定结果的解读与咨询">
+		<parameter name="courseName" value="2013体质测定结果的解读与咨询" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="奥美健康体适能管理体系整体解决方案设计">
+		<parameter name="courseName" value="奥美健康体适能管理体系整体解决方案设计" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+		<test name="血压及心血管测量与健康促进">
+		<parameter name="courseName" value="血压及心血管测量与健康促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="身体成分的检测方法与评价">
+		<parameter name="courseName" value="身体成分的检测方法与评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="人体成分分析仪的操作使用">
+		<parameter name="courseName" value="人体成分分析仪的操作使用" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="身体机能、素质的测量方法">
+		<parameter name="courseName" value="身体机能、素质的测量方法" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="科技服务国民，打造国民体质健康生态圈">
+		<parameter name="courseName" value="科技服务国民，打造国民体质健康生态圈" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	
+	<test name="力量的检测方法与评价">
+		<parameter name="courseName" value="力量的检测方法与评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="心血管供能检测与急救方法">
+		<parameter name="courseName" value="心血管供能检测与急救方法" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="人体成分分析仪的原理">
+		<parameter name="courseName" value="人体成分分析仪的原理" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="人体成分分析仪的报告讲解">
+		<parameter name="courseName" value="人体成分分析仪的报告讲解" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="全民健身公共服务体系建设">
+		<parameter name="courseName" value="全民健身公共服务体系建设" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="有氧能力的监测方法与评价">
+		<parameter name="courseName" value="有氧能力的监测方法与评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="亚健康与健康管理">
+		<parameter name="courseName" value="亚健康与健康管理" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质测定与科学健身指导技术培训班的意义和宗旨">
+		<parameter name="courseName" value="体质测定与科学健身指导技术培训班的意义和宗旨" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动与体重控制">
+		<parameter name="courseName" value="运动与体重控制" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体适能与运动健康管理">
+		<parameter name="courseName" value="体适能与运动健康管理" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
