@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【广东机电职业技术学院】视频播放" parallel="tests" preserve-order="true"
+<suite name="【奥美 · 云教育46-91】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -18,19 +18,6 @@
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
-	<test name="网站分析工具【广东机电】">
-		<parameter name="courseName" value="网站分析工具【广东机电】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	<test name="互联网营销概论【广东机电】">
-		<parameter name="courseName" value="互联网营销概论【广东机电】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
 	<!--	<test name="奥美之路公司10年回顾">
 		<parameter name="courseName" value="奥美之路公司10年回顾" />
 		<classes>
@@ -303,6 +290,300 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>-->
+	<test name="骨密度与健康促进">
+		<parameter name="courseName" value="骨密度与健康促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="全体员工能量突破和自我实现">
+		<parameter name="courseName" value="全体员工能量突破和自我实现" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="新销售培训">
+		<parameter name="courseName" value="新销售培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="奥美之路七法则">
+		<parameter name="courseName" value="奥美之路七法则" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="如何构建一个有效的面试">
+		<parameter name="courseName" value="如何构建一个有效的面试" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="健康体适能在健康管理中的价值和应用">
+		<parameter name="courseName" value="健康体适能在健康管理中的价值和应用" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="ISO9000宣贯讲解">
+		<parameter name="courseName" value="ISO9000宣贯讲解" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+		<test name="团队意识与行动目标的建立和实施">
+		<parameter name="courseName" value="团队意识与行动目标的建立和实施" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="功能训练与力量训练一体化">
+		<parameter name="courseName" value="功能训练与力量训练一体化" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="恒康佳业设备拆箱和故障排查培训">
+		<parameter name="courseName" value="恒康佳业设备拆箱和故障排查培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="身体成分评估与体重控制">
+		<parameter name="courseName" value="身体成分评估与体重控制" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质测定标准的技术及应用">
+		<parameter name="courseName" value="体质测定标准的技术及应用" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质测定与运动健身指导站运作与管理">
+		<parameter name="courseName" value="体质测定与运动健身指导站运作与管理" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="管理者的管理意识和管理技能提升">
+		<parameter name="courseName" value="管理者的管理意识和管理技能提升" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体育行业市场及客户分析">
+		<parameter name="courseName" value="体育行业市场及客户分析" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="院校行业市场及客户分析">
+		<parameter name="courseName" value="院校行业市场及客户分析" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="健康体适能与运动焕发身心">
+		<parameter name="courseName" value="健康体适能与运动焕发身心" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="金牌销售的七步">
+		<parameter name="courseName" value="金牌销售的七步" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="骨密度">
+		<parameter name="courseName" value="骨密度" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="便携式数字肌力测试仪">
+		<parameter name="courseName" value="便携式数字肌力测试仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="奥美公司年会">
+		<parameter name="courseName" value="奥美公司年会" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="骨质疏松及运动防治">
+		<parameter name="courseName" value="骨质疏松及运动防治" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="心肺功能评定与体质促进">
+		<parameter name="courseName" value="心肺功能评定与体质促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="商业模式">
+		<parameter name="courseName" value="商业模式" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="薪酬绩效系统穿越">
+		<parameter name="courseName" value="薪酬绩效系统穿越" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="健康体适能检测在健康管理中的应用">
+		<parameter name="courseName" value="健康体适能检测在健康管理中的应用" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="亚健康">
+		<parameter name="courseName" value="亚健康" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="日本人的健康管理与健身">
+		<parameter name="courseName" value="日本人的健康管理与健身" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质与健康促进">
+		<parameter name="courseName" value="体质与健康促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="糖尿病评价与健康促进">
+		<parameter name="courseName" value="糖尿病评价与健康促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="奥美之路企业文化">
+		<parameter name="courseName" value="奥美之路企业文化" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="有氧运动与力量训练处方">
+		<parameter name="courseName" value="有氧运动与力量训练处方" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="四川体质测定与健身指导">
+		<parameter name="courseName" value="四川体质测定与健身指导" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="恒康嘉业体质设备">
+		<parameter name="courseName" value="恒康嘉业体质设备" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="脊柱健康评价与运动维护">
+		<parameter name="courseName" value="脊柱健康评价与运动维护" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="体质与健身">
+		<parameter name="courseName" value="体质与健身" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="企业宗旨和经营理念">
+		<parameter name="courseName" value="企业宗旨和经营理念" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="九型人格">
+		<parameter name="courseName" value="九型人格" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="脊柱培训">
+		<parameter name="courseName" value="脊柱培训" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+	<test name="身体形态测量方法">
+		<parameter name="courseName" value="身体形态测量方法" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="生活方式与健康促进">
+		<parameter name="courseName" value="生活方式与健康促进" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="体质健康测试中心的管理与运营">
+		<parameter name="courseName" value="体质健康测试中心的管理与运营" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动负荷的确定及定量负荷恢复">
+		<parameter name="courseName" value="运动负荷的确定及定量负荷恢复" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运营岗位系统穿越">
+		<parameter name="courseName" value="运营岗位系统穿越" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="平衡能力练习及效果评价">
+		<parameter name="courseName" value="平衡能力练习及效果评价" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="运动处方、体质健康测试中心管理与运营">
+		<parameter name="courseName" value="运动处方、体质健康测试中心管理与运营" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+
+
+	
+
+	
+	
 
 </suite>
 
