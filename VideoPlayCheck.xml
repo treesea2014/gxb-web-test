@@ -30,8 +30,8 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="网络风险评估【精品课】">
-		<parameter name="courseName" value="网络风险评估【精品课】" />
+	<test name="面向对象方法精粹【精品课】">
+		<parameter name="courseName" value="面向对象方法精粹【精品课】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
