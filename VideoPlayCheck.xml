@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【武汉东翼今天商贸有限公司（Today）】视频播放" parallel="tests" preserve-order="true"
+<suite name="【山东建筑大学】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://today36524.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://sdjzu.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -581,8 +581,8 @@
 -->
 
 	
-	<test name="新员工培训课程">
-		<parameter name="courseName" value="新员工培训课程" />
+	<test name="军事理论">
+		<parameter name="courseName" value="军事理论" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
