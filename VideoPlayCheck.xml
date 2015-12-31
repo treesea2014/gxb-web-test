@@ -600,7 +600,7 @@
 		</classes>
 	</test>
 	<test name="互联网＋与阿里云">
-		<parameter name="courseName" value="互联网＋与阿里云 />
+		<parameter name="courseName" value="互联网＋与阿里云"/>
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
