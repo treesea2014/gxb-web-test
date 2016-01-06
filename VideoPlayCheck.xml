@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【贵州高校慕课互选平台】视频播放" parallel="tests" preserve-order="true"
+<suite name="【奥美 · 体育】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://gzmooc.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://sports.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -582,15 +582,69 @@
 -->
 	
 
-	<test name="形势与政策">
-		<parameter name="courseName" value="形势与政策" />
+	<test name="人体成分分析仪">
+		<parameter name="courseName" value="人体成分分析仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="心肺功能（ETT）">
+		<parameter name="courseName" value="心肺功能（ETT）" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="心肺功能（YMCA）">
+		<parameter name="courseName" value="心肺功能（YMCA）" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="超声骨密度仪">
+		<parameter name="courseName" value="超声骨密度仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="平衡仪">
+		<parameter name="courseName" value="平衡仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="动脉硬化检测仪">
+		<parameter name="courseName" value="动脉硬化检测仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="国民体质检测仪">
+		<parameter name="courseName" value="国民体质检测仪" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	
+	<test name="全民健身公共服务体系建设">
+		<parameter name="courseName" value="全民健身公共服务体系建设" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 
-
 	
+	<test name="成都市第二届全民健身运动会">
+		<parameter name="courseName" value="成都市第二届全民健身运动会" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 
 </suite>
 
