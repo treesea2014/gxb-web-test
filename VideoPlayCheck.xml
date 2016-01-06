@@ -582,8 +582,8 @@
 -->
 	
 
-	<test name="形势与政策【上海金融】">
-		<parameter name="courseName" value="形势与政策【上海金融】" />
+	<test name="形势与政策">
+		<parameter name="courseName" value="形势与政策" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
