@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【上海金融学院】视频播放" parallel="tests" preserve-order="true"
+<suite name="【贵州高校慕课互选平台】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://shfc.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://gzmooc.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -581,42 +581,14 @@
 
 -->
 	
-	<test name="心理健康【上海金融】">
-		<parameter name="courseName" value="心理健康【上海金融】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
+
 	<test name="形势与政策【上海金融】">
 		<parameter name="courseName" value="形势与政策【上海金融】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="搜索引擎、微信与口碑营销【上海金融】">
-		<parameter name="courseName" value="搜索引擎、微信与口碑营销【上海金融】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	<test name="安全教育【上海金融】">
-		<parameter name="courseName" value="安全教育【上海金融】"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	<test name="自我发展与创业指导【上海金融】">
-		<parameter name="courseName" value="自我发展与创业指导【上海金融】"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	<test name="就业指导—就业，亮出你自己【上海金融】">
-		<parameter name="courseName" value="就业指导—就业，亮出你自己【上海金融】"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
+
 
 	
 
