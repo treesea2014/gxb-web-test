@@ -578,7 +578,7 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
--->
+
 
 	
 	<test name="心理健康【上海金融】">
@@ -592,7 +592,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>
+	</test>-->
 	<test name="搜索引擎、微信与口碑营销【上海金融】">
 		<parameter name="courseName" value="搜索引擎、微信与口碑营销【上海金融】" />
 		<classes>
