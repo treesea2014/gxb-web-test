@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【奥美 · 医疗】视频播放" parallel="tests" preserve-order="true"
+<suite name="【奥美 ·企业大学】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://medical.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://acmeway.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -631,20 +631,7 @@
 		</classes>
 	</test>
 	
-	<test name="全民健身公共服务体系建设">
-		<parameter name="courseName" value="全民健身公共服务体系建设" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
 
-	
-	<test name="成都市第二届全民健身运动会">
-		<parameter name="courseName" value="成都市第二届全民健身运动会" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
 
 </suite>
 
