@@ -624,8 +624,8 @@
 		</classes>
 	</test>
 	
-	<test name="国民体质检测仪">
-		<parameter name="courseName" value="国民体质检测仪" />
+	<test name="国民体质测试仪">
+		<parameter name="courseName" value="国民体质测试仪" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
