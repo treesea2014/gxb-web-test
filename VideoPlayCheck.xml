@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【奥美 ·企业大学】视频播放" parallel="tests" preserve-order="true"
+<suite name="【南京航空航天大学计算机科学与技术学院】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://acmeway.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://nuaa.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -582,55 +582,61 @@
 -->
 	
 
-	<test name="人体成分分析仪">
-		<parameter name="courseName" value="人体成分分析仪" />
+	<test name="负载均衡（SLB）产品介绍">
+		<parameter name="courseName" value="负载均衡（SLB）产品介绍" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="心肺功能（ETT）">
-		<parameter name="courseName" value="心肺功能（ETT）" />
+	<test name="阿里云数据库（RDS）产品介绍">
+		<parameter name="courseName" value="阿里云数据库（RDS）产品介绍" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="心肺功能（YMCA）">
-		<parameter name="courseName" value="心肺功能（YMCA）" />
+	<test name="开放存储服务（OSS）产品介绍">
+		<parameter name="courseName" value="开放存储服务（OSS）产品介绍" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="超声骨密度仪">
-		<parameter name="courseName" value="超声骨密度仪" />
+	<test name="互联网＋与阿里云">
+		<parameter name="courseName" value="互联网＋与阿里云" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="平衡仪">
-		<parameter name="courseName" value="平衡仪" />
+	<test name="阿里云服务器ECS产品介绍">
+		<parameter name="courseName" value="阿里云服务器ECS产品介绍" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="动脉硬化检测仪">
-		<parameter name="courseName" value="动脉硬化检测仪" />
+	<test name="阿里云生态系统">
+		<parameter name="courseName" value="阿里云生态系统" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="国民体质测试仪">
-		<parameter name="courseName" value="国民体质测试仪" />
+	<test name="阿里金融云——科技想象力，金融创造力">
+		<parameter name="courseName" value="阿里金融云——科技想象力，金融创造力" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
+	<test name="阿里云及产品体系介绍">
+		<parameter name="courseName" value="阿里云及产品体系介绍" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 
 
 </suite>
