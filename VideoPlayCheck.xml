@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【东莞理工学院】视频播放" parallel="tests" preserve-order="true"
+<suite name="【北京航空航天大学-南通校区】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://dgut.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://buaant.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -582,47 +582,21 @@
 -->
 	
 
-	<test name="HTML5开发技术">
-		<parameter name="courseName" value="HTML5开发技术" />
+	<test name="社会化媒体营销">
+		<parameter name="courseName" value="社会化媒体营销" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="Android移动开发技术">
-		<parameter name="courseName" value="Android移动开发技术" />
+	<test name="静态网页技术">
+		<parameter name="courseName" value="静态网页技术" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="Java高级语言开发技术">
-		<parameter name="courseName" value="Java高级语言开发技术" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="数据结构">
-		<parameter name="courseName" value="数据结构" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="搜索引擎营销">
-		<parameter name="courseName" value="搜索引擎营销" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="大数据概论">
-		<parameter name="courseName" value="大数据概论" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
+
 	
 	
 
