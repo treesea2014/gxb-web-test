@@ -590,7 +590,7 @@
 	</test>
 	
 	<test name="商务礼仪">
-		<parameter name="courseName" value="商务礼仪 />
+		<parameter name="courseName" value="商务礼仪" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
