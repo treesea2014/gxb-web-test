@@ -582,8 +582,8 @@
 -->
 	
 
-	<test name="负载均衡（SLB）产品介绍">
-		<parameter name="courseName" value="负载均衡（SLB）产品介绍" />
+	<test name="负载均衡">
+		<parameter name="courseName" value="负载均衡" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
@@ -602,8 +602,8 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="互联网＋与阿里云自动化测试">
-		<parameter name="courseName" value="互联网＋与阿里云自动化测试" />
+	<test name="互联网＋与阿里云">
+		<parameter name="courseName" value="互联网＋与阿里云" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
