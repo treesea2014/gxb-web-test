@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【中南大学软件学院】视频播放" parallel="tests" preserve-order="true"
+<suite name="【vmware丨威睿云课堂】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://csu.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://vmware.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -582,57 +582,17 @@
 -->
 
 	
-	<test name="负载均衡（SLB）产品介绍">
-		<parameter name="courseName" value="负载均衡（SLB）产品介绍" />
+	
+	
+	<test name="Docker入门与实践【vmware丨威睿云课堂】">
+		<parameter name="courseName" value="Docker入门与实践【vmware丨威睿云课堂】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="阿里云数据库（RDS）产品介绍">
-		<parameter name="courseName" value="阿里云数据库（RDS）产品介绍" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="开放存储服务（OSS）产品介绍">
-		<parameter name="courseName" value="开放存储服务（OSS）产品介绍" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="互联网＋与阿里云">
-		<parameter name="courseName" value="互联网＋与阿里云" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="阿里云服务器ECS产品介绍">
-		<parameter name="courseName" value="阿里云服务器ECS产品介绍" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="阿里云生态系统">
-		<parameter name="courseName" value="阿里云生态系统" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="阿里金融云">
-		<parameter name="courseName" value="阿里金融云" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="阿里云及产品体系介绍">
-		<parameter name="courseName" value="阿里云及产品体系介绍" />
+	<test name="云运维技术【vmware丨威睿云课堂】">
+		<parameter name="courseName" value="云运维技术【vmware丨威睿云课堂】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
