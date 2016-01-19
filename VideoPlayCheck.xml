@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【阿里云 · 学堂】视频播放" parallel="tests" preserve-order="true"
+<suite name="【博雅未来能力教育】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://aliyun.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://bfability.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -584,14 +584,30 @@
 	
 	
 	
-	<test name="分布式系统">
-		<parameter name="courseName" value="分布式系统" />
+	<test name="搜索引擎营销【博雅未来教育】">
+		<parameter name="courseName" value="搜索引擎营销【博雅未来教育】" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	
-
+	<test name="搜索引擎优化技术【博雅未来教育】">
+		<parameter name="courseName" value="搜索引擎优化技术【博雅未来教育】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="社会化媒体运营【博雅未来教育】">
+		<parameter name="courseName" value="社会化媒体运营【博雅未来教育】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="互联网思维概述【博雅未来教育】">
+		<parameter name="courseName" value="互联网思维概述【博雅未来教育】" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
 
 </suite>
 
