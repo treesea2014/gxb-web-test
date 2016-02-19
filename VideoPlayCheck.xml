@@ -26,8 +26,8 @@
 		</classes>
 	</test>
 
-	<test name="现代汉语修辞学的学做应用">
-		<parameter name="courseName" value="现代汉语修辞学的学做应用" />
+	<test name="现代汉语修辞学的写作应用">
+		<parameter name="courseName" value="现代汉语修辞学的写作应用" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
