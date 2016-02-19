@@ -403,12 +403,14 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		for(int i = 0 ;i< videoMap.size();i++){
 			String videoPlayPath = url+"/" + videoMap.get(i)[2] +"/chapter/" +videoMap.get(i)[1];
 			driver.navigate().to(videoPlayPath);
-			refresh();
-			pause(15);
+
+			pause(10);
 			WebElement e = courseLearnPage.videoPlay;
+			e.click();
 			snapshot();
 			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
-			pause(2);
+			e.click();
+			pause(5);
 			logger.info("palyState:{}" , palyState);
 			if(isElementExist(courseLearnPage.errorVideoTitleXpath,5)){
 				 errMsg = courseLearnPage.errorVideoTitle.getText();
@@ -419,6 +421,10 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				errorVideo.append("课程名称:"+videoMap.get(i)[0]+",访问地址:"+videoPlayPath+", mp4地址:"+videoSrc+"\n");
 				snapshot(videoMap.get(i)[0]);
 				logger.error("检查课程:{},视频有误!" , videoMap.get(i)[0]);
+
+			}else if(palyState.trim().contains("buffering")){
+				snapshot("视频超时:"+videoMap.get(i)[0]);
+				logger.error("检查课程:{},视频超时!" , videoMap.get(i)[0]);
 
 			}else{
 				logger.info("检查课程:{},测试通过!" , videoMap.get(i)[0]);
