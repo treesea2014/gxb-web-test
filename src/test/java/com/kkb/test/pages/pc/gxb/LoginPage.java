@@ -19,17 +19,21 @@ public class LoginPage extends Page {
 
 	@FindBy(linkText = "登录/注册")
 	public WebElement tologinBtn;
+	//学号登录
+	@FindBy(id = "studentId")
+	public WebElement studentId;
+
 	
-	@FindBy(id = "username")
+	@FindBy(xpath = "(//*[@id='username'])[2]")
 	public WebElement username;
 
-	@FindBy(id = "password")
+	@FindBy(xpath = "(//*[@id='password'])[2]")
 	public WebElement password;
 
 	/**
 	 * 登陆按钮
 	 */
-	@FindBy(name = "submit")
+	@FindBy(xpath = "(//input[@name='submit'])[2]")
 	public WebElement loginBtn;
 	
 	/**

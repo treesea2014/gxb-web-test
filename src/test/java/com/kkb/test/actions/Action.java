@@ -18,18 +18,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.NoSuchFrameException;
-import org.openqa.selenium.NoSuchWindowException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -155,9 +144,9 @@ public class Action {
 	 */
 
 	public void click(WebElement element) {
-		//waitForPageLoad(driver);
+		waitForPageLoad(driver);
 		this.element = element;
-		//higthLight(element);
+		higthLight(element);
 		this.element.click();
 
 		//this.pause(second);
@@ -249,6 +238,14 @@ public class Action {
 		}
 	}
 
+	public WebElement getStaleElemt(By by) {
+		try {
+			return driver.findElement(by);
+		} catch (StaleElementReferenceException e) {
+			logger.info("Attempting to recover from StaleElementReferenceException ...");
+			return getStaleElemt(by);
+		}
+	}
 	/**
 	 * 进入iframe
 	 * 

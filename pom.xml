@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>ru.stqa.selenium</groupId>
 			<artifactId>webdriver-factory</artifactId>
-			<version>1.1.45</version>
+			<version>1.1.51</version>
 		</dependency>
 		<!-- 邮件 -->
 		<dependency>

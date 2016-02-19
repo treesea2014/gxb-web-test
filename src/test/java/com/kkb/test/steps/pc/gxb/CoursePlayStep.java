@@ -54,40 +54,23 @@ public class CoursePlayStep extends AbstractStep {
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
 			//搜索课程
-			commonCourseLearnAct.inputSearchContent(courseName);
+			commonCourseLearnAct.searchCourseNameByPerPage(courseName);
 			commonCourseLearnAct.snapshot();
-			//commonCourseLearnAct.refresh();
-
-			//System.out.println(driver.getCurrentUrl());
-			//点击第一门课程
-			//String errorVideo = commonCourseLearnAct.clickCourse(courseName);
-			
-			//点击开始/继续学习
-			//commonCourseLearnAct.clickStartStudy();
-			//int begin = driver.getCurrentUrl().indexOf("classes/")+7;
-			//int gao = driver.getCurrentUrl().indexOf("gaoxiaobang");
-			//int over = driver.getCurrentUrl().indexOf("?");
-
-			//String classid = driver.getCurrentUrl().substring(begin, over);
-			//String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/units/index";
-			//System.out.println(url);
-			//driver.navigate().to(url);
-			//等待30s
 			//点击开始/继续学习clickStartStudy
 			commonCourseLearnAct.clickStartStudy();
 			commonCourseLearnAct.pause(5);
-			commonCourseLearnAct.clickStartLearn();
+			//commonCourseLearnAct.clickStartLearn();
 			commonCourseLearnAct.refresh();
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
-			String errorCourseList = commonCourseLearnAct.all(errorCourse,courseName);
+			String errorCourseList = commonCourseLearnAct.checkVideoPlay(courseName);
+			;
 			if(errorCourseList.length()>4){
 				logger.info(courseName+"出错的视频有：");
 				logger.info(errorCourseList);
 				Assert.fail(errorCourseList);
 			}
 			logger.info("查看视频播放-测试用例执行结束！");
-		
 		} catch (Exception e) {
 			logger.error("查看视频播放-"+courseName, e);
 			throw new Exception("查看视频播放-"+courseName+"  >> "
@@ -99,30 +82,32 @@ public class CoursePlayStep extends AbstractStep {
 	 * gxb 用户登录
 	 */
 	public void userLogin(String baseUrl ,String loginName,String password ){
-		try {
-			p = PropertiesBundle.loadProperties(PropertiesBundle.ALL);
+		p = PropertiesBundle.loadProperties(PropertiesBundle.ALL);
 
-			driver = new WebdriverFactory().newInstanceOf(p.getProperty(BROWSER), p);
-			driver.get(baseUrl);
-			LoginAct l = new LoginAct(driver);
+		driver = new WebdriverFactory().newInstanceOf(p.getProperty(BROWSER), p);
+		driver.get(baseUrl);
+		LoginAct l = new LoginAct(driver);
+		try {
+
 			int i = 0;
 			while(i<5&&!l.checkLogin()){
 				logger.info("状态为：未登录");
 				l.clickToLogin();
+				l.loginByStudentNum();
 				l.inputUserName(loginName);
 				l.inputPassword(password);
 				l.clickLogin();
 				l.pause(3);
-				if(driver.getPageSource().contains("跳过")){
+				/*if(driver.getPageSource().contains("跳过")){
 				driver.findElement(By.linkText("跳过")).click();}
 				if(driver.getPageSource().contains("跳过")){
-					driver.findElement(By.linkText("跳过")).click();}
+					driver.findElement(By.linkText("跳过")).click();}*/
 				i++;
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			logger.error("登录失败！");
-			e.printStackTrace();
+			logger.error("学号登录失败！");
+
 		}
 
 	}

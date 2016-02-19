@@ -2,6 +2,7 @@ package com.kkb.test.actions.pc.gxb;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
@@ -73,5 +74,63 @@ public class CourseAct  extends IndexAct{
 			Assert.fail("课程不存在：【"+name);
 		}
 	}
+
+	/***
+	 * 逐页查找课程名
+	 * @param searchcourseName
+     */
+	public void searchCourseNameByPerPage(String searchcourseName){
+		boolean falg = false;
+		while (!falg){
+			falg = searchCourseName(searchcourseName);
+			//如果未找到
+			if(!falg){
+				WebElement e  = driver.findElement(By.xpath(coursePage.nextPageIsEnableXpath));
+				String nextPageClass = e.getAttribute("class");
+				//判断是否到达最后一页,如果是最后一页还没有找到的话,就是找不到了 哈哈
+				if(nextPageClass.contains("disabled")){
+					Assert.fail("课程不存在：【"+searchcourseName);
+					break;
+				}else{
+					pause(2);
+					click(coursePage.nextPage);
+					pause(1);
+				}
+			}else {
+				//找到了就break
+				break;
+
+			}
+		}
+	}
+
+	/**
+	 * 查询课程名称.
+	 * @param searchCourseName
+	 * @return
+     */
+	public boolean searchCourseName(String searchCourseName){
+		List<WebElement> courselist = driver.findElements(By.xpath(coursePage.courseNameListXpath));
+		WebElement webElement;
+		boolean found  = false ;
+		if(courselist.size()>0){
+			for (int i = 0; i < courselist.size() ;i++){
+				courselist = driver.findElements(By.xpath(coursePage.courseNameListXpath));
+				 webElement = courselist.get(i);
+				//webElement = getStaleElemt(By.xpath("(//div[@class='caption guide']/div/h4)["+(i+1)+"]"));
+				String courseName = webElement.getText();
+				logger.info("查找课程名称:{}=={}",searchCourseName,courseName);
+				if(courseName.toString().contains(searchCourseName)){
+					logger.info("已找到:{}=={}",searchCourseName,courseName);
+					click(driver.findElement(By.xpath("(//div[@class='caption guide']/div/h4)["+(i+1)+"]")));
+					found = true;
+					break;
+				}
+			}
+		}
+		return found;
+	}
+
+
 
 }

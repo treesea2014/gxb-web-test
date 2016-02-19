@@ -343,8 +343,91 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		String time = getText(courseLearnPage.historyPlayTime);
 		logger.info(" 获取历史视频播放进度：{}",time);
 	}
-	 
-	
+
+	/**
+	 * 获取所有章节下的视频video , unitId , chapterId
+	 * @param courseName
+     */
+	public TreeMap<Integer,String[] >  getItems(String courseName){
+		TreeMap<Integer,String[] >  videoMap = new TreeMap<Integer,String[] >();
+		int key = 0;
+		//点击已展开的列表,便于统一遍历
+		logger.info("点击已展开的列表");
+		click(courseLearnPage.ActiveChapter);
+		//获取所有的unitId
+		List<WebElement> unitIdList = courseLearnPage.unitIdList;
+		//获取第一级,逐个张开
+		List<WebElement> chapterList = courseLearnPage.chapterList;
+		int unitKey = 0;
+		for(WebElement e1 :chapterList){
+			//logger.info("点击第一级:{}",e1.getText());
+			click(e1);
+			String unitId = unitIdList.get(unitKey++).getAttribute("data-unit-id");
+			//获取第二级,逐个张开
+			List<WebElement> chapterList2 = courseLearnPage.chapterList2;
+			for(WebElement e2 :chapterList2){
+				logger.info("点击第二级:{}",e2.getText());
+				click(e2);
+				//获取第三级中的video视频,逐个存入map
+				List<WebElement> chapterList3 = courseLearnPage.chapterList3;
+					for(WebElement e3 : chapterList3){
+						String [] item = {courseName+"="+e1.getText()+"="+e2.getText()+"="+e3.getText(),
+											e3.getAttribute("chapter_id"),
+											unitId};
+						//logger.info("item:{}, {} ,{}",item[0],item[1] ,item[2]);
+						//e3.click();
+						videoMap.put(key++,item);
+					}
+				//关闭第一级
+				//logger.info("关闭第二级:{}",e2.getText());
+				click(e2);
+			}
+			//关闭第一级
+			//logger.info("关闭第一级:{}",e1.getText());
+			click(e1);
+			//logger.info("videoMap:{}",videoMap);
+		}
+		return  videoMap;
+	}
+
+	/**
+	 * 进行视频检测
+	 * @param courseName
+     */
+	public String checkVideoPlay(String courseName){
+		StringBuilder  errorVideo = new StringBuilder();
+		//手机视频信息
+		TreeMap<Integer,String[] >  videoMap = getItems(courseName);
+		String url = driver.getCurrentUrl();
+		String errMsg ="";
+		for(int i = 0 ;i< videoMap.size();i++){
+			String videoPlayPath = url+"/" + videoMap.get(i)[2] +"/chapter/" +videoMap.get(i)[1];
+			driver.navigate().to(videoPlayPath);
+			refresh();
+			pause(15);
+			WebElement e = courseLearnPage.videoPlay;
+			snapshot();
+			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
+			pause(2);
+			logger.info("palyState:{}" , palyState);
+			if(isElementExist(courseLearnPage.errorVideoTitleXpath,5)){
+				 errMsg = courseLearnPage.errorVideoTitle.getText();
+				logger.info("errMsg:{}",errMsg);
+			}
+			if(palyState.trim().contains("error")||errMsg.toLowerCase().contains("error")){
+				String videoSrc = driver.findElement(By.xpath(courseLearnPage.videoXpath)).getAttribute("src");
+				errorVideo.append("课程名称:"+videoMap.get(i)[0]+",访问地址:"+videoPlayPath+", mp4地址:"+videoSrc+"\n");
+				snapshot(videoMap.get(i)[0]);
+				logger.error("检查课程:{},视频有误!" , videoMap.get(i)[0]);
+
+			}else{
+				logger.info("检查课程:{},测试通过!" , videoMap.get(i)[0]);
+
+			}
+
+		}
+		return errorVideo.toString();
+	}
 	
 	public  String  all(StringBuilder errorVideo,String course) throws AWTException{
 		List<WebElement> chapterList = courseLearnPage.chapterList;

@@ -105,7 +105,7 @@ public class WebdriverFactory {
 		String browserPath = classpath
 				+ props.getProperty(CHROME_DRIVER_PATH);
 		File file = new File(browserPath);
-		if (!file.exists()) {
+			if (!file.exists()) {
 			browserPath = new File(classpath).getParentFile().getPath()
 					+ "\\classes\\"
 					+ props.getProperty(CHROME_DRIVER_PATH);		}

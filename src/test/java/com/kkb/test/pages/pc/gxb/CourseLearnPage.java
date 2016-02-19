@@ -54,13 +54,60 @@ public class CourseLearnPage extends Page {
 	/*******************************左侧边栏end******************************/
 	
 	/**
-	 * 所有章节名称
+	 * 1级所有章节名称
 	 */
-	@FindBy(xpath = "//*[@id='units_list']/div/div/h4/span[2]")
+	@FindBy(xpath = "//div[@class='unit-list']/h4[@class='gxb-cur-point']/span/parent::h4")
 	public List<WebElement> chapterList;
 	
-	public String chapterListXpath = "//*[@id='units_list']/div/div/h4/span[2]";	
-	
+	public String chapterListXpath = "//div[@class='unit-list']/h4[@class='gxb-cur-point']/span/parent::h4";
+
+
+	/**
+	 * 1级章打开的
+	 */
+	@FindBy(xpath = "//span[@class='gxb-icon-toggle toggle-chapter active']")
+	public WebElement ActiveChapter;
+
+	/**
+	 * 第一级下所有的unitId
+	 */
+	@FindBy(xpath = "//div[@class='unit-list']")
+	public List<WebElement> unitIdList;
+
+	/**
+	 * 2级所有章节名称
+	 */
+	@FindBy(xpath = "//div[@class='unit-list']/div[@style='display: block;']/h4")
+	public List<WebElement> chapterList2;
+
+	public String chapterList2Xpath = "//div[@class='unit-list']/div[@style='display: block;']/h4";
+
+	/**
+	 * 3级所有章节下的video类型的item
+	 */
+	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']")
+	public List<WebElement> chapterList3;
+
+	/**
+	 * 视频播放页面
+	 */
+	@FindBy(xpath = "//div[@class='player-video']/div[1]")
+	public WebElement videoPlay;
+	public String videoPlayXpath = "//div[@class='player-video']/div[1]";
+
+	public String videoXpath = "//video";
+
+	@FindBy(xpath = "//div[@class='jw-title jw-reset']/div[1]")
+	public WebElement errorVideoTitle;
+	/**
+	 * 视频标题是否存在
+	 */
+	public String errorVideoTitleXpath = "//div[@class='jw-title jw-reset']/div[1]";
+
+
+
+
+
 	/**
 	 * 所有章节下课程
 	 */

@@ -33,8 +33,16 @@ public class LoginAct  extends Action{
 		super(driver);
 		loginPage=new LoginPage(driver);
 	}
-	
-	
+
+
+	/**
+	 *点击学号登录
+	 */
+	public  void loginByStudentNum() {
+		logger.info("点击学号登录" );
+		click(loginPage.studentId);
+	}
+
 	/**
 	 *输入用户
 	 */
@@ -67,7 +75,8 @@ public class LoginAct  extends Action{
 		logger.info("点击去登陆按钮：");
 		this.click(loginPage.tologinBtn);
 	}
-	
+
+
 
 
 	/**
