@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【博雅未来能力教育】视频播放" parallel="tests" preserve-order="true"
+<suite name="【西北大学在线学习平台】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,34 +13,34 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://bfability.gaoxiaobang.com/" />
-	<parameter name="loginName" value="gxb0000" />
+	<parameter name="baseUrl" value="http://nwu.gaoxiaobang.com/" />
+	<parameter name="loginName" value="18600131417" />
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
 
-	<test name="世界文学作品赏析">
-		<parameter name="courseName" value="世界文学作品赏析" />
+	<test name="就业指导">
+		<parameter name="courseName" value="就业指导" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 
-	<test name="现代汉语修辞学的写作应用">
-		<parameter name="courseName" value="现代汉语修辞学的写作应用" />
+	<test name="大学生职业生涯规划">
+		<parameter name="courseName" value="大学生职业生涯规划" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 
-	<test name="创意长文写作基础">
-		<parameter name="courseName" value="创意长文写作基础" />
+	<test name="自我发展与创业指导">
+		<parameter name="courseName" value="自我发展与创业指导" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="幽默段子创意写作">
-		<parameter name="courseName" value="幽默段子创意写作" />
+	<test name="演讲口才与公众表达">
+		<parameter name="courseName" value="演讲口才与公众表达" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>

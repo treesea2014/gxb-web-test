@@ -408,7 +408,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			pause(10);
 			//WebElement e = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath));
 			//e.click();
-			snapshot();
+			//snapshot();
 			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
 			pause(5);
 			//e.click();
@@ -422,6 +422,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				errorVideo.append("课程名称:"+videoMap.get(i)[0]+",访问地址:"+videoPlayPath+", mp4地址:"+videoSrc+"\n");
 				snapshot(videoMap.get(i)[0]);
 				logger.error("检查课程:{},视频有误!" , videoMap.get(i)[0]);
+				errMsg="";
 
 			/*}else if(palyState.trim().contains("buffering")){
 				snapshot("视频超时:"+videoMap.get(i)[0]);

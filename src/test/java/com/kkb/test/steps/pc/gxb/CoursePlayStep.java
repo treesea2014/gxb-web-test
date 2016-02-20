@@ -53,6 +53,7 @@ public class CoursePlayStep extends AbstractStep {
 			commonCourseLearnAct.snapshot();
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
+			commonCourseLearnAct.pause(3);
 			//搜索课程
 			commonCourseLearnAct.searchCourseNameByPerPage(courseName);
 			commonCourseLearnAct.snapshot();
@@ -63,7 +64,7 @@ public class CoursePlayStep extends AbstractStep {
 			commonCourseLearnAct.refresh();
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
-			String errorCourseList = commonCourseLearnAct.checkVideoPlay(courseName);
+			String errorCourseList = commonCourseLearnAct.checkVideoPlay(courseName.trim());
 			;
 			if(errorCourseList.length()>4){
 				logger.info(courseName+"出错的视频有：");
