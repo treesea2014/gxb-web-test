@@ -361,13 +361,13 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		int unitKey = 0;
 		for(WebElement e1 :chapterList){
 			//logger.info("点击第一级:{}",e1.getText());
-			click(e1);
+			e1.click();
 			String unitId = unitIdList.get(unitKey++).getAttribute("data-unit-id");
 			//获取第二级,逐个张开
 			List<WebElement> chapterList2 = courseLearnPage.chapterList2;
 			for(WebElement e2 :chapterList2){
 				logger.info("点击第二级:{}",e2.getText());
-				click(e2);
+				e2.click();
 				//获取第三级中的video视频,逐个存入map
 				List<WebElement> chapterList3 = courseLearnPage.chapterList3;
 					for(WebElement e3 : chapterList3){
@@ -403,14 +403,15 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		for(int i = 0 ;i< videoMap.size();i++){
 			String videoPlayPath = url+"/" + videoMap.get(i)[2] +"/chapter/" +videoMap.get(i)[1];
 			driver.navigate().to(videoPlayPath);
+			this.refresh();
 
 			pause(10);
-			WebElement e = courseLearnPage.videoPlay;
-			e.click();
+			//WebElement e = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath));
+			//e.click();
 			snapshot();
 			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
 			pause(5);
-			e.click();
+			//e.click();
 			logger.info("palyState:{}" , palyState);
 			if(isElementExist(courseLearnPage.errorVideoTitleXpath,5)){
 				 errMsg = courseLearnPage.errorVideoTitle.getText();
@@ -422,11 +423,11 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				snapshot(videoMap.get(i)[0]);
 				logger.error("检查课程:{},视频有误!" , videoMap.get(i)[0]);
 
-			}else if(palyState.trim().contains("buffering")){
+			/*}else if(palyState.trim().contains("buffering")){
 				snapshot("视频超时:"+videoMap.get(i)[0]);
 				logger.error("检查课程:{},视频超时!" , videoMap.get(i)[0]);
 
-			}else{
+			*/}else{
 				logger.info("检查课程:{},测试通过!" , videoMap.get(i)[0]);
 
 			}

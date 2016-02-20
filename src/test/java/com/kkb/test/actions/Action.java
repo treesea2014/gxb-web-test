@@ -649,19 +649,22 @@ public class Action {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 		String mDateTime = formatter.format(new Date());
 		String fileName = mDateTime ;
+
 		//
+		try {
 		String imgUrl = "screenshot/" + fileName + ".jpg";
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File screenshot = new File("test-output/html" + File.separator
 				+ imgUrl);
-		try {
-			FileUtils.copyFile(scrFile, screenshot);
-		} catch (IOException e) {
-			logger.error("截图操作失败" + e.getMessage());
-		}
 		//Reporter.log(imgUrl+"\n");
 		Reporter.log("<a href=\""+imgUrl+"\""+" target=\""+"_blank\""+">\n");
 		Reporter.log("<img height=\"200px\" width=\"200px\" src=\"" +imgUrl  + "\"/></a>\n");
+
+			FileUtils.copyFile(scrFile, screenshot);
+		} catch (Exception e) {
+			logger.error("截图操作失败" + e.getMessage());
+		}
+
 	}
 	/**
 	 * 截图操作

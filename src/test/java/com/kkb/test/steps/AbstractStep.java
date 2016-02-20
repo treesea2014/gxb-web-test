@@ -41,7 +41,7 @@ public abstract class AbstractStep extends BaseStep {
 		for(String s :handles){
 			driver.switchTo().window(s);
 			logger.info("关闭浏览器：{}",s);
-			driver.quit();
+			driver.close();
 		}
 
 	}
