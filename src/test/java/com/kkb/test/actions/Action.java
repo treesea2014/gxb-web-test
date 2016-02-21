@@ -57,7 +57,7 @@ public class Action {
 	/**
 	 * 
 	 */
-	private int waitSencond = 30;
+	private int waitSencond = 60;
 
 	/**
 	 * 
@@ -358,7 +358,7 @@ public class Action {
 	 */
 	public void waitForPageLoad(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, waitSencond);
-		wait.until(isPageLoaded());
+		//wait.until(isPageLoaded());
 	}
 
 	/**
