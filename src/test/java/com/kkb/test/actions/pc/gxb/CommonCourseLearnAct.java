@@ -408,7 +408,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			pause(10);
 			//WebElement e = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath));
 			//e.click();
-			//snapshot();
+			snapshot();
 			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
 			pause(5);
 			//e.click();
