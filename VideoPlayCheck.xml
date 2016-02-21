@@ -19,28 +19,52 @@
 	
 	<!--配置课程-->
 
-	<test name="就业指导">
-		<parameter name="courseName" value="就业指导" />
+	<test name="世界文学作品赏析">
+		<parameter name="courseName" value="世界文学作品赏析" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 
-	<test name="大学生职业生涯规划">
-		<parameter name="courseName" value="大学生职业生涯规划" />
+	<test name="现代汉语修辞学的写作应用">
+		<parameter name="courseName" value="现代汉语修辞学的写作应用" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 
-	<test name="自我发展与创业指导">
-		<parameter name="courseName" value="自我发展与创业指导" />
+	<test name="创意长文写作基础">
+		<parameter name="courseName" value="创意长文写作基础" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="演讲口才与公众表达">
-		<parameter name="courseName" value="演讲口才与公众表达" />
+	<test name="幽默段子创意写作">
+		<parameter name="courseName" value="幽默段子创意写作" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="搜索引擎营销">
+		<parameter name="courseName" value="搜索引擎营销" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="搜索引擎优化技术">
+		<parameter name="courseName" value="搜索引擎优化技术" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="社会化媒体运营">
+		<parameter name="courseName" value="社会化媒体运营" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="互联网思维概述">
+		<parameter name="courseName" value="互联网思维概述" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
