@@ -410,7 +410,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 			pause(10);
 			//WebElement e = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath));
 			//e.click();
-			snapshot();
+			
 			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
 			pause(5);
 			//e.click();
@@ -431,6 +431,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				logger.error("检查课程:{},视频超时!" , videoMap.get(i)[0]);
 
 			*/}else{
+				snapshot();
 				logger.info("检查课程:{},测试通过!" , videoMap.get(i)[0]);
 
 			}
