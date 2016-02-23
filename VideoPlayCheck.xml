@@ -19,7 +19,7 @@
 	
 	<!--配置课程-->
 
-	<test name="世界文学作品赏析">
+<!--	<test name="世界文学作品赏析">
 		<parameter name="courseName" value="世界文学作品赏析" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
@@ -31,7 +31,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>
+	</test>-->
 
 	<test name="创意长文写作基础">
 		<parameter name="courseName" value="创意长文写作基础" />
