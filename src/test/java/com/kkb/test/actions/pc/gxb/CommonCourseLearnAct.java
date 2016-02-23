@@ -399,12 +399,14 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 		//手机视频信息
 		TreeMap<Integer,String[] >  videoMap = getItems(courseName);
 		String url = driver.getCurrentUrl();
+		WebDriver driver2 = driver;
 		String errMsg ="";
 		for(int i = 0 ;i< videoMap.size();i++){
 			String videoPlayPath = url+"/" + videoMap.get(i)[2] +"/chapter/" +videoMap.get(i)[1];
 			driver.navigate().to(videoPlayPath);
+			
 			this.refresh();
-
+			//this.driver = driver2;
 			pause(10);
 			//WebElement e = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath));
 			//e.click();
@@ -417,7 +419,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				 errMsg = courseLearnPage.errorVideoTitle.getText();
 				logger.info("errMsg:{}",errMsg);
 			}
-			if(palyState.trim().contains("error")||errMsg.toLowerCase().contains("error")){
+			if(palyState.trim().contains("error")||errMsg.toLowerCase().contains("错误")){
 				String videoSrc = driver.findElement(By.xpath(courseLearnPage.videoXpath)).getAttribute("src");
 				errorVideo.append("课程名称:"+videoMap.get(i)[0]+",访问地址:"+videoPlayPath+", mp4地址:"+videoSrc+"\n");
 				snapshot(videoMap.get(i)[0]);

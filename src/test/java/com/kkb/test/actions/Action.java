@@ -421,6 +421,8 @@ public class Action {
 		try {
 			driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 			driver.findElement(By.xpath(xpath));
+			driver.manage().timeouts().implicitlyWait(waitSencond, TimeUnit.SECONDS);
+
 			return true;
 		} catch (NoSuchElementException e) {
 			logger.debug("在规定时间{}s内，未找到该元素:{}", time, xpath);
