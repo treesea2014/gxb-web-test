@@ -130,7 +130,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>-->
+	</test>
 	<test name="创业基本功与精益创业方法论">
 		<parameter name="courseName" value="创业基本功与精益创业方法论" />
 		<classes>
@@ -142,7 +142,7 @@
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>
+	</test>-->
 	<test name="创业启蒙与案例分享">
 		<parameter name="courseName" value="创业启蒙与案例分享" />
 		<classes>
