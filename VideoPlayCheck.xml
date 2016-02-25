@@ -149,6 +149,13 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
+	<test name="移动互联网思维">
+		<parameter name="courseName" value="移动互联网思维" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<!--
 	<test name="计算机网络与网页制作">
 		<parameter name="courseName" value="计算机网络与网页制作" />
 		<classes>
@@ -161,18 +168,13 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="移动互联网思维">
-		<parameter name="courseName" value="移动互联网思维" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
+
 		<test name="计算思维">
 		<parameter name="courseName" value="计算思维" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
-	</test>
+	</test>-->
 	
 </suite>
 
