@@ -143,8 +143,8 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>-->
-	<test name="形势与政策">
-		<parameter name="courseName" value="形势与政策" />
+	<test name="形式与政策">
+		<parameter name="courseName" value="形式与政策" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
