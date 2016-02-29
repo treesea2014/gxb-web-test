@@ -46,14 +46,14 @@
 		</classes>
 	</test>
 	
-	<test name="OpenStack Overview【vmware丨威睿云课堂】">
-		<parameter name="courseName" value="OpenStack Overview【vmware丨威睿云课堂】" />
+	<test name="OpenStack ">
+		<parameter name="courseName" value="OpenStack" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="Cloud Foundry 入门【vmware丨威睿云课堂】">
-		<parameter name="courseName" value="Cloud Foundry 入门【vmware丨威睿云课堂】" />
+	<test name="Cloud Foundry">
+		<parameter name="courseName" value="Cloud Foundry" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
