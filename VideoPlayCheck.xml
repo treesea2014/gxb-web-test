@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【重庆大学在线学习平台 】视频播放" parallel="tests" preserve-order="true"
+<suite name="【华南理工大学在线学习平台 】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://cqu.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://scut.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
