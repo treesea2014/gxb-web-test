@@ -58,12 +58,7 @@
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="企业级分布式海量数据分析平台">
-		<parameter name="courseName" value="企业级分布式海量数据分析平台" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
+
 	<test name="IBM大数据平台软件定义计算技术">
 		<parameter name="courseName" value="IBM大数据平台软件定义计算技术" />
 		<classes>
