@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【vmware丨威睿云课堂 】视频播放" parallel="tests" preserve-order="true"
+<suite name="【IBM大数据与分析专区 】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,47 +13,65 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://vmware.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value=" http://ibm.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
 
 
-	<test name="云运维技术【vmware丨威睿云课堂】">
-		<parameter name="courseName" value="云运维技术【vmware丨威睿云课堂】" />
+	<test name="大数据统计分析技术">
+		<parameter name="courseName" value="大数据统计分析技术" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="Docker入门与实践【vmware丨威睿云课堂】">
-		<parameter name="courseName" value="Docker入门与实践【vmware丨威睿云课堂】" />
+	<test name="企业非结构化大数据的全生命周期管控">
+		<parameter name="courseName" value="企业非结构化大数据的全生命周期管控" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="企业超融合存储设计和实现【vmware丨威睿云课堂】">
-		<parameter name="courseName" value="企业超融合存储设计和实现【vmware丨威睿云课堂】" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-		</classes>
-	</test>
-	
-	<test name="大数据进阶【vmware丨威睿云课堂】">
-		<parameter name="courseName" value="大数据进阶【vmware丨威睿云课堂】" />
+	<test name="高级数据库管理">
+		<parameter name="courseName" value="高级数据库管理" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
 	
-	<test name="OpenStack ">
-		<parameter name="courseName" value="OpenStack" />
+	<test name="集成数据管理">
+		<parameter name="courseName" value="集成数据管理" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
 	</test>
-	<test name="Cloud Foundry">
-		<parameter name="courseName" value="Cloud Foundry" />
+	
+	<test name="大数据高级案例管理 ">
+		<parameter name="courseName" value="大数据高级案例管理" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="企业级分布式海量数据分析平台">
+		<parameter name="courseName" value="企业级分布式海量数据分析平台" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="企业级分布式海量数据分析平台">
+		<parameter name="courseName" value="企业级分布式海量数据分析平台" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="IBM大数据平台软件定义计算技术">
+		<parameter name="courseName" value="IBM大数据平台软件定义计算技术" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+		</classes>
+	</test>
+	<test name="IBM大数据平台软件定义存储技术">
+		<parameter name="courseName" value="IBM大数据平台软件定义存储技术" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 		</classes>
