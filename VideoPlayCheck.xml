@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【东莞理工学院MOOC学习平台】视频播放" parallel="tests" preserve-order="true"
+<suite name="【重庆邮电】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,7 +13,7 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://dgut.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://cqupt.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
@@ -63,6 +63,27 @@
 </test>
 <test name="阿里云及产品体系介绍">
 <parameter name="courseName" value="阿里云及产品体系介绍" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="团队建设与高效管理">
+<parameter name="courseName" value="团队建设与高效管理" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="魅力高效沟通实战技巧">
+<parameter name="courseName" value="魅力高效沟通实战技巧" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="自我发展与创业指导">
+<parameter name="courseName" value="自我发展与创业指导" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
