@@ -18,55 +18,7 @@
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
-	
-<test name="负载均衡（SLB）产品介绍">
-<parameter name="courseName" value="负载均衡（SLB）产品介绍" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="阿里云数据库（RDS）产品介绍">
-<parameter name="courseName" value="阿里云数据库（RDS）产品介绍" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="开放存储服务（OSS）产品介绍">
-<parameter name="courseName" value="开放存储服务（OSS）产品介绍" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="互联网＋与阿里云">
-<parameter name="courseName" value="互联网＋与阿里云" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="阿里云服务器ECS产品介绍">
-<parameter name="courseName" value="阿里云服务器ECS产品介绍" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="阿里云生态系统">
-<parameter name="courseName" value="阿里云生态系统" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="阿里金融云——科技想象力，金融创造力">
-<parameter name="courseName" value="阿里金融云——科技想象力，金融创造力" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-<test name="阿里云及产品体系介绍">
-<parameter name="courseName" value="阿里云及产品体系介绍" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
+
 
 <test name="团队建设与高效管理">
 <parameter name="courseName" value="团队建设与高效管理" />
