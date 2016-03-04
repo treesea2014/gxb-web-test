@@ -20,43 +20,43 @@
 	<!--配置课程-->
 
 
-<test name="大学生职业生涯发展规划-选修课">
-<parameter name="courseName" value="大学生职业生涯发展规划-选修课" />
+<test name="大学生职业生涯规划-选修课">
+<parameter name="courseName" value="大学生职业生涯规划-选修课" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
 </test>
 
-<test name="大学生职业生涯发展规划-2013级（本）">
-<parameter name="courseName" value="大学生职业生涯发展规划-2013级（本）" />
+<test name="大学生职业生涯规划-2013级（本）">
+<parameter name="courseName" value="大学生职业生涯规划-2013级（本）" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
 </test>
 
-<test name="大学生职业生涯发展规划-2014级（本）">
-<parameter name="courseName" value="大学生职业生涯发展规划-2014级（本）" />
+<test name="大学生职业生涯规划-2014级（本）">
+<parameter name="courseName" value="大学生职业生涯规划-2014级（本）" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
 </test>
 
-<test name="大学生职业生涯发展规划-2015级（本）">
-<parameter name="courseName" value="大学生职业生涯发展规划-2015级（本）" />
+<test name="大学生职业生涯规划-2015级（本）">
+<parameter name="courseName" value="大学生职业生涯规划-2015级（本）" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
 </test>
 
-<test name=" 大学生职业生涯发展规划-2014级（专）">
-<parameter name="courseName" value=" 大学生职业生涯发展规划-2014级（专）" />
+<test name=" 大学生职业生涯规划-2014级（专）">
+<parameter name="courseName" value=" 大学生职业生涯规划-2014级（专）" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
 </test>
 
-<test name="大学生职业生涯发展规划-2015级（专）">
-<parameter name="courseName" value="大学生职业生涯发展规划-2015级（专）" />
+<test name="大学生职业生涯规划-2015级（专）">
+<parameter name="courseName" value="大学生职业生涯规划-2015级（专）" />
 <classes>
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
