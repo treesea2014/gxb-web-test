@@ -46,41 +46,25 @@ public class CoursePlayStep extends AbstractStep {
 			commonCourseLearnAct.snapshot();
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
+			commonCourseLearnAct.pause(3);
 			//搜索课程
-			commonCourseLearnAct.inputSearchContent(courseName);
+			commonCourseLearnAct.searchCourseNameByPerPage(courseName);
 			commonCourseLearnAct.snapshot();
-			//commonCourseLearnAct.refresh();
-
-			//System.out.println(driver.getCurrentUrl());
-			//点击第一门课程
-			//String errorVideo = commonCourseLearnAct.clickCourse(courseName);
-			
-			//点击开始/继续学习
-			//commonCourseLearnAct.clickStartStudy();
-			//int begin = driver.getCurrentUrl().indexOf("classes/")+7;
-			//int gao = driver.getCurrentUrl().indexOf("gaoxiaobang");
-			//int over = driver.getCurrentUrl().indexOf("?");
-
-			//String classid = driver.getCurrentUrl().substring(begin, over);
-			//String url = driver.getCurrentUrl().substring(0, gao)+  "class.gaoxiaobang.com/classes"+classid+"#/units/index";
-			//System.out.println(url);
-			//driver.navigate().to(url);
-			//等待30s
 			//点击开始/继续学习clickStartStudy
 			commonCourseLearnAct.clickStartStudy();
 			commonCourseLearnAct.pause(5);
-			commonCourseLearnAct.clickStartLearn();
+			//commonCourseLearnAct.clickStartLearn();
 			commonCourseLearnAct.refresh();
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
-			String errorCourseList = commonCourseLearnAct.all(errorCourse,courseName);
+			String errorCourseList = commonCourseLearnAct.checkVideoPlay(courseName.trim());
+			;
 			if(errorCourseList.length()>4){
 				logger.info(courseName+"出错的视频有：");
 				logger.info(errorCourseList);
 				Assert.fail(errorCourseList);
 			}
 			logger.info("查看视频播放-测试用例执行结束！");
-		
 		} catch (Exception e) {
 			logger.error("查看视频播放-"+courseName, e);
 			throw new Exception("查看视频播放-"+courseName+"  >> "
