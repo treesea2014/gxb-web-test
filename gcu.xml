@@ -20,23 +20,23 @@
 
 
 	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’， -->
-	<test name="移动互联网思维【华南理工大学广州学院】">
-		<parameter name="courseName" value="移动互联网思维【华南理工大学广州学院】" />
+	<test name="创业启蒙与案例分享">
+		<parameter name="courseName" value="创业启蒙与案例分享" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
 	</test>
 	
     <!-- 课程名称2 后面依次类推 ，添加课程复制即可-->
-	<test name="创业基本功与精益创业方法论【华南理工大学广州学院】">
-		<parameter name="courseName" value="创业基本功与精益创业方法论【华南理工大学广州学院】" />
+	<test name="创业基本功与精益创业方法论">
+		<parameter name="courseName" value="创业基本功与精益创业方法论" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
 	</test>
 	
-		<test name="创业启蒙与案例分享【华南理工大学广州学院】">
-		<parameter name="courseName" value="创业启蒙与案例分享【华南理工大学广州学院】" />
+		<test name="移动互联网思维">
+		<parameter name="courseName" value="移动互联网思维" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
