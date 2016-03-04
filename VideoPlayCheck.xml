@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="【华南理工大学广州学院】视频播放" parallel="tests" preserve-order="true"
+<suite name="【鲁东大学在线学习平台】视频播放" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,12 +13,54 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://gcu.gaoxiaobang.com/ " />
+	<parameter name="baseUrl" value="http://ldu.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	
 	<!--配置课程-->
 
+
+<test name="大学生职业生涯发展规划-选修课">
+<parameter name="courseName" value="大学生职业生涯发展规划-选修课" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="大学生职业生涯发展规划-2013级（本）">
+<parameter name="courseName" value="大学生职业生涯发展规划-2013级（本）" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="大学生职业生涯发展规划-2014级（本）">
+<parameter name="courseName" value="大学生职业生涯发展规划-2014级（本）" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="大学生职业生涯发展规划-2015级（本）">
+<parameter name="courseName" value="大学生职业生涯发展规划-2015级（本）" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name=" 大学生职业生涯发展规划-2014级（专）">
+<parameter name="courseName" value=" 大学生职业生涯发展规划-2014级（专）" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
+
+<test name="大学生职业生涯发展规划-2015级（专）">
+<parameter name="courseName" value="大学生职业生涯发展规划-2015级（专）" />
+<classes>
+<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
+</classes>
+</test>
 
 <test name="创业启蒙与案例分享">
 <parameter name="courseName" value="创业启蒙与案例分享" />
@@ -26,22 +68,6 @@
 <class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
 </classes>
 </test>
-
-<test name="创业基本功与精益创业方法论">
-<parameter name="courseName" value="创业基本功与精益创业方法论" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-
-<test name="移动互联网思维">
-<parameter name="courseName" value="移动互联网思维" />
-<classes>
-<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep" />
-</classes>
-</test>
-
-
 
 	
 </suite>
