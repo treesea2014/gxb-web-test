@@ -351,9 +351,12 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 	public TreeMap<Integer,String[] >  getItems(String courseName){
 		TreeMap<Integer,String[] >  videoMap = new TreeMap<Integer,String[] >();
 		int key = 0;
-		//点击已展开的列表,便于统一遍历
-		logger.info("点击已展开的列表");
-		click(courseLearnPage.ActiveChapter);
+
+		if(isElementExist(courseLearnPage.activeChapterXpath,10)){
+			//点击已展开的列表,便于统一遍历
+			logger.info("点击已展开的列表");
+			click(courseLearnPage.ActiveChapter);
+		}
 		//获取所有的unitId
 		List<WebElement> unitIdList = courseLearnPage.unitIdList;
 		//获取第一级,逐个张开

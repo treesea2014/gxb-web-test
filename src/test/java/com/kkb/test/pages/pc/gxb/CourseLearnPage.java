@@ -68,6 +68,8 @@ public class CourseLearnPage extends Page {
 	@FindBy(xpath = "//span[@class='gxb-icon-toggle toggle-chapter active']")
 	public WebElement ActiveChapter;
 
+	public String activeChapterXpath = "//span[@class='gxb-icon-toggle toggle-chapter active']";
+
 	/**
 	 * 第一级下所有的unitId
 	 */
