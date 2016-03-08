@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="广州大学松田学院" parallel="tests" preserve-order="true"
+<suite name="山东外贸职业学院" parallel="tests" preserve-order="true"
 	   thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -14,45 +14,20 @@
 
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
 
-	<parameter name="baseUrl" value="http://sontan.gaoxiaobang.com/" />
+	<parameter name="baseUrl" value="http://sdwm.gaoxiaobang.com/" />
 	<parameter name="loginName" value="gxb0000" />
 	<parameter name="password" value="123456" />
 	<!--配置课程-->
-	<test name="创业启蒙与案例分享">
-		<parameter name="courseName" value="创业启蒙与案例分享"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
-		</classes>
-	</test>
-	<test name="创业基本功与精益创业方法论">
-		<parameter name="courseName" value="创业基本功与精益创业方法论"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
-		</classes>
-	</test>
 	<test name="互联网营销概论">
 		<parameter name="courseName" value="互联网营销概论"/>
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
 		</classes>
 	</test>
-	<test name="商务办公软件应用与实践">
-		<parameter name="courseName" value="商务办公软件应用与实践"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
-		</classes>
-	</test>
-	<test name="自我发展与创业指导">
-		<parameter name="courseName" value="自我发展与创业指导"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
-		</classes>
-	</test>
-	<test name="团队建设与高效管理">
-		<parameter name="courseName" value="团队建设与高效管理"/>
+	<test name="搜索引擎、微信与口碑营销">
+		<parameter name="courseName" value="搜索引擎、微信与口碑营销"/>
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
 		</classes>
 	</test>
 </suite>
-
