@@ -39,7 +39,7 @@ public class CoursePlayStep extends AbstractStep {
 
 
 	/**
-	 * 高校帮-个人中心-个人信息设置
+	 * gxb-视频检测
 	 * 
 	 * @throws Exception
 	 */

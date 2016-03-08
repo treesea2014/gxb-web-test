@@ -399,25 +399,25 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
      */
 	public String checkVideoPlay(String courseName){
 		StringBuilder  errorVideo = new StringBuilder();
-		//手机视频信息
+		//收集视频信息
 		TreeMap<Integer,String[] >  videoMap = getItems(courseName);
+		//获取当前URL
 		String url = driver.getCurrentUrl();
-		WebDriver driver2 = driver;
 		String errMsg ="";
 		for(int i = 0 ;i< videoMap.size();i++){
+			//拼接视频章节的URL
 			String videoPlayPath = url+"/" + videoMap.get(i)[2] +"/chapter/" +videoMap.get(i)[1];
+			//跳转到视频播放页面
 			driver.navigate().to(videoPlayPath);
-			
+			//刷新
 			this.refresh();
-			//this.driver = driver2;
 			pause(10);
-			//WebElement e = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath));
-			//e.click();
-			
+			//获取播放状态的样式
 			String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
 			pause(5);
 			//e.click();
 			logger.info("palyState:{}" , palyState);
+			//判断是否存在错误信息
 			if(isElementExist(courseLearnPage.errorVideoTitleXpath,5)){
 				 errMsg = courseLearnPage.errorVideoTitle.getText();
 				logger.info("errMsg:{}",errMsg);
@@ -428,12 +428,7 @@ public class CommonCourseLearnAct  extends CommonCourseDetailsAct{
 				snapshot(videoMap.get(i)[0]);
 				logger.error("检查课程:{},视频有误!" , videoMap.get(i)[0]);
 				errMsg="";
-
-			/*}else if(palyState.trim().contains("buffering")){
-				snapshot("视频超时:"+videoMap.get(i)[0]);
-				logger.error("检查课程:{},视频超时!" , videoMap.get(i)[0]);
-
-			*/}else{
+			}else{
 				snapshot();
 				logger.info("检查课程:{},测试通过!" , videoMap.get(i)[0]);
 
