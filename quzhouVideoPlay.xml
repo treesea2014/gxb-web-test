@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="泉州师范视频播放" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="西藏民族大学在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,23 +8,26 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 				<!-- 依次为课程首页，用户名  密码 -->
-	   	    	<parameter name="baseUrl" value="http://qztc.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://xzmu.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="1234567"/>
 	  			 <!-- 依次为课程首页，用户名  密码 -->
 	     
 	     
 	     
-	      <test name="大学生心理健康【泉州师范】">
-	    	<parameter name="courseName" value="大学生心理健康【泉州师范】"/>
+	      <test name="创业启蒙与案例分享【西藏民族大学】">
+	    	<parameter name="courseName" value="创业启蒙与案例分享【西藏民族大学】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
 	      
-	      <test name="形势与政策【泉州师范全校必修】">
-	    	<parameter name="courseName" value="形势与政策【泉州师范全校必修】"/>
+	      <test name="创业基本功与精益创业方法论【西藏民族大学】">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论【西藏民族大学】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	  
+	  <test name="移动互联网思维【西藏民族大学】">
+	    	<parameter name="courseName" value="移动互联网思维【西藏民族大学】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   
 </suite>
 
