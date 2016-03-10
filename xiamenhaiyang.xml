@@ -31,12 +31,6 @@
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   
-	   <test name="计算机网络与网页制作【厦门海洋】">
-	    	<parameter name="courseName" value="计算机网络与网页制作【厦门海洋】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   
-	  
 	   
 </suite>
 
