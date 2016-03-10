@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="山东旅游职业学院MOOC在线课程" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="石家庄科工院在线课程" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,30 +8,120 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://sdts.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="test"/>
+	   	    	<parameter name="baseUrl" value="http://sjzkg.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 	   
- 		 <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+ 		 <test name="移动互联网思维">
+	    	<parameter name="courseName" value="移动互联网思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
- 		 <test name="创业基本功与精益方法论">
-	    	<parameter name="courseName" value="创业基本功与精益方法论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   
-	    <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
+ 		 <test name="计算思维">
+	    	<parameter name="courseName" value="计算思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
 	   
-	    <test name="商务办公软件">
-	    	<parameter name="courseName" value="商务办公软件"/>
+	    <test name="创业基本功与精益创业方法论">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   
+	    <test name="创业启蒙与案例分享【石家庄科工院】">
+	    	<parameter name="courseName" value="创业启蒙与案例分享【石家庄科工院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   
-	   
+	   	    <test name="创业启蒙与案例分享【14级必修】">
+	    	<parameter name="courseName" value="创业启蒙与案例分享【14级必修】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	    <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	    <test name="搜索引擎、微信与口碑营销">
+	    	<parameter name="courseName" value="搜索引擎、微信与口碑营销"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	    <test name="就业指导——就业，亮出你自己">
+	    	<parameter name="courseName" value="就业指导——就业，亮出你自己"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	    <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	    <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	    <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	    <test name="安全教育【15级必修】">
+	    	<parameter name="courseName" value="安全教育【15级必修】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	    <test name="安全教育【石家庄科工院】">
+	    	<parameter name="courseName" value="安全教育【石家庄科工院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	    <test name="心理健康">
+	    	<parameter name="courseName" value="心理健康"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	    <test name="商务办公软件应用与实践">
+	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="计算机网络与网页制作">
+	    	<parameter name="courseName" value="计算机网络与网页制作"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="计算机多媒体应用基础">
+	    	<parameter name="courseName" value="计算机多媒体应用基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="计算机数据库基础与应用">
+	    	<parameter name="courseName" value="计算机数据库基础与应用"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="演讲口才与公众表达">
+	    	<parameter name="courseName" value="演讲口才与公众表达"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	    <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	    <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	    <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	    <test name="魅力高效沟通实战技巧">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	    <test name="商务礼仪【15级必修】">
+	    	<parameter name="courseName" value="商务礼仪【15级必修】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	    <test name="商务礼仪【石家庄科工院】">
+	    	<parameter name="courseName" value="商务礼仪【石家庄科工院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	    <test name="职业素养【14级必修】">
+	    	<parameter name="courseName" value="职业素养【14级必修】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	    <test name="职业素养【石家庄科工院】">
+	    	<parameter name="courseName" value="职业素养【石家庄科工院】"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
 
 
