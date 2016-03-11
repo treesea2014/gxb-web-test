@@ -15,13 +15,8 @@
 
 
 		
-		 <test name="计算机数据库基础与应用【复旦2016春季同步】">
-	    	<parameter name="courseName" value="计算机数据库基础与应用【复旦2016春季同步】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	      <test name="计算机多媒体应用基础【复旦2016春季同步】">
-	    	<parameter name="courseName" value="计算机多媒体应用基础【复旦2016春季同步】"/>
+		 <test name="计算思维【复旦】">
+	    	<parameter name="courseName" value="计算思维【复旦】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
 	     </test>
 
