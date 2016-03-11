@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-
-<!-- 修改学校名称 -->
-<suite name="首体就业指导中心自主在线学习平台 parallel="tests" preserve-order="true"
-	   thread-count="1">
-	<listeners>
-		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+<suite name="首体就业指导中心自主在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<listeners>     
+	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
-		<listener class-name="com.kkb.test.util.reporter.TestngListener" />
-	</listeners>
-
-
-	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-
-	<parameter name="baseUrl" value="http://cupes-jy.gaoxiaobang.com/" />
-	<parameter name="loginName" value="gxb0000" />
-	<parameter name="password" value="123456" />
-	<!--配置课程-->
-	<test name="创业启蒙与案例分享">
-		<parameter name="courseName" value="创业启蒙与案例分享"/>
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/>
-		</classes>
-	</test>
+	
+	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
+</listeners>
+				<!-- 依次为课程首页，用户名  密码 -->
+	   	    	<parameter name="baseUrl" value="http://cupes-jy.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="gxb0000"/>
+	   	    	<parameter name="password" value="123456"/>
+	  			 <!-- 依次为课程首页，用户名  密码 -->
+	  
+	      <test name="创业启蒙与案例分享">
+	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	      
+	   	 
 </suite>
