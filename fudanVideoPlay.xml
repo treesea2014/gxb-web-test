@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="上海复旦视频播放" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="复旦大学软件学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -13,66 +13,24 @@
 	 <parameter name="password" value="13110240020"/>
 	<!-- 依次为课程首页，用户名  密码 -->
 
+	 
+	  
 	     
-	     <test name="计算机多媒体应用基础【12月FCT备考】">
-	    	<parameter name="courseName" value="计算机多媒体应用基础【12月FCT备考】"/>
-	   	<classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	     <test name="计算机网络与网页制作【12月FCT备考】">
-	    	<parameter name="courseName" value="计算机网络与网页制作【12月FCT备考】"/>
-	   	<classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	     <test name="计算机数据库基础与应用【12月FCT备考】">
-	    	<parameter name="courseName" value="计算机数据库基础与应用【12月FCT备考】"/>
-	   	<classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	     <test name="计算机办公自动化【12月FCT备考】">
-	    	<parameter name="courseName" value="计算机办公自动化【12月FCT备考】"/>
-	   	<classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	     <test name="FCT考试系统演示【12月FCT备考】">
-	    	<parameter name="courseName" value="FCT考试系统演示【12月FCT备考】"/>
-	   	<classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	    <!-- <test name="计算机多媒体应用基础【复旦同步】">
-	    	<parameter name="courseName" value="计算机多媒体应用基础【复旦同步】"/>
+	     <test name="计算思维【复旦】】">
+	    	<parameter name="courseName" value="计算思维【复旦】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
 	     </test>
 		
-		 <test name="计算机办公自动化【复旦大学】">
-	    	<parameter name="courseName" value="计算机办公自动化【复旦大学】"/>
+		 <test name="计算机数据库基础与应用【复旦2016春季同步】">
+	    	<parameter name="courseName" value="计算机数据库基础与应用【复旦2016春季同步】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
 	     </test>
 	     
-	      <test name="计算机网络与网页制作【复旦线上】">
-	    	<parameter name="courseName" value="计算机网络与网页制作【复旦线上】"/>
+	      <test name="计算机多媒体应用基础【复旦2016春季同步】">
+	    	<parameter name="courseName" value="计算机多媒体应用基础【复旦2016春季同步】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
 	     </test>
-	    
-	       <test name="计算机数据库基础与应用【复旦线上">
-	    	<parameter name="courseName" value="计算机数据库基础与应用【复旦线上"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	    <test name="FCT考试系统演示【复旦】">
-	    	<parameter name="courseName" value="FCT考试系统演示【复旦】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test> 
-	     
-	      <test name="计算机多媒体应用基础【复旦线上】">
-	    	<parameter name="courseName" value="计算机多媒体应用基础【复旦线上】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test>
-	     
-	      <test name="计算思维【复旦】">
-	    	<parameter name="courseName" value="计算思维【复旦】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.fudan.CoursePlayStep"/></classes>
-	     </test> -->
+
 	  
 	   
 </suite>
