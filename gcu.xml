@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="华南理工大学视频播放" parallel="tests" preserve-order="true"
+<suite name="复旦大学软件学院在线学习平台" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -13,30 +13,30 @@
 	
 	
 	<!-- 修改下面三处，依次为学校首页，用户名 密码 -->
-	<parameter name="baseUrl" value="http://gcu.gaoxiaobang.com/" />
-	<parameter name="loginName" value="200930051763" />
-	<parameter name="password" value="052324" />
+	<parameter name="baseUrl" value="http://fudan.gaoxiaobang.com/" />
+	<parameter name="loginName" value="13110240020" />
+	<parameter name="password" value="13110240020" />
 
 
 
 	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’， -->
-	<test name="创业启蒙与案例分享">
-		<parameter name="courseName" value="创业启蒙与案例分享" />
+	<test name="计算思维">
+		<parameter name="courseName" value="计算思维" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
 	</test>
 	
     <!-- 课程名称2 后面依次类推 ，添加课程复制即可-->
-	<test name="创业基本功与精益创业方法论">
-		<parameter name="courseName" value="创业基本功与精益创业方法论" />
+	<test name="计算机数据库基础与应用">
+		<parameter name="courseName" value="计算机数据库基础与应用" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
 	</test>
 	
-		<test name="移动互联网思维">
-		<parameter name="courseName" value="移动互联网思维" />
+		<test name="计算机多媒体应用基础">
+		<parameter name="courseName" value="计算机多媒体应用基础" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
