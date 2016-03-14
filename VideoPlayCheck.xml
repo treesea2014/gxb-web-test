@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="沈阳工程学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="辽宁工业大学在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,7 +8,7 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 				<!-- 依次为课程首页，用户名  密码 -->
-	   	    	<parameter name="baseUrl" value="http://sie.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://lnit.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="18500818020"/>
 	   	    	<parameter name="password" value="123456"/>
 	  			 <!-- 依次为课程首页，用户名  密码 -->
@@ -21,12 +21,12 @@
 	    	<parameter name="courseName" value="创新思维开发与落地"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	     	      <test name="创业基础">
+	    	<parameter name="courseName" value="创业基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	     	      <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
 	     	    
