@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="创e+大学生创业平台" parallel="tests" preserve-order="true" thread-count="1">
+    <listeners>
+        <listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
+        <listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+
+        <listener class-name="com.kkb.test.util.reporter.TestngListener" />
+    </listeners>
+
+    <parameter name="baseUrl" value="http://chuange.gaoxiaobang.com/"/>
+    <parameter name="loginName" value="gxb0000"/>
+    <parameter name="password" value="123456"/>
+
+    <test name="创业基本功与精益创业方法论">
+        <parameter name="courseName" value="创业基本功与精益创业方法论"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="就业指导">
+        <parameter name="courseName" value="就业指导"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="大学生职业生涯规划">
+        <parameter name="courseName" value="大学生职业生涯规划"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="自我发展与创业指导">
+        <parameter name="courseName" value="自我发展与创业指导"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="职业素养">
+        <parameter name="courseName" value="职业素养"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="团队建设与高效管理">
+        <parameter name="courseName" value="团队建设与高效管理"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="移动互联网思维">
+        <parameter name="courseName" value="移动互联网思维"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="计算机网络与网页制作">
+        <parameter name="courseName" value="计算机网络与网页制作"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="创业基础">
+        <parameter name="courseName" value="创业基础"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="打造无敌商业计划书">
+        <parameter name="courseName" value="打造无敌商业计划书"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="数字化营销入门">
+        <parameter name="courseName" value="数字化营销入门"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+    <test name="互联网营销全攻略">
+        <parameter name="courseName" value="互联网营销全攻略"/>
+        <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+    </test>
+</suite>
