@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="石家庄工程职业学院" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="河北科技学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,7 +8,7 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://sjzevc.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://hbkjxy.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
@@ -18,6 +18,22 @@
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
+	   	   	   	    <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	    <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   	   	   	    
 </suite>
 
