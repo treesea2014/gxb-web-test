@@ -42,4 +42,5 @@
         <parameter name="courseName" value="演讲口才与公众表达"/>
         <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
     </test>
+	   	   	   	    
 </suite>
