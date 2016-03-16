@@ -94,7 +94,7 @@ public class CoursePlayStep extends AbstractStep {
 			while(i<5&&!l.checkLogin()){
 				logger.info("状态为：未登录");
 				l.clickToLogin();
-//				l.loginByStudentNum();
+				l.loginByStudentNum();
 				l.inputUserName(loginName);
 				l.inputPassword(password);
 				l.clickLogin();
