@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="厦门大学软件学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="宣科院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,42 +8,89 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 				<!-- 依次为课程首页，用户名  密码 -->
-	   	    	<parameter name="baseUrl" value="http://xmu.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://xhkjzyxy.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 	  			 <!-- 依次为课程首页，用户名  密码 -->
 	  
-	      <test name="负载均衡">
-	    	<parameter name="courseName" value="负载均衡"/>
+	      <test name="创业启蒙与案例分享">
+	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	    	      <test name="阿里云数据库">
-	    	<parameter name="courseName" value="阿里云数据库"/>
+	    	      <test name="创业基本功与精益创业方法论">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="开放存储服务">
-	    	<parameter name="courseName" value="开放存储服务"/>
+	     	      <test name="计算思维">
+	    	<parameter name="courseName" value="计算思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="互联网">
-	    	<parameter name="courseName" value="互联网"/>
+	     	      <test name="移动互联网思维">
+	    	<parameter name="courseName" value="移动互联网思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	   	     	      <test name="阿里云服务器">
-	    	<parameter name="courseName" value="阿里云服务器"/>
+	     	   	     	      <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	     	      <test name="阿里云生态系统">
-	    	<parameter name="courseName" value="阿里云生态系统"/>
+	     	     	      <test name="搜索引擎">
+	    	<parameter name="courseName" value="搜索引擎"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	     	      <test name="阿里金融云">
-	    	<parameter name="courseName" value="阿里金融云"/>
+	     	     	      <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	     	      <test name="阿里云及产品体系介绍">
-	    	<parameter name="courseName" value="阿里云及产品体系介绍"/>
+	     	     	      <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	     	      
+	     	     	     	      <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	      <test name="商务办公软件应用与实践">
+	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	      <test name="计算机网络与网页制作">
+	    	<parameter name="courseName" value="计算机网络与网页制作"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	      <test name="计算机多媒体应用基础">
+	    	<parameter name="courseName" value="计算机多媒体应用基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	      <test name="计算机数据库基础与应用">
+	    	<parameter name="courseName" value="计算机数据库基础与应用"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	      <test name="演讲口才与公众表达">
+	    	<parameter name="courseName" value="演讲口才与公众表达"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	      <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	      <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	      <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	     	      <test name="魅力高效沟通实战技巧">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	     	      <test name="商务礼仪">
+	    	<parameter name="courseName" value="商务礼仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	     	     	     	     	      <test name="职业素养">
+	    	<parameter name="courseName" value="职业素养"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
 </suite>
