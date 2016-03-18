@@ -13,8 +13,8 @@
 	   	    	<parameter name="password" value="123456"/>
 
 
-	   	   	   	    <test name="军事理论">
-	    	<parameter name="courseName" value="军事理论"/>
+	   	   	   	    <test name="湖工程新院重修班">
+	    	<parameter name="courseName" value="湖工程新院重修班"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	    
