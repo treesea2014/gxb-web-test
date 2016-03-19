@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="西安欧亚学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="鞍山师范学院在线教育平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,37 +8,30 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 				<!-- 依次为课程首页，用户名  密码 -->
-	   	    	<parameter name="baseUrl" value="http://eurasia.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://asnc.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 	  			 <!-- 依次为课程首页，用户名  密码 -->
 	  
-	      <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	      <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	    	      <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	    	      <test name="安全教育">
+	    	<parameter name="courseName" value="安全教育"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	     	      <test name="心理健康">
+	    	<parameter name="courseName" value="心理健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	     	      <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="搜索引擎">
-	    	<parameter name="courseName" value="搜索引擎"/>
+	     	      <test name="商务礼仪">
+	    	<parameter name="courseName" value="商务礼仪"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	      <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
-	     		     	      <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>     	     	     
+	     	         
 </suite>
