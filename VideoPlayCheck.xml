@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="西南财经大学天府学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="四川大学锦江学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,15 +8,30 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 				<!-- 依次为课程首页，用户名  密码 -->
-	   	    	<parameter name="baseUrl" value="http://tfswufe.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://scujj.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="18500818020"/>
 	   	    	<parameter name="password" value="123456"/>
 	  			 <!-- 依次为课程首页，用户名  密码 -->
 
-	    	      <test name="大学生心里健康教育">
-	    	<parameter name="courseName" value="大学生心里健康教育"/>
+	    	      <test name="魅力高效沟通实战技巧">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	     
+	   	    	      <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	    	      <test name="打造无敌商业计划书">
+	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	    	      <test name="创业基础">
+	    	<parameter name="courseName" value="创业基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
+	     	    	      <test name="创新思维开发与落地">
+	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	     </test>
 	     	         
 </suite>
