@@ -22,17 +22,5 @@
 	    	<parameter name="courseName" value="计算机网络与网页制作"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     		     	    	      <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
-
-	     		     	    	      <test name="国学素养">
-	    	<parameter name="courseName" value="国学素养"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
-	     	     		     	    	      <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
+	     		     	    	     
 </suite>
