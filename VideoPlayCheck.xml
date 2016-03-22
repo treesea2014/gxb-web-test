@@ -13,22 +13,11 @@
 	   	    	<parameter name="password" value="123456"/>
 	  			 <!-- 依次为课程首页，用户名  密码 -->
 
-	    	      <test name="职业素养">
-	    	<parameter name="courseName" value="职业素养"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
-	   	    	      <test name="商务礼仪">
-	    	<parameter name="courseName" value="商务礼仪"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
 	     	    	      <test name="魅力高效沟通实战技巧">
 	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	    	      <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
+
 	     	    	      <test name="自我发展与创业指导">
 	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
@@ -37,8 +26,5 @@
 	    	<parameter name="courseName" value="搜索引擎"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	     </test>
-	     	     	    	      <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	     </test>
+
 </suite>
