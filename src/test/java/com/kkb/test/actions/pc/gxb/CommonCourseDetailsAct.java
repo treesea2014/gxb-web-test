@@ -55,8 +55,8 @@ public class CommonCourseDetailsAct extends CourseAct {
      * 点击授权提示按钮
      */
     public void clickPromptButton() {
-        logger.info("授权提示框");
         if (this.isElementPresent(courseDetialsPage.promptBox)) {
+            logger.info("课程授权提示框");
             click(courseDetialsPage.promptButton);
             this.pause(1);
             clickStartStudy();
