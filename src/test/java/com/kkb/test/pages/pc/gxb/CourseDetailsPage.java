@@ -53,7 +53,19 @@ public class CourseDetailsPage extends Page {
 	 */
 	@FindBy(xpath = "//a[@class='start-study ng-scope']/p")
 	public WebElement startStudy;
-	
+
+	/**
+	 * 授权提示框
+	 */
+	@FindBy(xpath = "//div[@class='modal-content']")
+	public WebElement promptBox;
+
+	/**
+	 * 授权确认按钮
+	 */
+	@FindBy(xpath = "//a[@class='cms-pop-btn']")
+	public WebElement promptButton;
+
 	/**
 	 * 课程介绍
 	 */

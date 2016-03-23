@@ -59,6 +59,7 @@ public class CoursePlayStep extends AbstractStep {
 			commonCourseLearnAct.snapshot();
 			//点击开始/继续学习clickStartStudy
 			commonCourseLearnAct.clickStartStudy();
+			commonCourseLearnAct.clickPromptButton();
 			commonCourseLearnAct.pause(5);
 			//commonCourseLearnAct.clickStartLearn();
 			commonCourseLearnAct.refresh();

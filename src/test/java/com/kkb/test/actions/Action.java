@@ -399,6 +399,7 @@ public class Action {
 		try {
 			return element.isDisplayed();
 		} catch (NoSuchElementException e) {
+			logger.debug("未找到该元素:{}", element);
 			return false;
 		}
 		// WebDriverWait wait = (new WebDriverWait(driver, waitSencond));
