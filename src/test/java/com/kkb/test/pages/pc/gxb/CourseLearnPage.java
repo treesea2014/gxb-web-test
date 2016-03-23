@@ -89,6 +89,7 @@ public class CourseLearnPage extends Page {
 	 */
 	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']")
 	public List<WebElement> chapterList3;
+	public String chapterList3Xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']";
 
 	/**
 	 * 视频播放页面
