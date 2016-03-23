@@ -21,15 +21,9 @@
 	    	<parameter name="courseName" value="移动互联网思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-
-	   
-	   	   	   	   	   	   	   	   	    <test name="团队建设与高效管理">
+	   	   	   
+	   	   	   	   	   	    <test name="团队建设与高效管理">
 	    	<parameter name="courseName" value="团队建设与高效管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	   
+	   </test>	   	   	   	   	   	   	   	   
 </suite>
