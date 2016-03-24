@@ -32,5 +32,33 @@
 	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
+	   	   	   	   	   	   	   	   	    <test name="商务办公软件应用与实践">
+	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	    <test name="我和大学有个约会">
+	    	<parameter name="courseName" value="我和大学有个约会"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	    <test name="职业化的态度">
+	    	<parameter name="courseName" value="职业化的态度"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	    <test name="学生社团管理">
+	    	<parameter name="courseName" value="学生社团管理"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   	    <test name="玩转课外活动">
+	    	<parameter name="courseName" value="玩转课外活动"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   	    <test name="逐梦象牙塔">
+	    	<parameter name="courseName" value="逐梦象牙塔"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   	    <test name="演讲修炼">
+	    	<parameter name="courseName" value="演讲修炼"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   	   	   	   	   	   	   	   	   
 </suite>
