@@ -416,7 +416,7 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
             driver.navigate().to(videoPlayPath);
             //刷新
             this.refresh();
-            pause(20);
+            pause(10);
             //获取播放状态的样式
             String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
             pause(5);
