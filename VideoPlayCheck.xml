@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="武汉大学国际软件学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="凹凸课 | 就业 · 创业 · 职前教育" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,41 +8,29 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://isswhu.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://aotuke.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
-	   	   
-	   	   	   	   	   	    <test name="负载均衡">
-	    	<parameter name="courseName" value="负载均衡"/>
+
+	   	   	   	   	   	    <test name="演讲口才与公众表达">
+	    	<parameter name="courseName" value="演讲口才与公众表达"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	    <test name="阿里云数据库">
-	    	<parameter name="courseName" value="阿里云数据库"/>
+	   	   	   	   	   	    <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	    <test name="开放存储服务">
-	    	<parameter name="courseName" value="开放存储服务"/>
+	   	   	   	   	   	    <test name="安全教育">
+	    	<parameter name="courseName" value="安全教育"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	    <test name="互联网">
-	    	<parameter name="courseName" value="互联网"/>
+	   	   	   	   	   	    <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	    <test name="阿里云服务器">
-	    	<parameter name="courseName" value="阿里云服务器"/>
+	   	   	   	   	   	   	   	    <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	    <test name="阿里云生态系统">
-	    	<parameter name="courseName" value="阿里云生态系统"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	    <test name="阿里金融云">
-	    	<parameter name="courseName" value="阿里金融云"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	    <test name="阿里云及产品体系介绍">
-	    	<parameter name="courseName" value="阿里云及产品体系介绍"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   
+	   	   	   	   	   	   	   	   	   
 </suite>
