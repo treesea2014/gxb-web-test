@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="凹凸课 | 就业 · 创业 · 职前教育" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="四川旅游学院创新创业平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,16 +8,12 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://aotuke.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="gxb0000"/>
+	   	    	<parameter name="baseUrl" value="http://sctu.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="18500818020"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   	   	    <test name="职业化的态度">
-	    	<parameter name="courseName" value="职业化的态度"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	    <test name="学生社团管理">
-	    	<parameter name="courseName" value="学生社团管理"/>
+	   	   	   	   	   	   	    <test name="创业基本功与精益创业方法论">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	    	   	   	   
