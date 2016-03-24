@@ -12,24 +12,24 @@
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   	    <test name="高效沟通任你行">
-	    	<parameter name="courseName" value="高效沟通任你行"/>
+	   	   	   	   	   	    <test name="校招之面试那些事儿">
+	    	<parameter name="courseName" value="校招之面试那些事儿"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="亮出你自己">
-	    	<parameter name="courseName" value="亮出你自己"/>
+	   	   	   	   	   	    <test name="面试形象与礼仪">
+	    	<parameter name="courseName" value="面试形象与礼仪"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="猫咪老师讲面试之我是一只纸老虎">
-	    	<parameter name="courseName" value="猫咪老师讲面试之我是一只纸老虎"/>
+	   	   	   	   	   	    <test name="简历123">
+	    	<parameter name="courseName" value="简历123"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="基于心理学的面试技巧">
-	    	<parameter name="courseName" value="基于心理学的面试技巧"/>
+	   	   	   	   	   	    <test name="别让简历把你拒之门外">
+	    	<parameter name="courseName" value="别让简历把你拒之门外"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	    <test name="礼仪无处不在">
-	    	<parameter name="courseName" value="礼仪无处不在"/>
+	   	   	   	   	   	   	   	    <test name="简历哔咚">
+	    	<parameter name="courseName" value="简历哔咚"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	   	   	   	   
