@@ -12,6 +12,10 @@
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
+	   	   	   	   	   	   	    <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   	   	   	   	   	    <test name="自我发展与创业指导">
 	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
@@ -28,8 +32,5 @@
 	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	    <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>	   	   	   	   	   	   	   	   
+	   	   	   	   	   	   	   	   	   
 </suite>
