@@ -12,16 +12,12 @@
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   	   	    <test name="玩转课外活动">
-	    	<parameter name="courseName" value="玩转课外活动"/>
+	   	   	   	   	   	   	    <test name="职业化的态度">
+	    	<parameter name="courseName" value="职业化的态度"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="逐梦象牙塔">
-	    	<parameter name="courseName" value="逐梦象牙塔"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	    <test name="演讲修炼">
-	    	<parameter name="courseName" value="演讲修炼"/>
+	   	   	   	   	   	    <test name="学生社团管理">
+	    	<parameter name="courseName" value="学生社团管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	    	   	   	   
