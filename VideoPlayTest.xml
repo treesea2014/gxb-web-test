@@ -48,17 +48,5 @@
 	    	<parameter name="courseName" value="学生社团管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	   	   	    <test name="玩转课外活动">
-	    	<parameter name="courseName" value="玩转课外活动"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	   	    <test name="逐梦象牙塔">
-	    	<parameter name="courseName" value="逐梦象牙塔"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	   	    <test name="演讲修炼">
-	    	<parameter name="courseName" value="演讲修炼"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 	   	   	   	   	   	   	   	   	   
 </suite>
