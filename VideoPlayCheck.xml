@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="四川旅游学院创新创业平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="湖北工程学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,12 +8,12 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://sctu.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="18500818020"/>
+	   	    	<parameter name="baseUrl" value="http://hbeu.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   	   	    <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   	   	   	   	   	   	    <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	    	   	   	   
