@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="凹凸课 | 就业 · 创业 · 职前教育" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="慧邦继续教育学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,44 +8,28 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://aotuke.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://jw.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   	    <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	   	   	   	   	   	    <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="职业素养">
-	    	<parameter name="courseName" value="职业素养"/>
+	   	   	   	   	   	    <test name="搜索引擎">
+	    	<parameter name="courseName" value="搜索引擎"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="计算思维">
-	    	<parameter name="courseName" value="计算思维"/>
+	   	   	   	   	   	    <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   	   	   	   	   	    <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	    <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="商务办公软件应用与实践">
-	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="我和大学有个约会">
-	    	<parameter name="courseName" value="我和大学有个约会"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="职业化的态度">
-	    	<parameter name="courseName" value="职业化的态度"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="学生社团管理">
-	    	<parameter name="courseName" value="学生社团管理"/>
+	   	   	   	   	   	   	   	    <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	   	   	   	   
