@@ -3,6 +3,10 @@ package com.kkb.test.actions.pc.gxb;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.InputEvent;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
@@ -67,7 +71,7 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
             //logger.info("*********{}********",i);
             //logger.info("课程名称:{}",getText(courseNameList.get(i)));
             /*logger.info("课程类型:{}",getText(coursePage.courseType.get(i)));
-			logger.info("课程信息:{}",getText(coursePage.bodyCourseInfo.get(i)));
+            logger.info("课程信息:{}",getText(coursePage.bodyCourseInfo.get(i)));
 			logger.info("课程简介:{}",getText(coursePage.bodyCoursentro.get(i)));
 			logger.info("课程星级评价:{}",getText(coursePage.bodyCourseStars.get(i)));
 			logger.info("参与人数:{}",getText(coursePage.bodyCoursePeoples.get(i)));*/
@@ -109,8 +113,8 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
         for (int i = 0; i < courseNameList.size(); i++) {
             //logger.info("*********{}********",i);
             //logger.info("课程名称:{}",getText(courseNameList.get(i)));
-			/*logger.info("课程类型:{}",getText(coursePage.courseType.get(i)));
-			logger.info("课程信息:{}",getText(coursePage.bodyCourseInfo.get(i)));
+            /*logger.info("课程类型:{}",getText(coursePage.courseType.get(i)));
+            logger.info("课程信息:{}",getText(coursePage.bodyCourseInfo.get(i)));
 			logger.info("课程简介:{}",getText(coursePage.bodyCoursentro.get(i)));
 			logger.info("课程星级评价:{}",getText(coursePage.bodyCourseStars.get(i)));
 			logger.info("参与人数:{}",getText(coursePage.bodyCoursePeoples.get(i)));*/
@@ -402,7 +406,7 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
      *
      * @param courseName
      */
-    public String checkVideoPlay(String courseName) {
+    public String checkVideoPlay(String courseName) throws ParseException {
         StringBuilder errorVideo = new StringBuilder();
         //收集视频信息
         TreeMap<Integer, String[]> videoMap = getItems(courseName);
@@ -420,6 +424,16 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
             //获取播放状态的样式
             String palyState = driver.findElement(By.xpath(courseLearnPage.videoPlayXpath)).getAttribute("class");
             pause(5);
+
+            //获取播放时间
+            String videoPlayTime = courseLearnPage.videoPlayTime.getText();
+            String playTime = videoPlayTime.substring(videoPlayTime.length() - 1, videoPlayTime.length());
+            if (Integer.parseInt(playTime) == 0) {
+                logger.error("检查课程:{},视频播放时间!", videoPlayTime);
+            }
+
+            logger.info("videoPlayTime:{},playTime:{}", videoPlayTime, playTime);
+
             //e.click();
             logger.info("palyState:{}", palyState);
             //判断是否存在错误信息

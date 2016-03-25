@@ -100,6 +100,9 @@ public class CourseLearnPage extends Page {
 
 	public String videoXpath = "//video";
 
+	@FindBy(xpath = "//span[@class='jw-text jw-reset jw-text-duration']")
+	public WebElement videoPlayTime;
+
 	@FindBy(xpath = "//div[@class='jw-title jw-reset']/div[1]")
 	public WebElement errorVideoTitle;
 	/**
