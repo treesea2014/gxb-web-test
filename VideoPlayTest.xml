@@ -12,27 +12,23 @@
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   	    <test name="计算机网络与网页制作">
+	   	   	   	   	   	   	    <test name="计算机网络与网页制作">
 	    	<parameter name="courseName" value="计算机网络与网页制作"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="计算机多媒体应用基础">
+	   	   	   	   	   	   	   	    <test name="计算机多媒体应用基础">
 	    	<parameter name="courseName" value="计算机多媒体应用基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="计算机数据库基础与应用">
+	   	   	   	   	   	   	   	    <test name="计算机数据库基础与应用">
 	    	<parameter name="courseName" value="计算机数据库基础与应用"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	    <test name="演讲口才与公众表达">
+	   	   	   	   	   	   	   	    <test name="演讲口才与公众表达">
 	    	<parameter name="courseName" value="演讲口才与公众表达"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	   	   	    <test name="自我发展与创业指导">
-	    	<parameter name="courseName" value="自我发展与创业指导"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="自我发展与创业指导">
 	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
@@ -44,7 +40,7 @@
 	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	   	    <test name="魅力高效沟通实战技巧">
+	   	   	   	   	   	   	   	   	   	    <test name="魅力高效沟通实战技巧">
 	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
@@ -56,4 +52,5 @@
 	    	<parameter name="courseName" value="职业素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
+	   	   	   	   	   	    	   	   	   
 </suite>
