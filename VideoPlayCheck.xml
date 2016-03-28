@@ -16,6 +16,9 @@
 	    	<parameter name="courseName" value="大学生职业生涯规划"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	   
+	   	   	   	   	   	   	   	   	    <test name="创业启蒙与案例分享">
+	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>	   	   	   	   	   	   	   
 	   	   	   	   	   	    	   	   	   
 </suite>
