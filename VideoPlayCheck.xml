@@ -36,8 +36,20 @@
 	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   	   	   	   	    <test name="自我发展与创业指导">
-	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   	   	   	   	   	   	   	   	   	   	    <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   	   	   	    <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   	   	   	    <test name="魅力高效沟通实战技巧">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   	   	   	    <test name="职业素养">
+	    	<parameter name="courseName" value="职业素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   
