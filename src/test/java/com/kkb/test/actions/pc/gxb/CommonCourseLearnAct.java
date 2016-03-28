@@ -426,13 +426,13 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
             pause(5);
 
             //获取播放时间
-            String videoPlayTime = courseLearnPage.videoPlayTime.getText();
-            String playTime = videoPlayTime.substring(videoPlayTime.length() - 1, videoPlayTime.length());
-            if (Integer.parseInt(playTime) == 0) {
-                logger.error("检查课程:{},视频播放时间!", videoPlayTime);
-            }
-
-            logger.info("videoPlayTime:{},playTime:{}", videoPlayTime, playTime);
+//            String videoPlayTime = courseLearnPage.videoPlayTime.getText();
+//            String playTime = videoPlayTime.substring(videoPlayTime.length() - 1, videoPlayTime.length());
+//            if (Integer.parseInt(playTime) == 0) {
+//                logger.error("检查课程:{},视频播放时间!", videoPlayTime);
+//            }
+//
+//            logger.info("videoPlayTime:{},playTime:{}", videoPlayTime, playTime);
 
             //e.click();
             logger.info("palyState:{}", palyState);
