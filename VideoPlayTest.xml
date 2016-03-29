@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="首体就业指导中心自主在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="Today线上课程培训" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,23 +8,16 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://cupes-jy.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="gxb0000"/>
+	   	    	<parameter name="baseUrl" value="Today线上课程培训"/>
+	   	    	<parameter name="loginName" value="18500818020"/>
 	   	    	<parameter name="password" value="123456"/>
 
 
-	   	   	   	   	   	   	   	    <test name="创业启蒙与案例分享 ">
-	    	<parameter name="courseName" value="创业启蒙与案例分享 "/>
+	   	   	   	   	   	   	   	    <test name="新员工培训课程 ">
+	    	<parameter name="courseName" value="新员工培训课程 "/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	
-	   		   	   	   	   	   	   	   	    <test name="就业指导 ">
-	    	<parameter name="courseName" value="就业指导 "/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   	    <test name="大学生职业生涯规划 ">
-	    	<parameter name="courseName" value="大学生职业生涯规划 "/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   		   	   	   	   	   	   	   	   
 	   	   	   	   	   	    	   	   	   
 </suite>
