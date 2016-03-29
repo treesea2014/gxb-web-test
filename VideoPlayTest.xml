@@ -8,7 +8,7 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="Today线上课程培训"/>
+	   	    	<parameter name="baseUrl" value="http://today36524.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="18500818020"/>
 	   	    	<parameter name="password" value="123456"/>
 
