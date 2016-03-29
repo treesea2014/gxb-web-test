@@ -424,13 +424,14 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
 
             //获取播放时间
             this.mouseAction(courseLearnPage.videoPlay);
-            if (isElementExist(courseLearnPage.playRightControlbar, 2)) {
+            if (isElementExist(courseLearnPage.playRightControlbar, 1)) {
                 String videoPlayTime = courseLearnPage.videoPlayTime.getText();
                 logger.info("videoPlayTime:{}", videoPlayTime);
                 if (videoPlayTime.length() != 0) {
-                    String playTime = videoPlayTime.substring(videoPlayTime.length() - 1, videoPlayTime.length());
-                    if (Integer.parseInt(playTime) == 0) {
-                        logger.error("检查课程:{},视频播放时间!", videoPlayTime);
+                    String[] strData = videoPlayTime.split(":");
+                    String playTime = strData[0]+ strData[1];
+                    if (playTime.equals("0000")) {
+                        logger.error("检查课程,视频播放时间:{}", videoPlayTime);
                     }
 
                     logger.info("videoPlayTime:{},playTime:{}", videoPlayTime, playTime);
