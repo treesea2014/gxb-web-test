@@ -102,6 +102,7 @@ public class CourseLearnPage extends Page {
 
 	@FindBy(xpath = "//span[@class='jw-text jw-reset jw-text-duration']")
 	public WebElement videoPlayTime;
+	public String playRightControlbar = "//div[@class='jw-group jw-controlbar-right-group jw-reset']";
 
 	@FindBy(xpath = "//div[@class='jw-title jw-reset']/div[1]")
 	public WebElement errorVideoTitle;

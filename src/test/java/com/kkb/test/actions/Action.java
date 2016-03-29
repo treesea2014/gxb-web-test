@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -803,4 +804,13 @@ public class Action {
 	    RestAssured.port = 8080;
 	    RestAssured.basePath = "/service/v1";
 	}
+
+
+	public void mouseAction(WebElement projectElement)
+	{
+		Actions actions = new Actions(driver);
+		actions.moveToElement(projectElement)
+				.build().perform();
+	}
+
 }
