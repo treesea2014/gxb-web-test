@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Today线上课程培训" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="北京开云慧科网络科技有限公司" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,13 +8,13 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://today36524.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="18500818020"/>
+	   	    	<parameter name="baseUrl" value="http://kkb.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
 
-	   	   	   	   	   	   	   	    <test name="新员工培训课程 ">
-	    	<parameter name="courseName" value="新员工培训课程 "/>
+	   	   	   	   	   	   	   	    <test name="CompTIA">
+	    	<parameter name="courseName" value="CompTIA"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	
