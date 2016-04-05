@@ -9,7 +9,7 @@
 </listeners>
 
 	   	    	<parameter name="baseUrl" value="http://bfability.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="18500818020"/>
+	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 
 	   	   <test name="创意长文写作基础">
