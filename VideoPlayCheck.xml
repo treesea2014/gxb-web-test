@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="博雅未来能力教育" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="河南师范大学在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,24 +8,21 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://bfability.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://hnsfdx.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 	   
-	   	   	   <test name="商务办公软件应用与实践">
-	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
+	   	   	   <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="商务礼仪">
-	    	<parameter name="courseName" value="商务礼仪"/>
+	   	   	   	   <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="魅力高效沟通实战技巧">
-	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   	   	   	   <test name="心理健康">
+	    	<parameter name="courseName" value="心理健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+
 </suite>
