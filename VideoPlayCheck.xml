@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="河南师范大学在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="三峡大学在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,21 +8,13 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://hnsfdx.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://ctgu.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="gxb0000"/>
 	   	    	<parameter name="password" value="123456"/>
 	   
-	   	   	   <test name="形势与政策">
-	    	<parameter name="courseName" value="形势与政策"/>
+	   	   	   <test name="计算思维">
+	    	<parameter name="courseName" value="计算思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   <test name="心理健康">
-	    	<parameter name="courseName" value="心理健康"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-
+	   	   	   	   
 </suite>
