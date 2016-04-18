@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="阿里云 · 学堂" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="四川长江职业学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,13 +8,29 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://aliyun.gaoxiaobang.com/gxb#/port/course_square/"/>
-	   	    	<parameter name="loginName" value="13918103677"/>
+	   	    	<parameter name="baseUrl" value="http://sccvc.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="18500818020"/>
 	   	    	<parameter name="password" value="123456"/>
 
 
-	   	   	   	   <test name="阿里云数据库">
-	    	<parameter name="courseName" value="阿里云数据库"/>
+	   	   	   	   <test name="创业基本功与精益创业方法论">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   <test name="创业基础">
+	    	<parameter name="courseName" value="创业基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   <test name="打造无敌商业计划书">
+	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	  
