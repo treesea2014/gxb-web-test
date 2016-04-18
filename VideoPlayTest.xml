@@ -13,8 +13,8 @@
 	   	    	<parameter name="password" value="123456"/>
 
 
-	   	   	   	   <test name="阿里云数据库产品介绍">
-	    	<parameter name="courseName" value="阿里云数据库产品介绍"/>
+	   	   	   	   <test name="阿里云数据库">
+	    	<parameter name="courseName" value="阿里云数据库"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	   	   	  
