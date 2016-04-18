@@ -13,35 +13,11 @@
 	<parameter name="password" value="123456"/>
 
 
-	<test name="数理统计">
-		<parameter name="courseName" value="数理统计"/>
+	<test name="云平台实践">
+		<parameter name="courseName" value="云平台实践"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
 
-	<test name="数据结构">
-		<parameter name="courseName" value="数据结构"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-	<test name="大数据概论">
-		<parameter name="courseName" value="大数据概论"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-	<test name="R语言建模与预测">
-		<parameter name="courseName" value="R语言建模与预测"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-	<test name="Spark集群环境部署与应用实践">
-		<parameter name="courseName" value="Spark集群环境部署与应用实践"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-	<test name="Openstack云平台实践">
-		<parameter name="courseName" value="Openstack云平台实践"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-	<test name="Linux操作系统应用">
-		<parameter name="courseName" value="Linux操作系统应用"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
 	<test name="互联网营销概论">
 		<parameter name="courseName" value="互联网营销概论"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
