@@ -17,15 +17,6 @@
 	<parameter name="loginName" value="13110240020" />
 	<parameter name="password" value="13110240020" />
 
-
-
-	<!-- 课程名称1 按照下列格式，修改2处课程名称即可，例如修改为‘计算机文化基础【诚毅学院】’， -->
-	<test name="计算思维">
-		<parameter name="courseName" value="计算思维" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
-		</classes>
-	</test>
 	
     <!-- 课程名称2 后面依次类推 ，添加课程复制即可-->
 	<test name="计算机多媒体应用基础">
