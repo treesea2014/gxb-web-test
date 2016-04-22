@@ -3,7 +3,7 @@
 
 
 <!-- 修改学校名称 -->
-<suite name="复旦大学软件学院在线学习平台" parallel="tests" preserve-order="true"
+<suite name="复旦计算机应用能力线上培养" parallel="tests" preserve-order="true"
 	thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
@@ -28,20 +28,31 @@
 	</test>
 	
     <!-- 课程名称2 后面依次类推 ，添加课程复制即可-->
-	<test name="计算机数据库基础与应用">
-		<parameter name="courseName" value="计算机数据库基础与应用" />
-		<classes>
-			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
-		</classes>
-	</test>
-	
-		<test name="计算机多媒体应用基础">
+	<test name="计算机多媒体应用基础">
 		<parameter name="courseName" value="计算机多媒体应用基础" />
 		<classes>
 			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
 		</classes>
 	</test>
-
+	
+		<test name="计算机数据库基础与应用">
+		<parameter name="courseName" value="计算机数据库基础与应用" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
+		</classes>
+	</test>
+		<test name="计算机网络与网页制作">
+		<parameter name="courseName" value="计算机网络与网页制作" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
+		</classes>
+	</test>
+			<test name="计算机办公自动化">
+		<parameter name="courseName" value="计算机办公自动化" />
+		<classes>
+			<class name="com.kkb.test.steps.pc.gxb.gcu.CoursePlayStep" />
+		</classes>
+	</test>
 	
 
 </suite>
