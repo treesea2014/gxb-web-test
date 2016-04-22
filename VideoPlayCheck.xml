@@ -17,32 +17,32 @@
 		<parameter name="courseName" value="从持续集成的角度"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="大云之美">
-		<parameter name="courseName" value="大云之美"/>
+		<test name="隔空绘图立体现实">
+		<parameter name="courseName" value="隔空绘图立体现实"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="Foundry">
-		<parameter name="courseName" value="Foundry"/>
+		<test name="动作捕捉系统展示">
+		<parameter name="courseName" value="动作捕捉系统展示"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="Nova">
-		<parameter name="courseName" value="Nova"/>
+		<test name="5.0新特性">
+		<parameter name="courseName" value="5.0新特性"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="OpenStack">
-		<parameter name="courseName" value="OpenStack"/>
+		<test name="游戏生态展示">
+		<parameter name="courseName" value="游戏生态展示"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="Hyper">
-		<parameter name="courseName" value="Hyper"/>
+		<test name="30分钟教你如何开发">
+		<parameter name="courseName" value="30分钟教你如何开发"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-			<test name="Federation">
-		<parameter name="courseName" value="Federation"/>
+			<test name="高并发网站存储架构设计">
+		<parameter name="courseName" value="高并发网站存储架构设计"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-			<test name="增强虚拟现实">
-		<parameter name="courseName" value="增强虚拟现实"/>
+			<test name="峰会网络主题核心内容及峰会遗珠">
+		<parameter name="courseName" value="峰会网络主题核心内容及峰会遗珠"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
 		
