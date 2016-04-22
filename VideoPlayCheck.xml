@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="虚拟创客学院" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="智诚阅品 互联网+在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,41 +8,41 @@
 		<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 	</listeners>
 
-	<parameter name="baseUrl" value="http://xnckxy.gaoxiaobang.com/"/>
-	<parameter name="loginName" value="18500818020"/>
+	<parameter name="baseUrl" value="http://zcyp.gaoxiaobang.com/"/>
+	<parameter name="loginName" value="wxxu@gaoxiaobang.com"/>
 	<parameter name="password" value="123456"/>
 
 
-	<test name="打造无敌商业计划书">
-		<parameter name="courseName" value="打造无敌商业计划书"/>
+	<test name="从持续集成的角度">
+		<parameter name="courseName" value="从持续集成的角度"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="创新思维开发与落地">
-		<parameter name="courseName" value="创新思维开发与落地"/>
+		<test name="大云之美">
+		<parameter name="courseName" value="大云之美"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="计算思维">
-		<parameter name="courseName" value="计算思维"/>
+		<test name="Foundry">
+		<parameter name="courseName" value="Foundry"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="移动互联网思维">
-		<parameter name="courseName" value="移动互联网思维"/>
+		<test name="Nova">
+		<parameter name="courseName" value="Nova"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="自我发展与创业指导">
-		<parameter name="courseName" value="自我发展与创业指导"/>
+		<test name="OpenStack">
+		<parameter name="courseName" value="OpenStack"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="创业启蒙与案例分享">
-		<parameter name="courseName" value="创业启蒙与案例分享"/>
+		<test name="Hyper">
+		<parameter name="courseName" value="Hyper"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-			<test name="创业基础">
-		<parameter name="courseName" value="创业基础"/>
+			<test name="Federation">
+		<parameter name="courseName" value="Federation"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-			<test name="创业基本功与精益创业方法论">
-		<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+			<test name="增强虚拟现实">
+		<parameter name="courseName" value="增强虚拟现实"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
 		
