@@ -12,42 +12,14 @@
 	<parameter name="loginName" value="wxxu@gaoxiaobang.com"/>
 	<parameter name="password" value="123456"/>
 
-
-	<test name="技术进化论">
-		<parameter name="courseName" value="技术进化论"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-		<test name="坚持成长">
-		<parameter name="courseName" value="坚持成长"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
 		<test name="如何在数据化运营体系中工作">
 		<parameter name="courseName" value="如何在数据化运营体系中工作"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
-		<test name="5.0新特性">
-		<parameter name="courseName" value="5.0新特性"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-		<test name="游戏生态展示">
-		<parameter name="courseName" value="游戏生态展示"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-		<test name="互联网用户体验性能管理">
-		<parameter name="courseName" value="互联网用户体验性能管理"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-			<test name="使用Unity打造互动式电影特效">
-		<parameter name="courseName" value="使用Unity打造互动式电影特效"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-			<test name="阿里云及产品体系介绍">
-		<parameter name="courseName" value="阿里云及产品体系介绍"/>
+		
+		<test name="Unity Show">
+		<parameter name="courseName" value="Unity Show"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
 		
-			<test name="阿里云API对用户需求的挖掘">
-		<parameter name="courseName" value="阿里云API对用户需求的挖掘"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
 </suite>
