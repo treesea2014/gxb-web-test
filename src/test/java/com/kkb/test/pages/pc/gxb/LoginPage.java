@@ -26,9 +26,7 @@ public class LoginPage extends Page {
     @FindBy(xpath = "//div[@id='userInfo']/a")
     public WebElement loginInfo;
 
-//    @FindBy(xpath = "//div[@class='wrapper']/div[2]/div[@class='mainRight']/ul/li[contains(text(), '账号登录')]")
-
-    @FindBy(xpath = "html/body/div[1]/div[2]/div[2]/ul/li[2]")
+    @FindBy(xpath = "//div[@class='wrapper']/div[2]/div[@class='mainRight']/ul/li[contains(text(), '账号登录')]")
     public WebElement studentId;
 
 
