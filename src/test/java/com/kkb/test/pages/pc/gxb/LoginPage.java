@@ -30,28 +30,28 @@ public class LoginPage extends Page {
     public WebElement studentId;
 
 
-//    @FindBy(xpath = "(//*[@id='username'])[2]")
-//    public WebElement username;
-//
-//    @FindBy(xpath = "(//*[@id='password'])[2]")
-//    public WebElement password;
-//
-//    /**
-//     * 登陆按钮
-//     */
-//    @FindBy(xpath = "(//input[@name='submit'])[2]")
-//    public WebElement loginBtn;
-
-    @FindBy(xpath = "//*[@id='username']")
+    @FindBy(xpath = "(//*[@id='username'])[2]")
     public WebElement username;
 
-    @FindBy(xpath = "//*[@id='password']")
+    @FindBy(xpath = "(//*[@id='password'])[2]")
     public WebElement password;
 
     /**
      * 登陆按钮
      */
-    @FindBy(xpath = "//input[@name='submit']")
+    @FindBy(xpath = "(//input[@name='submit'])[2]")
     public WebElement loginBtn;
+
+//    @FindBy(xpath = "//*[@id='username']")
+//    public WebElement username;
+//
+//    @FindBy(xpath = "//*[@id='password']")
+//    public WebElement password;
+//
+//    /**
+//     * 登陆按钮
+//     */
+//    @FindBy(xpath = "//input[@name='submit']")
+//    public WebElement loginBtn;
 
 }
