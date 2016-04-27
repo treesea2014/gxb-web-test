@@ -8,7 +8,7 @@
 		<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 	</listeners>
 
-	<parameter name="baseUrl" value="http://ccnu.class.gaoxiaobang.com/"/>
+	<parameter name="baseUrl" value="http://ccnu.class.gaoxiaobang.com"/>
 	<parameter name="loginName" value="wjgui@gaoxiaobang.com"/>
 	<parameter name="password" value="123456"/>
 
