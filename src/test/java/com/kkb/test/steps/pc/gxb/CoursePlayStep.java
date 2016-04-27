@@ -90,28 +90,34 @@ public class CoursePlayStep extends AbstractStep {
 		driver = new WebdriverFactory().newInstanceOf(p.getProperty(BROWSER), p);
 		driver.get(baseUrl);
 		LoginAct l = new LoginAct(driver);
-		try {
-
-			int i = 0;
-			while(i<5&&!l.checkLogin()){
-				logger.info("状态为：未登录");
-				l.clickToLogin();
-				l.loginByStudentNum();
-				l.inputUserName(loginName);
-				l.inputPassword(password);
-				l.clickLogin();
-				l.pause(3);
-				/*if(driver.getPageSource().contains("跳过")){
-				driver.findElement(By.linkText("跳过")).click();}
-				if(driver.getPageSource().contains("跳过")){
-					driver.findElement(By.linkText("跳过")).click();}*/
-				i++;
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			logger.error("学号登录失败！");
-
-		}
+		l.clickToLogin();
+		l.loginByStudentNum();
+		l.inputUserName(loginName);
+		l.inputPassword(password);
+		l.clickLogin();
+		l.pause(3);
+//		try {
+//
+//			int i = 0;
+//			while(i<5&&!l.checkLogin()){
+//				logger.info("状态为：未登录");
+//				l.clickToLogin();
+//				l.loginByStudentNum();
+//				l.inputUserName(loginName);
+//				l.inputPassword(password);
+//				l.clickLogin();
+//				l.pause(3);
+//				/*if(driver.getPageSource().contains("跳过")){
+//				driver.findElement(By.linkText("跳过")).click();}
+//				if(driver.getPageSource().contains("跳过")){
+//					driver.findElement(By.linkText("跳过")).click();}*/
+//				i++;
+//			}
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			logger.error("学号登录失败！");
+//
+//		}
 
 	}
 
