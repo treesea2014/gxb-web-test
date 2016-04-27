@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="华中师范大学" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="中国地质大学" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,8 +8,8 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://ccnu.class.gaoxiaobang.com"/>
-	   	    	<parameter name="loginName" value="wjgui@gaoxiaobang.com"/>
+	   	    	<parameter name="baseUrl" value="http://cug.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13379209092"/>
 	   	    	<parameter name="password" value="123456"/>
 
 
