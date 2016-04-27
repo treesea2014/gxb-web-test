@@ -9,7 +9,7 @@
 	</listeners>
 
 	<parameter name="baseUrl" value="http://ccnu.class.gaoxiaobang.com/"/>
-	<parameter name="loginName" value="wjgui@gaoxiaobang.com"/>
+	<parameter name="loginName" value="13379209092"/>
 	<parameter name="password" value="123456"/>
 
 		<test name="计算思维">
