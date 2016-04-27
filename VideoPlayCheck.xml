@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="智诚阅品 互联网+在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="华中师范大学" parallel="tests" preserve-order="true" thread-count="1">
 	<listeners>
 		<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,17 +8,12 @@
 		<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 	</listeners>
 
-	<parameter name="baseUrl" value="http://zcyp.gaoxiaobang.com/"/>
+	<parameter name="baseUrl" value="http://ccnu.class.gaoxiaobang.com/"/>
 	<parameter name="loginName" value="wxxu@gaoxiaobang.com"/>
 	<parameter name="password" value="123456"/>
 
-		<test name="如何在数据化运营体系中工作">
-		<parameter name="courseName" value="如何在数据化运营体系中工作"/>
-		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	</test>
-		
-		<test name="Unity Show">
-		<parameter name="courseName" value="Unity Show"/>
+		<test name="计算思维">
+		<parameter name="courseName" value="计算思维"/>
 		<classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	</test>
 		
