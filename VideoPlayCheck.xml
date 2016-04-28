@@ -12,7 +12,10 @@
 	   	    	<parameter name="loginName" value="18601248802"/>
 	   	    	<parameter name="password" value="123456"/>
 
-
+	   <test name="商务礼仪">
+	    	<parameter name="courseName" value="商务礼仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   <test name="互联网营销概论">
 	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
