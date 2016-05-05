@@ -12,16 +12,8 @@
 	   	    	<parameter name="loginName" value="zma@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="abcd1234"/>
 
-	   	   	   <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 	   	   	   	   <test name="大数据营销与创新">
 	    	<parameter name="courseName" value="大数据营销与创新"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   <test name="实用摄影基础教程">
-	    	<parameter name="courseName" value="实用摄影基础教程"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
