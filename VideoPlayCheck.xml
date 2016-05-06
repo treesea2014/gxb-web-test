@@ -12,32 +12,48 @@
 	   	    	<parameter name="loginName" value="13379209092"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   	   	   	   <test name="静态网页技术">
+	    	<parameter name="courseName" value="静态网页技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   	   	   	   	   <test name="Java核心开发技术">
+	    	<parameter name="courseName" value="Java核心开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="计算思维">
-	    	<parameter name="courseName" value="计算思维"/>
+	   	   	   	   	   <test name="C面向对象程序设计">
+	    	<parameter name="courseName" value="C面向对象程序设计"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	   	   	   	   	   <test name="数据库基础">
+	    	<parameter name="courseName" value="数据库基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
+	   	   	   	   	   	   <test name="数据库高级技术">
+	    	<parameter name="courseName" value="数据库高级技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="打造无敌商业计划书">
-	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   	   	   	   	   	   <test name="Android移动开发技术">
+	    	<parameter name="courseName" value="Android移动开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   	   	   	   	   	   <test name="语言程序设计">
+	    	<parameter name="courseName" value="语言程序设计"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   <test name="框架技术">
+	    	<parameter name="courseName" value="框架技术"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   <test name="编程算法">
+	    	<parameter name="courseName" value="编程算法"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   <test name="数据结构">
+	    	<parameter name="courseName" value="数据结构"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   <test name="面向对象方法精粹">
+	    	<parameter name="courseName" value="面向对象方法精粹"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
