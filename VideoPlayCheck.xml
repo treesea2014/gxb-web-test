@@ -11,36 +11,9 @@
 	   	    	<parameter name="baseUrl" value="http://zgdzdx.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="13379209092"/>
 	   	    	<parameter name="password" value="123456"/>
-
-	   	   	   	   <test name="数字化营销入门">
-	    	<parameter name="courseName" value="数字化营销入门"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   <test name="CompTIA">
-	    	<parameter name="courseName" value="CompTIA"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   <test name="百度凤巢沙盒系统营销实践">
-	    	<parameter name="courseName" value="百度凤巢沙盒系统营销实践"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   <test name="百度凤巢沙盒系统实习">
-	    	<parameter name="courseName" value="百度凤巢沙盒系统实习"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   <test name="搜索引擎优化技术">
-	    	<parameter name="courseName" value="搜索引擎优化技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   <test name="搜索引擎营销">
-	    	<parameter name="courseName" value="搜索引擎营销"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   <test name="社会化媒体营销">
-	    	<parameter name="courseName" value="社会化媒体营销"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   <test name="互联网营销概论">
+	   	   	   	   
+	   	   	   	   	   
+	   <test name="互联网营销概论">
 	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
