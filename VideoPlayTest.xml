@@ -12,44 +12,48 @@
 	   	    	<parameter name="loginName" value="13379209092"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   <test name="微信与口碑营销">
-	    	<parameter name="courseName" value="微信与口碑营销"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 	   	   	   	   	   <test name="数字化营销入门">
 	    	<parameter name="courseName" value="数字化营销入门"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="互联网营销全攻略">
-	    	<parameter name="courseName" value="互联网营销全攻略"/>
+	   	   	   	   	   <test name="Essentials云计算精要">
+	    	<parameter name="courseName" value="Essentials云计算精要"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="信息安全意识与网络安全">
-	    	<parameter name="courseName" value="信息安全意识与网络安全"/>
+	   	   	   	   	   <test name="数理统计">
+	    	<parameter name="courseName" value="数理统计"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="互联网金融零突破">
-	    	<parameter name="courseName" value="互联网金融零突破"/>
+	   	   	   	   	   	   <test name="大数据概论">
+	    	<parameter name="courseName" value="大数据概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="从零起步学软文营销">
-	    	<parameter name="courseName" value="从零起步学软文营销"/>
+	   	   	   	   	   	   <test name="R语言编程技术">
+	    	<parameter name="courseName" value="R语言编程技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="大数据营销与创新">
-	    	<parameter name="courseName" value="大数据营销与创新"/>
+	   	   	   	   	   	   <test name="R语言建模与预测">
+	    	<parameter name="courseName" value="R语言建模与预测"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   <test name="留学第一课">
-	    	<parameter name="courseName" value="留学第一课"/>
+	   	   	   	   	   	   	   <test name="数据挖掘技术">
+	    	<parameter name="courseName" value="数据挖掘技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   <test name="实用摄影基础教程">
-	    	<parameter name="courseName" value="实用摄影基础教程"/>
+	   	   	   	   	   	   	   <test name="Spark集群环境部署与应用实践">
+	    	<parameter name="courseName" value="Spark集群环境部署与应用实践"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   <test name="网络风险评估">
-	    	<parameter name="courseName" value="网络风险评估"/>
+	   	   	   	   	   	   	   <test name="数据学工具应用">
+	    	<parameter name="courseName" value="数据学工具应用"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   <test name="OpenStack云平台实践">
+	    	<parameter name="courseName" value="OpenStack云平台实践"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	   	   	   	   <test name="Linux操作系统应用">
+	    	<parameter name="courseName" value="Linux操作系统应用"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
