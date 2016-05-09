@@ -12,48 +12,33 @@
 	   	    	<parameter name="loginName" value="13379209092"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   <test name="静态网页技术">
-	    	<parameter name="courseName" value="静态网页技术"/>
+	   	   	   	   <test name="数字化营销入门">
+	    	<parameter name="courseName" value="数字化营销入门"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="Java核心开发技术">
-	    	<parameter name="courseName" value="Java核心开发技术"/>
+	   	   	   	   	   <test name="百度凤巢沙盒系统营销实践">
+	    	<parameter name="courseName" value="百度凤巢沙盒系统营销实践"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="C面向对象程序设计">
-	    	<parameter name="courseName" value="C面向对象程序设计"/>
+	   	   	   	   	   <test name="百度凤巢沙盒系统实习">
+	    	<parameter name="courseName" value="百度凤巢沙盒系统实习"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="数据库基础">
-	    	<parameter name="courseName" value="数据库基础"/>
+	   	   	   	   	   <test name="搜索引擎优化技术">
+	    	<parameter name="courseName" value="搜索引擎优化技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="数据库高级技术">
-	    	<parameter name="courseName" value="数据库高级技术"/>
+	   	   	   	   	   	   <test name="搜索引擎营销">
+	    	<parameter name="courseName" value="搜索引擎营销"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="Android移动开发技术">
-	    	<parameter name="courseName" value="Android移动开发技术"/>
+	   	   	   	   	   	   <test name="社会化媒体营销">
+	    	<parameter name="courseName" value="社会化媒体营销"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   <test name="语言程序设计">
-	    	<parameter name="courseName" value="语言程序设计"/>
+	   	   	   	   	   	   <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   	   	   <test name="框架技术">
-	    	<parameter name="courseName" value="框架技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   <test name="编程算法">
-	    	<parameter name="courseName" value="编程算法"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   <test name="数据结构">
-	    	<parameter name="courseName" value="数据结构"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   	   	   <test name="面向对象方法精粹">
-	    	<parameter name="courseName" value="面向对象方法精粹"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   	   	   	   	   	   	  
 </suite>
