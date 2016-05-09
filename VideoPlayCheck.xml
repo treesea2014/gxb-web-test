@@ -16,6 +16,10 @@
 	    	<parameter name="courseName" value="数字化营销入门"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
+	   	   	   	   <test name="CompTIA">
+	    	<parameter name="courseName" value="CompTIA"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   	   	   	   	   <test name="百度凤巢沙盒系统营销实践">
 	    	<parameter name="courseName" value="百度凤巢沙盒系统营销实践"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
