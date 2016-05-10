@@ -31,6 +31,7 @@ public class CoursePage extends Page {
 	@FindBy(xpath = "//div[@class='caption']/div/h2")
 	public List<WebElement> courseNameList;
 	public String courseNameListXpath ="//div[@class='caption']/div/h2";
+
 	/**
 	 * 下一页
 	 */
@@ -84,19 +85,19 @@ public class CoursePage extends Page {
 	/**
 	 * 课程查询输入框
 	 */
-	@FindBy(xpath = "//*[@id='keyword']")
+	@FindBy(xpath = "//div[@class='searchCourse']/div[@class='search']/input")
 	public WebElement searchInput;
 
 	/**
 	 * 查询
 	 */
-	@FindBy(xpath = "//*[@id='searchSubmitBtn']")
+	@FindBy(xpath = "//div[@class='searchCourse']/div[@class='search']/i")
 	public WebElement searchBth;
 
 	/**
 	 * 查询
 	 */
-	@FindBy(xpath = "//div[@class='course-content']/h1")
+	@FindBy(xpath = "(//div[@class='caption']/div/h2)[1]")
 	public WebElement searchResult;
 
 }

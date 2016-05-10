@@ -43,9 +43,9 @@ public class CoursePlayStep extends AbstractStep {
 	 * 
 	 * @throws Exception
 	 */
-	@Parameters({"baseUrl","loginName","password","courseName" })
+	@Parameters({"baseUrl","loginName","password","courseName","searchText" })
 	@Test(description = "查看视频播放 " , priority = 1)
-	public void testVideoPaly(String baseUrl,String loginName,String password,String courseName) throws Exception {
+	public void testVideoPaly(String baseUrl,String loginName,String password,String courseName,boolean searchText) throws Exception {
 		try {
 			userLogin(baseUrl,loginName, password);
 			commonCourseLearnAct = new CommonCourseLearnAct(driver);
@@ -54,9 +54,19 @@ public class CoursePlayStep extends AbstractStep {
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
 			commonCourseLearnAct.pause(3);
+
 			//搜索课程
-			commonCourseLearnAct.searchCourseNameByPerPage(courseName);
-			commonCourseLearnAct.snapshot();
+			if(searchText)
+			{
+				commonCourseLearnAct.searchCourseNameBySearchText(courseName);
+				commonCourseLearnAct.snapshot();
+			}
+		   else
+			{
+				commonCourseLearnAct.searchCourseNameByPerPage(courseName);
+				commonCourseLearnAct.snapshot();
+			}
+
 			//点击开始/继续学习clickStartStudy
 			commonCourseLearnAct.clickStartStudy();
 			commonCourseLearnAct.pause(1);

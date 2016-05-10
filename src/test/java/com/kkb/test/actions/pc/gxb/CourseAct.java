@@ -133,5 +133,23 @@ public class CourseAct  extends IndexAct{
 	}
 
 
-
+	/***
+	 * 根据课程名称搜索
+	 * @param searchcourseName
+	 */
+	public void searchCourseNameBySearchText(String searchcourseName){
+		logger.info("搜索框内输入课程名称：{}",searchcourseName);
+		String courseName = coursePage.searchInput.getText();
+		type(coursePage.searchInput,searchcourseName);
+		this.pause(5);
+		click(coursePage.searchBth);
+		logger.info("已找到:{}=={}",searchcourseName,courseName);
+		this.pause(5);
+		boolean flag = this.isElementExist("(//div[@class='caption']/div/h2)[1]", 5);
+		if(flag){
+			click(coursePage.searchResult);
+		}else{
+			Assert.fail("课程不存在：【"+searchcourseName + "】");
+		}
+	}
 }
