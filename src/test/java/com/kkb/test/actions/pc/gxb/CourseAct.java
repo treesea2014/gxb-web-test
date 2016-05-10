@@ -122,7 +122,8 @@ public class CourseAct  extends IndexAct{
 				logger.info("查找课程名称:{}=={}",searchCourseName,courseName);
 				if(courseName.toString().trim().contains(searchCourseName.trim())){
 					logger.info("已找到:{}=={}",searchCourseName,courseName);
-					click(driver.findElement(By.xpath("(//div[@class='caption guide']/div/h4)["+(i+1)+"]")));
+//					click(driver.findElement(By.xpath("(//div[@class='caption guide']/div/h4)["+(i+1)+"]")));
+					click(driver.findElement(By.xpath("(//div[@class='caption']/div/h2)["+(i+1)+"]")));
 					found = true;
 					break;
 				}

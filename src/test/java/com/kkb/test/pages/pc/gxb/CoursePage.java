@@ -24,76 +24,79 @@ public class CoursePage extends Page {
 	 */
 	@FindBy(xpath = "//div[@class='courseInfo']/div/h3")
 	public WebElement headCourseInfo;
-	
+
 	/**
 	 * 课程名称
 	 */
-	@FindBy(xpath = "//div[@class='caption guide']/div/h4")
+	@FindBy(xpath = "//div[@class='caption']/div/h2")
 	public List<WebElement> courseNameList;
-	public String courseNameListXpath ="//div[@class='caption guide']/div/h4";
+	public String courseNameListXpath ="//div[@class='caption']/div/h2";
 	/**
 	 * 下一页
 	 */
-	@FindBy(xpath = "//span[text()='下一页']")
+//	@FindBy(xpath = "//span[text()='下一页']")
+	@FindBy(xpath = "//*[@id='pagination']/div/ul/li[text()='下一页']")
 	public WebElement nextPage;
 
 
 	/**
 	 * 判断下一页是否可以点击
 	 */
-	public String nextPageIsEnableXpath = "//*[@class='pagination']/li[last()]";
+	//public String nextPageIsEnableXpath = "//*[@class='pagination']/li[last()]";
+
+	public String nextPageIsEnableXpath = "//*[@id='pagination']/div/ul/li[last()]";
 	/**
 	 * 课程类型
 	 */
 	@FindBy(xpath = "//div[@class='course-type']")
 	public List<WebElement> courseType;
-	
+
 	/**
 	 * 课程信息
 	 */
 	@FindBy(xpath = "//div[@class='course-info']")
 	public List<WebElement> bodyCourseInfo;
-	
+
 	/**
 	 * 课程简介
 	 */
 	@FindBy(xpath = "//div[@class='course-intro']")
 	public List<WebElement> bodyCoursentro;
-	
+
 	/**
 	 * 课程星级评价
 	 */
 	@FindBy(xpath = "//div[@class='course-review']/span[1]/span[2]")
 	public List<WebElement> bodyCourseStars;
-	
+
 	/**
 	 * 参与人数
 	 */
 	@FindBy(xpath = "//div[@class='course-review']/span[2]/span")
 	public List<WebElement> bodyCoursePeoples;
-	
+
 	/**
 	 * 合作课程信息
 	 */
 	@FindBy(xpath = "//div[@class='row']/div/a/div/div[2]")
 	public List<WebElement> cooperationCourse;
-	
+
 	/**
 	 * 课程查询输入框
 	 */
 	@FindBy(xpath = "//*[@id='keyword']")
 	public WebElement searchInput;
-	
+
 	/**
 	 * 查询
 	 */
 	@FindBy(xpath = "//*[@id='searchSubmitBtn']")
 	public WebElement searchBth;
-	
+
 	/**
 	 * 查询
 	 */
 	@FindBy(xpath = "//div[@class='course-content']/h1")
 	public WebElement searchResult;
-	
+
 }
