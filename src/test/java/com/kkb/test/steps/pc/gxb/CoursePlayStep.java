@@ -67,7 +67,7 @@ public class CoursePlayStep extends AbstractStep {
 			commonCourseLearnAct.snapshot();
 			//获取所有章节
 			String errorCourseList = commonCourseLearnAct.checkVideoPlay(courseName.trim());
-			;
+
 			if(errorCourseList.length()>4){
 				logger.info(courseName+"出错的视频有：");
 				logger.info(errorCourseList);

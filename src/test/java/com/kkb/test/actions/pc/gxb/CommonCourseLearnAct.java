@@ -366,9 +366,12 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
         List<WebElement> unitIdList = courseLearnPage.unitIdList;
         //获取第一级,逐个张开
         List<WebElement> chapterList = courseLearnPage.chapterList;
+//        click(courseLearnPage.onlyChapter);
+        logger.info("总共有多少个======" + chapterList.size());
+
         int unitKey = 0;
         for (WebElement e1 : chapterList) {
-            //logger.info("点击第一级:{}",e1.getText());
+            logger.info("点击第一级:{}",e1.getText());
             e1.click();
             String unitId = unitIdList.get(unitKey++).getAttribute("data-unit-id");
             //获取第二级,逐个张开

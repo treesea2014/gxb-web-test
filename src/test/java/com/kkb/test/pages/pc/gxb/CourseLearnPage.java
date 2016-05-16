@@ -56,10 +56,14 @@ public class CourseLearnPage extends Page {
 	/**
 	 * 1级所有章节名称
 	 */
-	@FindBy(xpath = "//div[@class='unit-list']/h4[@class='gxb-cur-point']/span/parent::h4")
+//	@FindBy(xpath = "//div[@class='unit-list']/h4[@class='gxb-cur-point']/span/parent::h4")
+	@FindBy(xpath = "//div[@class='unit-list lxy-item-border']/h4[@class='gxb-cur-point lxy-list-css lxy-h4-fix']/span/parent::h4")
 	public List<WebElement> chapterList;
 	
-	public String chapterListXpath = "//div[@class='unit-list']/h4[@class='gxb-cur-point']/span/parent::h4";
+	public String chapterListXpath = "//*[@id='unitList']/div/h4";
+
+	@FindBy(xpath = "//*[@id='unitList']/div[4]/h4")
+	public WebElement onlyChapter;
 
 
 	/**
@@ -73,23 +77,25 @@ public class CourseLearnPage extends Page {
 	/**
 	 * 第一级下所有的unitId
 	 */
-	@FindBy(xpath = "//div[@class='unit-list']")
+//	@FindBy(xpath = "//div[@class='unit-list']")
+	@FindBy(xpath = "//div[@class='unit-list lxy-item-border']")
 	public List<WebElement> unitIdList;
 
 	/**
 	 * 2级所有章节名称
 	 */
-	@FindBy(xpath = "//div[@class='unit-list']/div[@style='display: block;']/h4")
+	@FindBy(xpath = "//div[@class='unit-list lxy-item-border']/div[@style='display: block;']/h4")
 	public List<WebElement> chapterList2;
 
-	public String chapterList2Xpath = "//div[@class='unit-list']/div[@style='display: block;']/h4";
+	public String chapterList2Xpath = "//div[@class='unit-list lxy-item-border']/div[@class='unit-list item-list-dis']/h4";
 
 	/**
 	 * 3级所有章节下的video类型的item
 	 */
-	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']")
+//	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']")
+	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block']/li/h5/a[@content_type='Video']")
 	public List<WebElement> chapterList3;
-	public String chapterList3Xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']";
+	public String chapterList3Xpath = "//*[@id='unitList']/div/div/ul[@style='display: block']/li/h5/a[@content_type='Video']";
 
 	/**
 	 * 视频播放页面
