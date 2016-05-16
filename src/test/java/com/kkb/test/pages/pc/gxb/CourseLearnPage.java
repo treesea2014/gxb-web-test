@@ -62,9 +62,6 @@ public class CourseLearnPage extends Page {
 	
 	public String chapterListXpath = "//*[@id='unitList']/div/h4";
 
-	@FindBy(xpath = "//*[@id='unitList']/div[4]/h4")
-	public WebElement onlyChapter;
-
 
 	/**
 	 * 1级章打开的

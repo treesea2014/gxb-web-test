@@ -366,12 +366,10 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
         List<WebElement> unitIdList = courseLearnPage.unitIdList;
         //获取第一级,逐个张开
         List<WebElement> chapterList = courseLearnPage.chapterList;
-//        click(courseLearnPage.onlyChapter);
-        logger.info("总共有多少个======" + chapterList.size());
 
         int unitKey = 0;
         for (WebElement e1 : chapterList) {
-            logger.info("点击第一级:{}",e1.getText());
+//            logger.info("点击第一级:{}",e1.getText());
             e1.click();
             String unitId = unitIdList.get(unitKey++).getAttribute("data-unit-id");
             //获取第二级,逐个张开
@@ -386,20 +384,15 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
                         String[] item = {courseName + "=" + e1.getText() + "=" + e2.getText() + "=" + e3.getText(),
                                 e3.getAttribute("chapter_id"),
                                 unitId};
-                        //logger.info("item:{}, {} ,{}",item[0],item[1] ,item[2]);
-                        //e3.click();
                         videoMap.put(key++, item);
                     }
                 }
 
                 //关闭第一级
-                //logger.info("关闭第二级:{}",e2.getText());
                 click(e2);
             }
             //关闭第一级
-            //logger.info("关闭第一级:{}",e1.getText());
             click(e1);
-            //logger.info("videoMap:{}",videoMap);
         }
         return videoMap;
     }
