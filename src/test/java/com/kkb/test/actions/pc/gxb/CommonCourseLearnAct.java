@@ -422,7 +422,7 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
             this.mouseAction(courseLearnPage.videoPlay);
             if (isElementExist(courseLearnPage.playRightControlbar, 1)) {
                 String videoPlayTime = courseLearnPage.videoPlayTime.getText();
-                logger.info("videoPlayTime:{}", videoPlayTime);
+//                logger.info("videoPlayTime:{}", videoPlayTime);
                 if (videoPlayTime.length() != 0) {
                     String[] strData = videoPlayTime.split(":");
                     String playTime = strData[0]+ strData[1];
