@@ -357,48 +357,34 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
         TreeMap<Integer, String[]> videoMap = new TreeMap<Integer, String[]>();
         int key = 0;
 
-        if (isElementExist(courseLearnPage.activeChapterXpath, 10)) {
-            //点击已展开的列表,便于统一遍历
-            logger.info("点击已展开的列表");
-            click(courseLearnPage.ActiveChapter);
-        }
-        //获取所有的unitId
-        List<WebElement> unitIdList = courseLearnPage.unitIdList;
-        //获取第一级,逐个张开
-        List<WebElement> chapterList = courseLearnPage.chapterList;
-
-        int unitKey = 0;
-        for (WebElement e1 : chapterList) {
-            logger.info("点击第一级:{}",e1.getText());
+        //如果有展示的列表点击收缩
         if (isElementPresent(courseLearnPage.ActiveChapter)) {
             //点击已展开的列表,便于统一遍历
             logger.info("点击已展开的列表");
             click(courseLearnPage.ActiveChapter);
         }
+
+        //获取所有的unitId
+        List<WebElement> unitIdList = courseLearnPage.unitIdList;
+        //获取第一级,逐个张开
+        List<WebElement> chapterList = courseLearnPage.chapterList;
+        
+        int unitKey = 0;
+        for (WebElement e1 : chapterList) {
+            logger.info("点击第一级:{}",e1.getText());
             e1.click();
             String unitId = unitIdList.get(unitKey++).getAttribute("data-unit-id");
-            //获取第二级,逐个张开
-            List<WebElement> chapterList2 = courseLearnPage.chapterList2;
-            for (WebElement e2 : chapterList2) {
-//                logger.info("点击第二级:{}", e2.getText());
-                e2.click();
                 //获取第三级中的video视频,逐个存入map
-                if (isElementExist(courseLearnPage.chapterList3Xpath, 15)) {
+                if (isElementExist(courseLearnPage.chapterList3Xpath, 1)) {
                     List<WebElement> chapterList3 = courseLearnPage.chapterList3;
                     for (WebElement e3 : chapterList3) {
-                        if(e3.getText().length()>0){
-//                            logger.info("第一级========" + e1.getText() + "====第二级======" + e2.getText() + "===第三级===" + e3.getText());
-                            String[] item = {courseName + "=" + e1.getText() + "=" + e2.getText() + "=" + e3.getText(),
-                                    e3.getAttribute("chapter_id"),
-                                    unitId};
-                            videoMap.put(key++, item);
-                        }
+                        String[] item = {courseName + "=" + e1.getText() + "=" + e3.getText(),
+                                e3.getAttribute("chapter_id"),
+                                unitId};
+                        videoMap.put(key++, item);
                     }
                 }
 
-                //关闭第一级
-                click(e2);
-            }
             //关闭第一级
             click(e1);
         }

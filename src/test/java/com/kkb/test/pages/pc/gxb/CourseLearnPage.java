@@ -90,9 +90,9 @@ public class CourseLearnPage extends Page {
 	 * 3级所有章节下的video类型的item
 	 */
 //	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block;']/li/h5/a[@content_type='Video']")
-	@FindBy(xpath = "//*[@id='unitList']/div/div/ul[@style='display: block']/li/h5/a[@content_type='Video']")
+	@FindBy(xpath = "//*[@id='unitList']/div/div[@style='display: block;']/ul/li/h5/a[@content_type='Video']")
 	public List<WebElement> chapterList3;
-	public String chapterList3Xpath = "//*[@id='unitList']/div/div/ul[@style='display: block']/li/h5/a[@content_type='Video']";
+	public String chapterList3Xpath = "//*[@id='unitList']/div/div[@style='display: block;']/ul/li/h5/a[@content_type='Video']";
 
 	/**
 	 * 视频播放页面
