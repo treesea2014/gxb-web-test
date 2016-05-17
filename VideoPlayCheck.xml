@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="上海奉贤中等专业学校" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="四川职业技术学院计算机科学系MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,29 +8,33 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://fxzz.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="18817500532"/>
+	   	    	<parameter name="baseUrl" value="http://scvtcjkx.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13880763371"/>
 	   	    	<parameter name="password" value="123456"/>
 	   	   	   	   
 	   	   	   	   	   
-	   <test name="恋爱与青春健康">
-	    	<parameter name="courseName" value="恋爱与青春健康"/>
+	   <test name="静态网页技术">
+	    	<parameter name="courseName" value="静态网页技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	  <test name="国学素养">
-	    	<parameter name="courseName" value="国学素养"/>
+	  <test name="Java核心开发技术">
+	    	<parameter name="courseName" value="Java核心开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	  <test name="军事理论">
-	    	<parameter name="courseName" value="军事理论"/>
+	   	  <test name="C面向对象程序设计">
+	    	<parameter name="courseName" value="C面向对象程序设计"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	  <test name="安全教育">
-	    	<parameter name="courseName" value="安全教育"/>
+	   	  <test name="MySQL数据库基础">
+	    	<parameter name="courseName" value="MySQL数据库基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	  <test name="心理健康">
-	    	<parameter name="courseName" value="心理健康"/>
+	   	  <test name="MySQL数据库高级技术">
+	    	<parameter name="courseName" value="MySQL数据库高级技术"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	  <test name="移动开发技术">
+	    	<parameter name="courseName" value="移动开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
