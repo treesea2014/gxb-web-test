@@ -37,4 +37,24 @@
 	    	<parameter name="courseName" value="移动开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
+	   <test name="PHP语言程序设计">
+	    	<parameter name="courseName" value="PHP语言程序设计"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="ThinkPHP框架技术">
+	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="编程算法">
+	    	<parameter name="courseName" value="编程算法"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="数据结构">
+	    	<parameter name="courseName" value="数据结构"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="面向对象方法精粹">
+	    	<parameter name="courseName" value="面向对象方法精粹"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
