@@ -12,24 +12,9 @@
 	   	    	<parameter name="loginName" value="13880763371"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	   	   	   	   <test name="军事理论">
-	    	<parameter name="courseName" value="军事理论"/>
+	   	   	   	   	   <test name="创业基本功与精益创业方法论">
+	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   	   <test name="形势与政策">
-	    	<parameter name="courseName" value="形势与政策"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   <test name="创业基本功与精益方法论">
-	    	<parameter name="courseName" value="创业基本功与精益方法论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	   <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   	   	   	   	   
 </suite>
