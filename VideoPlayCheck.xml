@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="无锡商业职业技术学院创业教育学院" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="淮阴工学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,36 +8,32 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://wxic.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://hyit.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="13851742182"/>
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 
-	   <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	  	   <test name="搜索引擎">
-	    	<parameter name="courseName" value="搜索引擎"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="互联网营销全攻略">
-	    	<parameter name="courseName" value="互联网营销全攻略"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="打造无敌商业计划书">
+	   <test name="打造无敌商业计划书">
 	    	<parameter name="courseName" value="打造无敌商业计划书"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	  	   <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
+	   	   <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="安全教育">
+	    	<parameter name="courseName" value="安全教育"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="心理健康">
+	    	<parameter name="courseName" value="心理健康"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
