@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="武汉商学院在线学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="淮阴工学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,9 +8,9 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://whcsc.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="13379209092"/>
-	   	    	<parameter name="password" value="123456"/>
+	   	    	<parameter name="baseUrl" value="http://hyit.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13851742182"/>
+	   	    	<parameter name="password" value="gaoxiaobang"/>
 
 	   <test name="创业启蒙与案例分享">
 	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
