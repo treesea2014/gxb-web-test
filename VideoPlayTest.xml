@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="山西工商学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="常州大学" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,9 +8,9 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://sxtbu.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="13379209092"/>
-	   	    	<parameter name="password" value="123456"/>
+	   	    	<parameter name="baseUrl" value="http://cczu.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13851742182"/>
+	   	    	<parameter name="password" value="gaoxiaobang"/>
 
 	   <test name="创业启蒙与案例分享">
 	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
@@ -20,13 +20,20 @@
 	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="国学素养">
-	    	<parameter name="courseName" value="国学素养"/>
+	   	   <test name="计算思维">
+	    	<parameter name="courseName" value="计算思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
+	   	   <test name="移动互联网思维">
+	    	<parameter name="courseName" value="移动互联网思维"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	 
+	   	   	   <test name="创业基础">
+	    	<parameter name="courseName" value="创业基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   <test name="创新思维开发与落地">
+	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
