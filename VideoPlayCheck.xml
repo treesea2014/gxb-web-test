@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="淮阴工学院" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="四川文轩职业学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,16 +8,24 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://hyit.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="13851742182"/>
-	   	    	<parameter name="password" value="gaoxiaobang"/>
+	   	    	<parameter name="baseUrl" value="http://scwxzyxy.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13880763371"/>
+	   	    	<parameter name="password" value="123456"/>
 
-	   <test name="心理健康">
-	    	<parameter name="courseName" value="心理健康"/>
+	   <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
+	   <test name="恋爱与青春健康">
+	    	<parameter name="courseName" value="恋爱与青春健康"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   <test name="演讲口才与公众表达">
+	    	<parameter name="courseName" value="演讲口才与公众表达"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   <test name="创业基础">
+	    	<parameter name="courseName" value="创业基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
