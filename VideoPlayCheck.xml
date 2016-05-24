@@ -12,8 +12,36 @@
 	   	    	<parameter name="loginName" value="15910501807"/>
 	   	    	<parameter name="password" value="ttcui01"/>
 
-	   <test name="人体成分分析仪">
-	    	<parameter name="courseName" value="人体成分分析仪"/>
+	   <test name="心肺功能(ETT)">
+	    	<parameter name="courseName" value="心肺功能(ETT)"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="超声骨密度仪">
+	    	<parameter name="courseName" value="超声骨密度仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="平衡仪">
+	    	<parameter name="courseName" value="平衡仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="动脉硬化检测仪">
+	    	<parameter name="courseName" value="动脉硬化检测仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="成都市第二届全民健身运动会">
+	    	<parameter name="courseName" value="成都市第二届全民健身运动会"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   <test name="心肺功能(YMCA)">
+	    	<parameter name="courseName" value="心肺功能(YMCA)"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   <test name="全民健身公共服务体系建设">
+	    	<parameter name="courseName" value="全民健身公共服务体系建设"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   <test name="健康体适能中心工作站">
+	    	<parameter name="courseName" value="健康体适能中心工作站"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	  	  
