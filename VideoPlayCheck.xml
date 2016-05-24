@@ -13,28 +13,25 @@
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 
 	
-	   	   <test name="打造无敌商业计划书">
-	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   	   <test name="心理健康">
+	    	<parameter name="courseName" value="心理健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="搜索引擎">
-	    	<parameter name="courseName" value="搜索引擎"/>
+	   	   <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="数字化营销入门">
-	    	<parameter name="courseName" value="数字化营销入门"/>
+	   	   	   <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="互联网营销全攻略">
-	    	<parameter name="courseName" value="互联网营销全攻略"/>
+	   	   	   	   <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="信息安全意识与网络安全">
-	    	<parameter name="courseName" value="信息安全意识与网络安全"/>
+	   	   	   	   <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="互联网金融零突破">
-	    	<parameter name="courseName" value="互联网金融零突破"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+
 </suite>
