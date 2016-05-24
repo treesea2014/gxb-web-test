@@ -13,24 +13,8 @@
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 
 	
-	   	   <test name="心理健康">
+	   <test name="心理健康">
 	    	<parameter name="courseName" value="心理健康"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="大学生职业生涯规划">
-	    	<parameter name="courseName" value="大学生职业生涯规划"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   <test name="自我发展与创业指导">
-	    	<parameter name="courseName" value="自我发展与创业指导"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   <test name="国学素养">
-	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
