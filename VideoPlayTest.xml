@@ -12,8 +12,8 @@
 	   	    	<parameter name="loginName" value="15910501807"/>
 	   	    	<parameter name="password" value="ttcui01"/>
 
-	   <test name="健康体适能综合评估和锻炼指导报告">
-	    	<parameter name="courseName" value="健康体适能综合评估和锻炼指导报告"/>
+	   <test name="健康体适能综合评估报告和锻炼指导报告">
+	    	<parameter name="courseName" value="健康体适能综合评估报告和锻炼指导报告"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	  	   <test name="国民体质测试仪">
