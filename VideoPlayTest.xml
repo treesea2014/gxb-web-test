@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="常州大学" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="奥美体育大学" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,32 +8,40 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://cczu.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="13851742182"/>
-	   	    	<parameter name="password" value="gaoxiaobang"/>
+	   	    	<parameter name="baseUrl" value="http://sports.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="15910501807"/>
+	   	    	<parameter name="password" value="ttcui01"/>
 
-	   <test name="从零起步学软文营销">
-	    	<parameter name="courseName" value="从零起步学软文营销"/>
+	   <test name="健康体适能综合评估和锻炼指导报告">
+	    	<parameter name="courseName" value="健康体适能综合评估和锻炼指导报告"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	  	   <test name="数据库高级技术">
-	    	<parameter name="courseName" value="数据库高级技术"/>
+	  	   <test name="国民体质测试仪">
+	    	<parameter name="courseName" value="国民体质测试仪"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="语言程序设计">
-	    	<parameter name="courseName" value="语言程序设计"/>
+	   	   <test name="运动风险运动能力报告">
+	    	<parameter name="courseName" value="运动风险运动能力报告"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="形势与政策">
-	    	<parameter name="courseName" value="形势与政策"/>
+	   	   <test name="运动处方与运动指导">
+	    	<parameter name="courseName" value="运动处方与运动指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="军事理论">
-	    	<parameter name="courseName" value="军事理论"/>
+	   	   	   <test name="健康体适能全套测评的意义">
+	    	<parameter name="courseName" value="健康体适能全套测评的意义"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   <test name="安全教育">
-	    	<parameter name="courseName" value="安全教育"/>
+	   <test name="课题数据采集和规范">
+	    	<parameter name="courseName" value="课题数据采集和规范"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="M8001综合评估报告和锻炼原则报告">
+	    	<parameter name="courseName" value="M8001综合评估报告和锻炼原则报告"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   <test name="M6001综合评估报告和锻炼原则报告">
+	    	<parameter name="courseName" value="M6001综合评估报告和锻炼原则报告"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
