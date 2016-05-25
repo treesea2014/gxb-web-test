@@ -12,36 +12,36 @@
 	   	    	<parameter name="loginName" value="13851742182"/>
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 
-	   <test name="大数据营销与创新">
-	    	<parameter name="courseName" value="大数据营销与创新"/>
+	   <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	  	   <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	  	   <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   	   <test name="形势与政策">
+	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="计算思维">
-	    	<parameter name="courseName" value="计算思维"/>
+	   	   <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	   	   	   <test name="安全教育">
+	    	<parameter name="courseName" value="安全教育"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
+	   <test name="心理健康">
+	    	<parameter name="courseName" value="心理健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="打造无敌商业计划书">
-	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   	   <test name="计算机文化基础">
+	    	<parameter name="courseName" value="计算机文化基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   	   <test name="恋爱与青春健康">
+	    	<parameter name="courseName" value="恋爱与青春健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
