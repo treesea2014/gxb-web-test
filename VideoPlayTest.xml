@@ -12,6 +12,11 @@
 	   	    	<parameter name="loginName" value="13851742182"/>
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 
+	   <test name="从零起步学软文营销">
+	    	<parameter name="courseName" value="从零起步学软文营销"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
 	   <test name="就业指导">
 	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
