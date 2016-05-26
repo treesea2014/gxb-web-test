@@ -92,9 +92,9 @@ public class CourseAct  extends IndexAct{
 					Assert.fail("课程不存在：【"+searchcourseName);
 					break;
 				}else{
-					pause(2);
+					pause(3);
 					click(coursePage.nextPage);
-					pause(1);
+					pause(2);
 				}
 			}else {
 				//找到了就break

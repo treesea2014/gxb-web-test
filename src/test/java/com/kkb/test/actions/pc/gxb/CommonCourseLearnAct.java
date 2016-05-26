@@ -421,7 +421,7 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
                     String[] strData = videoPlayTime.split(":");
                     String playTime = strData[0]+ strData[1];
                     if (playTime.equals("0000")) {
-                        logger.error("检查课程,视频播放时间:{}", videoPlayTime);
+                        logger.error("检查课程,视频播放时间有误!:{}", videoPlayTime);
                     }
 
                     logger.info("videoPlayTime:{},playTime:{}", videoPlayTime, playTime);
