@@ -51,7 +51,8 @@ public class CourseDetailsPage extends Page {
 	/**
 	 * 开始/继续学习
 	 */
-	@FindBy(xpath = "//a[@class='start-study ng-scope']/p")
+//	@FindBy(xpath = "//a[@class='start-study ng-scope']/p")
+	@FindBy(xpath = "//div[@class='vedioRight']/div[@class='r_right']/p")
 	public WebElement startStudy;
 
 	/**

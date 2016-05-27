@@ -17,7 +17,8 @@ public class LoginPage extends Page {
         super(webDriver);
     }
 
-    @FindBy(linkText = "登录/注册")
+//    @FindBy(linkText = "登录/注册")
+    @FindBy(xpath = "//a[@class='gxb_signin']")
     public WebElement tologinBtn;
 
     /**

@@ -28,20 +28,24 @@ public class CoursePage extends Page {
 	/**
 	 * 课程名称
 	 */
-	@FindBy(xpath = "//div[@class='caption guide']/div/h4")
+//	@FindBy(xpath = "//div[@class='caption guide']/div/h4")
+	@FindBy(xpath = "//div[@class='caption']/div/h2")
 	public List<WebElement> courseNameList;
-	public String courseNameListXpath ="//div[@class='caption guide']/div/h4";
+    public String courseNameListXpath ="//div[@class='caption']/div/h2";
+
 	/**
 	 * 下一页
 	 */
-	@FindBy(xpath = "//span[text()='下一页']")
+//	@FindBy(xpath = "//span[text()='下一页']")
+	@FindBy(xpath = "//*[@id='pagination']/div/ul/li[text()='下一页']")
 	public WebElement nextPage;
 
 
 	/**
 	 * 判断下一页是否可以点击
 	 */
-	public String nextPageIsEnableXpath = "//*[@class='pagination']/li[last()]";
+//	public String nextPageIsEnableXpath = "//*[@class='pagination']/li[last()]";
+	public String nextPageIsEnableXpath = "//*[@id='pagination']/div/ul/li[last()]";
 	/**
 	 * 课程类型
 	 */
