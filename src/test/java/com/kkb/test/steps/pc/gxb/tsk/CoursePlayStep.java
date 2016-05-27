@@ -53,7 +53,7 @@ public class CoursePlayStep extends LoginStep {
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
 			//搜索课程
-			commonCourseLearnAct.inputSearchContent(courseName);
+			commonCourseLearnAct.searchCourseNameBySearchText(courseName);
 			commonCourseLearnAct.snapshot();
 			System.out.println(driver.getCurrentUrl());
 			//点击第一门课程

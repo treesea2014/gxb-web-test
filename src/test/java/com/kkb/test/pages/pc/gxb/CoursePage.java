@@ -85,19 +85,19 @@ public class CoursePage extends Page {
 	/**
 	 * 课程查询输入框
 	 */
-	@FindBy(xpath = "//*[@id='keyword']")
+	@FindBy(xpath = "//div[@class='search-box']/input")
 	public WebElement searchInput;
 	
 	/**
 	 * 查询
 	 */
-	@FindBy(xpath = "//*[@id='searchSubmitBtn']")
+	@FindBy(xpath = "//div[@class='search-box']/i")
 	public WebElement searchBth;
 	
 	/**
-	 * 查询
+	 * 点击搜索的课程
 	 */
-	@FindBy(xpath = "//div[@class='course-content']/h1")
+	@FindBy(xpath = "(//div[@class='caption']/div/h2)[1]")
 	public WebElement searchResult;
 	
 }

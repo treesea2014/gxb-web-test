@@ -47,7 +47,7 @@ public class QuizCheckStep extends AbstractStep {
 			//点击课程bar
 			commonCourseQuizAct.clickCourseBar();
 			//搜索课程
-			commonCourseQuizAct.inputSearchContent(courseName);
+			commonCourseQuizAct.searchCourseNameBySearchText(courseName);
 			commonCourseQuizAct.snapshot();
 			//点击开始/继续学习clickStartStudy
 			commonCourseQuizAct.clickStartStudy();

@@ -60,18 +60,18 @@ public class CourseAct  extends IndexAct{
 		return firstCourse ;
 	}
 	
-	public void inputSearchContent(String name){
-		logger.info("搜索框内输入课程名称：{}",name);
-		type(coursePage.searchInput,name);
-		logger.info("点击搜索",name);
-		this.pause(5);
+	public void searchCourseNameBySearchText(String courseName){
+		logger.info("搜索框内输入课程名称：{}",courseName);
+		type(coursePage.searchInput,courseName);
+		logger.info("点击搜索",courseName);
+		this.pause(2);
 		click(coursePage.searchBth);
-		this.pause(5);
-		boolean flag = this.isElementExist("//div[@class='course-content']/h1", 5);
+		this.pause(2);
+		boolean flag = this.isElementExist("(//div[@class='caption']/div/h2)[1]", 2);
 		if(flag){
 			click(coursePage.searchResult);
 		}else{
-			Assert.fail("课程不存在：【"+name);
+			Assert.fail("课程不存在：【"+courseName+"】");
 		}
 	}
 
@@ -130,7 +130,4 @@ public class CourseAct  extends IndexAct{
 		}
 		return found;
 	}
-
-
-
 }

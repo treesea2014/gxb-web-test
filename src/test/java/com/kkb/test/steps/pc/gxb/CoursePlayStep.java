@@ -54,9 +54,14 @@ public class CoursePlayStep extends AbstractStep {
 			//点击课程
 			commonCourseLearnAct.clickCourseBar();
 			commonCourseLearnAct.pause(3);
-			//搜索课程
-			commonCourseLearnAct.searchCourseNameByPerPage(courseName);
+			//根据搜索条件搜索课程
+			commonCourseLearnAct.searchCourseNameBySearchText(courseName);
 			commonCourseLearnAct.snapshot();
+
+			//根据分页搜索课程
+//			commonCourseLearnAct.searchCourseNameByPerPage(courseName);
+//			commonCourseLearnAct.snapshot();
+
 			//点击开始/继续学习clickStartStudy
 			commonCourseLearnAct.clickStartStudy();
 			commonCourseLearnAct.pause(1);
