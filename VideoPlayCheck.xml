@@ -12,19 +12,7 @@
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="080930"/>
 	   	    	
-	   <test name="搜索引擎优化">
-	    	<parameter name="courseName" value="搜索引擎优化"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 
-	   <test name="C面向对象程序设计">
-	    	<parameter name="courseName" value="C面向对象程序设计"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   <test name="MySQL数据库基础">
-	    	<parameter name="courseName" value="MySQL数据库基础"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 	   <test name="MySQL数据库高级技术">
 	    	<parameter name="courseName" value="MySQL数据库高级技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
