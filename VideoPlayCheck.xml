@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="四川师范大学计算机科学学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="淮阴工学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,26 +8,13 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://sicnucs.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
-	   	    	<parameter name="password" value="080930"/>
+	   	    	<parameter name="baseUrl" value="http://hyit.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13851742182"/>
+	   	    	<parameter name="password" value="gaoxiaobang"/>
 	   	    	
 
-	   <test name="MySQL数据库高级技术">
-	    	<parameter name="courseName" value="MySQL数据库高级技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="移动开发技术">
-	    	<parameter name="courseName" value="移动开发技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   <test name="PHP语言程序设计">
-	    	<parameter name="courseName" value="PHP语言程序设计"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-
-	   <test name="ThinkPHP框架技术">
-	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
+	   <test name="从校园到职场">
+	    	<parameter name="courseName" value="从校园到职场"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
