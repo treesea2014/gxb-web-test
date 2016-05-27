@@ -20,8 +20,8 @@
 	    	<parameter name="courseName" value="数据结构"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="面向对象方法精粹">
-	    	<parameter name="courseName" value="面向对象方法精粹"/>
+	   	   <test name="R语言编程技术">
+	    	<parameter name="courseName" value="R语言编程技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   <test name="云计算精要">
