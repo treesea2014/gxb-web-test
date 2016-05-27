@@ -12,29 +12,29 @@
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="080930"/>
 
-	   <test name="打造无敌商业计划书">
-	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   <test name="C面向对象程序设计">
+	    	<parameter name="courseName" value="C面向对象程序设计"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   <test name="互联网金融零突破">
-	    	<parameter name="courseName" value="互联网金融零突破"/>
+	   <test name="MySQL数据库基础">
+	    	<parameter name="courseName" value="MySQL数据库基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   <test name="从零起步学软文营销">
-	    	<parameter name="courseName" value="从零起步学软文营销"/>
+	   <test name="MySQL数据库高级技术">
+	    	<parameter name="courseName" value="MySQL数据库高级技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
+	   	   <test name="移动开发技术">
+	    	<parameter name="courseName" value="移动开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   <test name="百度凤巢沙盒系统营销实践">
-	    	<parameter name="courseName" value="百度凤巢沙盒系统营销实践"/>
+	   <test name="PHP语言程序设计">
+	    	<parameter name="courseName" value="PHP语言程序设计"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
-	   <test name="百度凤巢沙盒系统实习">
-	    	<parameter name="courseName" value="百度凤巢沙盒系统实习"/>
+	   <test name="ThinkPHP框架技术">
+	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 
