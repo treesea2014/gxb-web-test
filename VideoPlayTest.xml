@@ -12,37 +12,29 @@
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="080930"/>
 
-	   <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   <test name="搜索引擎优化技术">
+	    	<parameter name="courseName" value="搜索引擎优化技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	  	   <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	  	   <test name="搜索引擎营销">
+	    	<parameter name="courseName" value="搜索引擎营销"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="计算思维">
-	    	<parameter name="courseName" value="计算思维"/>
+	   	   <test name="社会化媒体营销">
+	    	<parameter name="courseName" value="社会化媒体营销"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	   	   <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
+	   	   	   <test name="静态网页技术">
+	    	<parameter name="courseName" value="静态网页技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   <test name="Java核心开发技术">
+	    	<parameter name="courseName" value="Java核心开发技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="打造无敌商业计划书">
-	    	<parameter name="courseName" value="打造无敌商业计划书"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="搜索引擎">
-	    	<parameter name="courseName" value="搜索引擎"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-
+	   	  
 </suite>
