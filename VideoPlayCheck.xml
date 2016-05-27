@@ -42,10 +42,5 @@
 	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   
-	   	   <test name="ThinkPHP框架技术">
-	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 
 </suite>
