@@ -16,10 +16,7 @@
 	    	<parameter name="courseName" value="搜索引擎优化"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="C面向对象程序设计">
-	    	<parameter name="courseName" value="C面向对象程序设计"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+
 	   <test name="C面向对象程序设计">
 	    	<parameter name="courseName" value="C面向对象程序设计"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
@@ -42,6 +39,11 @@
 	   </test>
 
 	   <test name="ThinkPHP框架技术">
+	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   
+	   	   <test name="ThinkPHP框架技术">
 	    	<parameter name="courseName" value="ThinkPHP框架技术"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
