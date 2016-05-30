@@ -12,16 +12,6 @@
 	   	    	<parameter name="loginName" value="13878751001"/>
 	   	    	<parameter name="password" value="123456"/>
 	   	    	
-
-	   <test name="安全教育【广铁】">
-	    	<parameter name="courseName" value="安全教育【广铁】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-
-	   <test name="计算思维【广铁】">
-	    	<parameter name="courseName" value="计算思维【广铁】"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 	   
 	   	   <test name="创业启蒙与案例分享【广铁】">
 	    	<parameter name="courseName" value="创业启蒙与案例分享【广铁】"/>
