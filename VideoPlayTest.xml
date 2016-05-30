@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="四川师范大学计算机科学学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="常州大学" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,55 +8,13 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://sicnucs.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
-	   	    	<parameter name="password" value="080930"/>
+	   	    	<parameter name="baseUrl" value="http://cczu.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="13851742182"/>
+	   	    	<parameter name="password" value="gaoxiaobang"/>
 
-	   <test name="编程算法">
-	    	<parameter name="courseName" value="编程算法"/>
+	   <test name="从校园到职场">
+	    	<parameter name="courseName" value="从校园到职场"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	  	   <test name="数据结构">
-	    	<parameter name="courseName" value="数据结构"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="云计算精要">
-	    	<parameter name="courseName" value="云计算精要"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   <test name="数理统计">
-	    	<parameter name="courseName" value="数理统计"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   <test name="大数据概论">
-	    	<parameter name="courseName" value="大数据概论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   
-	   <test name="R语言编程技术">
-	    	<parameter name="courseName" value="R语言编程技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="R语言建模与预测">
-	    	<parameter name="courseName" value="R语言建模与预测"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   <test name="数据挖掘技术">
-	    	<parameter name="courseName" value="数据挖掘技术"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   
-	   <test name="集群环境部署与应用实践">
-	    	<parameter name="courseName" value="集群环境部署与应用实践"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="数据学工具应用">
-	    	<parameter name="courseName" value="数据学工具应用"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="云平台实践">
-	    	<parameter name="courseName" value="云平台实践"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	  
+	  	 
 </suite>
