@@ -26,9 +26,6 @@
 	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+
 	   	   	  
 </suite>
