@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="江苏师范大学" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="宿迁学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,29 +8,41 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://jsnu.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://sqc.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="13851742182"/>
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 	   	    	
 
-	   	   <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   	   <test name="搜索引擎">
+	    	<parameter name="courseName" value="搜索引擎"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   	   <test name="数字化营销入门">
+	    	<parameter name="courseName" value="数字化营销入门"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
+	   	   	   <test name="互联网营销全攻略">
+	    	<parameter name="courseName" value="互联网营销全攻略"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="自我发展与创业指导">
-	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   	   	   <test name="信息安全意识与网络安全">
+	    	<parameter name="courseName" value="信息安全意识与网络安全"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
+	   	   	   <test name="互联网金融零突破">
+	    	<parameter name="courseName" value="互联网金融零突破"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   <test name="从零起步学软文营销">
+	    	<parameter name="courseName" value="从零起步学软文营销"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   <test name="留学第一课">
+	    	<parameter name="courseName" value="留学第一课"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   <test name="实用摄影基础教程">
+	    	<parameter name="courseName" value="实用摄影基础教程"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	  
