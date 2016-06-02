@@ -13,38 +13,26 @@
 	   	    	<parameter name="password" value="gaoxiaobang"/>
 	   	    	
 
-	   	   <test name="形势与政策">
-	    	<parameter name="courseName" value="形势与政策"/>
+	   	   <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="大学生职业生涯规划">
-	    	<parameter name="courseName" value="大学生职业生涯规划"/>
+	   	   <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="安全教育">
-	    	<parameter name="courseName" value="安全教育"/>
+	   	   	   <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="心理健康">
-	    	<parameter name="courseName" value="心理健康"/>
+	   	   	   <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   <test name="计算机文化基础">
-	    	<parameter name="courseName" value="计算机文化基础"/>
+	   	   	   <test name="职业素养">
+	    	<parameter name="courseName" value="职业素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	   <test name="恋爱与青春健康">
-	    	<parameter name="courseName" value="恋爱与青春健康"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   <test name="商务办公软件应用与实践">
-	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	 
+	   	   	   	  
 	   	   	  
 </suite>
