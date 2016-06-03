@@ -36,5 +36,13 @@
 	   	   	   <test name="计算机数据库基础与应用">
 	    	<parameter name="courseName" value="计算机数据库基础与应用"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>	  
+	   </test>
+	   	   	   	   <test name="魅力高效沟通实战技巧">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   <test name="商务礼仪">
+	    	<parameter name="courseName" value="商务礼仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
