@@ -16,10 +16,6 @@
 	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   
-	   <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+
 	  	  
 </suite>
