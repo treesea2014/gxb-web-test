@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="成都大学MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="重庆科技学院网络课程学习平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,15 +8,33 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://cdu.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://cqust.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="801205"/>
 
-
-	   	   	     <test name="计算机文化基础">
-	    	<parameter name="courseName" value="计算机文化基础"/>
+	   	     <test name="打造无敌商业计划书">
+	    	<parameter name="courseName" value="打造无敌商业计划书"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	    
-	   	   
+	   	     <test name="互联网营销全攻略">
+	    	<parameter name="courseName" value="互联网营销全攻略"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	     <test name="信息安全意识与网络安全">
+	    	<parameter name="courseName" value="信息安全意识与网络安全"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	     <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	     <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	     <test name="安全教育">
+	    	<parameter name="courseName" value="安全教育"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	  
 </suite>
