@@ -48,5 +48,8 @@
 	    	<parameter name="courseName" value="心理健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-
+	   	   	   	     <test name="恋爱与青春健康">
+	    	<parameter name="courseName" value="恋爱与青春健康"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
