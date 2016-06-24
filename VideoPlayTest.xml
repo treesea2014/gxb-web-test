@@ -56,4 +56,16 @@
 	    	<parameter name="courseName" value="计算机多媒体应用基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
+	   	   	   	   	   	     <test name="魅力高效沟通实战技巧">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	     <test name="商务礼仪">
+	    	<parameter name="courseName" value="商务礼仪"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	   	   	     <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
