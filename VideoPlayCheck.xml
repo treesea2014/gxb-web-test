@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="重庆科技学院网络课程学习平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="四川爱华学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,32 +8,32 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://cqust.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://scaihua.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="801205"/>
 
-	   	     <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
+	   	     <test name="计算机数据库基础与应用">
+	    	<parameter name="courseName" value="计算机数据库基础与应用"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	     <test name="魅力高效沟通实战技巧">
-	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
+	   	   	     <test name="计算机文化基础">
+	    	<parameter name="courseName" value="计算机文化基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	     <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
+	   	     <test name="大学生职业生涯规划">
+	    	<parameter name="courseName" value="大学生职业生涯规划"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	     <test name="自我发展与创业指导">
-	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   	     <test name="就业指导">
+	    	<parameter name="courseName" value="就业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	     <test name="从校园到职场">
-	    	<parameter name="courseName" value="从校园到职场"/>
+	   	   	     <test name="互联网营销全攻略">
+	    	<parameter name="courseName" value="互联网营销全攻略"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	     <test name="大学生就业综合技能提升">
-	    	<parameter name="courseName" value="大学生就业综合技能提升"/>
+	   	   	     <test name="创新思维开发与落地">
+	    	<parameter name="courseName" value="创新思维开发与落地"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
