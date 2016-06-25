@@ -12,6 +12,10 @@
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="801205"/>
 
+	   	     <test name="计算机文化基础">
+	    	<parameter name="courseName" value="计算机文化基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 	   	     <test name="创业基本功与精益创业方法论">
 	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
@@ -20,52 +24,13 @@
 	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	     <test name="心理健康">
-	    	<parameter name="courseName" value="心理健康"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	     <test name="安全教育">
-	    	<parameter name="courseName" value="安全教育"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	     <test name="军事理论">
+	   	     <test name="军事理论">
 	    	<parameter name="courseName" value="军事理论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	     <test name="形势与政策">
-	    	<parameter name="courseName" value="形势与政策"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 	   	   	   	     <test name="恋爱与青春健康">
 	    	<parameter name="courseName" value="恋爱与青春健康"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	   	     <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	     <test name="商务办公软件应用与实践">
-	    	<parameter name="courseName" value="商务办公软件应用与实践"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	     <test name="计算机网络与网页制作">
-	    	<parameter name="courseName" value="计算机网络与网页制作"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	     <test name="计算机多媒体应用基础">
-	    	<parameter name="courseName" value="计算机多媒体应用基础"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	     <test name="魅力高效沟通实战技巧">
-	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	     <test name="商务礼仪">
-	    	<parameter name="courseName" value="商务礼仪"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   	   	   	     <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   	   	   	    
 </suite>
