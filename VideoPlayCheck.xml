@@ -12,28 +12,36 @@
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="801205"/>
 
-	   	     <test name="计算机数据库基础与应用">
-	    	<parameter name="courseName" value="计算机数据库基础与应用"/>
+	   	     <test name="大数据与云计算初体验">
+	    	<parameter name="courseName" value="大数据与云计算初体验"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	     <test name="计算机文化基础">
-	    	<parameter name="courseName" value="计算机文化基础"/>
+	   	   	     <test name="大数据应用与管理">
+	    	<parameter name="courseName" value="大数据应用与管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	     <test name="大学生职业生涯规划">
-	    	<parameter name="courseName" value="大学生职业生涯规划"/>
+	   	     <test name="职业素养">
+	    	<parameter name="courseName" value="职业素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	     <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
+	   	     <test name="国学素养">
+	    	<parameter name="courseName" value="国学素养"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	     <test name="互联网营销全攻略">
-	    	<parameter name="courseName" value="互联网营销全攻略"/>
+	   	   	     <test name="团队建设与高效管理">
+	    	<parameter name="courseName" value="团队建设与高效管理"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   	     <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   	   	     <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	     <test name="大学生就业综合技能提升">
+	    	<parameter name="courseName" value="大学生就业综合技能提升"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
+	   	   	   	     <test name="从校园到职场">
+	    	<parameter name="courseName" value="从校园到职场"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
 </suite>
