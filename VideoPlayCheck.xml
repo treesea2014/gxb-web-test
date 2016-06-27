@@ -12,14 +12,6 @@
 	   	    	<parameter name="loginName" value="13379209092"/>
 	   	    	<parameter name="password" value="123456"/>
 
-	   	     <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	     <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
 	   	     <test name="从零起步学软文营销">
 	    	<parameter name="courseName" value="从零起步学软文营销"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
@@ -48,20 +40,5 @@
 	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-	   	   <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="搜索引擎">
-	    	<parameter name="courseName" value="搜索引擎"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
-	   	   	   <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test>
+	   	  
 </suite>
