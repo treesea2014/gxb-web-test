@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="江苏农牧科技职业学院" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="合肥师范学院MOOC慕课中心" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,15 +8,38 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://jsahvc.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="13851742182"/>
+	   	    	<parameter name="baseUrl" value="http://hftc.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="xrwang@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="123456"/>
 
 
-	   <test name="大学生就业综合技能提升">
-	    	<parameter name="courseName" value="大学生就业综合技能提升"/>
+	   <test name="创新思维开发与落地">
+	    	<parameter name="courseName" value="创新思维开发与落地"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
  
-	   
+	   	 <test name="创业基础">
+	    	<parameter name="courseName" value="创业基础"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	 <test name="创业启蒙与案例分享">
+	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	 <test name="大数据营销与创新">
+	    	<parameter name="courseName" value="大数据营销与创新"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	 <test name="实用摄影基础教程">
+	    	<parameter name="courseName" value="实用摄影基础教程"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	 <test name="信息安全意识与网络安全">
+	    	<parameter name="courseName" value="信息安全意识与网络安全"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	   	 <test name="移动互联网思维">
+	    	<parameter name="courseName" value="移动互联网思维"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
 </suite>
