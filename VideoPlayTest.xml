@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="湖南中医药MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="潮汕职业技术学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,56 +8,29 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://hnzyy.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="lfwang@gaoxiaobang.com"/>
+	   	    	<parameter name="baseUrl" value="http://chaoshan.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="18817500532"/>
 	   	    	<parameter name="password" value="123456"/>
 
 	   
-	   	 <test name="创业启蒙与案例分享">
-	    	<parameter name="courseName" value="创业启蒙与案例分享"/>
+	   	 <test name="创新思维开发与落地【潮汕学院(含教师)】">
+	    	<parameter name="courseName" value="创新思维开发与落地【潮汕学院(含教师)】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
 
-	   	    <test name="创业基本功与精益创业方法论">
-	    	<parameter name="courseName" value="创业基本功与精益创业方法论"/>
+	   	    <test name="创新思维开发与落地【潮汕学院】">
+	    	<parameter name="courseName" value="创新思维开发与落地【潮汕学院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
  
-	   	    <test name="创业基础">
-	    	<parameter name="courseName" value="创业基础"/>
+	   	    <test name="魅力高效沟通实战技巧【潮汕学院(含教师)】">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧【潮汕学院(含教师)】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
 	   	   
-	   <test name="打造无敌商业计划书">
-	    	<parameter name="courseName" value="打造无敌商业计划书"/>
+	   <test name="魅力高效沟通实战技巧【潮汕学院】">
+	    	<parameter name="courseName" value="魅力高效沟通实战技巧【潮汕学院】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
-	   	   <test name="创新思维开发与落地">
-	    	<parameter name="courseName" value="创新思维开发与落地"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="互联网营销概论">
-	    	<parameter name="courseName" value="互联网营销概论"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="搜索引擎">
-	    	<parameter name="courseName" value="搜索引擎"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="微信与口碑营销">
-	    	<parameter name="courseName" value="微信与口碑营销"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   	   <test name="从零起步学软文营销">
-	    	<parameter name="courseName" value="从零起步学软文营销"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   	   <test name="计算机网络与网页制件">
-	    	<parameter name="courseName" value="计算机网络与网页制件"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   	   <test name="计算机多媒体应用基础">
-	    	<parameter name="courseName" value="计算机多媒体应用基础"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
+	   	
 </suite>
