@@ -11,11 +11,7 @@
 	   	    	<parameter name="baseUrl" value="http://hnzyygz.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="lfwang@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="123456"/>
-
-	   <test name="大数据营销与创新">
-	    	<parameter name="courseName" value="大数据营销与创新"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
+ 
 	   <test name="创业基础">
 	    	<parameter name="courseName" value="创业基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
