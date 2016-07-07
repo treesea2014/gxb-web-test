@@ -96,7 +96,7 @@ public class CoursePlayStep extends AbstractStep {
 		driver.get(baseUrl);
 		LoginAct l = new LoginAct(driver);
 		l.clickToLogin();
-		l.loginByStudentNum();
+//		l.loginByStudentNum();
 		l.inputUserName(loginName);
 		l.inputPassword(password);
 		l.clickLogin();
