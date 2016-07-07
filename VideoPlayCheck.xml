@@ -12,21 +12,11 @@
 	   	    	<parameter name="loginName" value="ycao@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="801205"/>
  
-	   <test name="实用摄影基础教程">
-	    	<parameter name="courseName" value="实用摄影基础教程"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
+
 	   	   <test name="魅力高效沟通实战技巧">
 	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
-	   	   <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="国学素养">
-	    	<parameter name="courseName" value="国学素养"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
+
 	   	 	 
 </suite>
