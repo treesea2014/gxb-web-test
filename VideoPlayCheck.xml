@@ -12,15 +12,22 @@
 	   	    	<parameter name="loginName" value="xrwang@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="wang654321"/>
  
-	   <test name="职业素养">
-	    	<parameter name="courseName" value="职业素养"/>
+	   <test name="自我发展与创业指导">
+	    	<parameter name="courseName" value="自我发展与创业指导"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
 
-	   	   <test name="团队建设与高效管理">
-	    	<parameter name="courseName" value="团队建设与高效管理"/>
+	   	   <test name="大学生就业综合技能提升">
+	    	<parameter name="courseName" value="大学生就业综合技能提升"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
-
+	   	   <test name="创新思维开发与落地">
+	    	<parameter name="courseName" value="创新思维开发与落地"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	   	   <test name="大数据与云计算初体验">
+	    	<parameter name="courseName" value="大数据与云计算初体验"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
 	   
 </suite>
