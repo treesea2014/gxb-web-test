@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="炎黄职业技术学院" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="南京晓庄学院" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
-	<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
+	
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://yhust.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://njxzc.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="13851742182"/>
 	   	    	<parameter name="password" value="123456"/>
- 
 
-	   	   <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
+	   
+	   	 <test name="互联网营销概论">
+	    	<parameter name="courseName" value="互联网营销概论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
- 	   	  
+
+	   	    <test name="从校园到职场">
+	    	<parameter name="courseName" value="从校园到职场"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+ 
+	   	    <test name="云计算精要">
+	    	<parameter name="courseName" value="云计算精要"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	   
+	   	   	    <test name="新媒体策划">
+	    	<parameter name="courseName" value="新媒体策划"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
 </suite>
