@@ -16,25 +16,5 @@
 	    	<parameter name="courseName" value="留学第一课"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
-	   	   <test name="演讲口才与公众表达">
-	    	<parameter name="courseName" value="演讲口才与公众表达"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="国学素养">
-	    	<parameter name="courseName" value="国学素养"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="魅力高效沟通实战技巧">
-	    	<parameter name="courseName" value="魅力高效沟通实战技巧"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="大学生职业生涯规划">
-	    	<parameter name="courseName" value="大学生职业生涯规划"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   <test name="就业指导">
-	    	<parameter name="courseName" value="就业指导"/>
-	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
-	   </test> 
-	   	   	   	
+	   	  
 </suite>
