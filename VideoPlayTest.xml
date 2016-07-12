@@ -13,13 +13,13 @@
 	   	    	<parameter name="password" value="123456"/>
 
 	   
-	   	 <test name="安全教育">
-	    	<parameter name="courseName" value="安全教育"/>
+	   	 <test name="安全教育【太原科技大学-2014级】">
+	    	<parameter name="courseName" value="安全教育【太原科技大学-2014级】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
 
-	   	    <test name="信息安全意识与网络安全">
-	    	<parameter name="courseName" value="信息安全意识与网络安全"/>
+	   	    <test name="信息安全意识与网络安全【太原科技大学-2013、2015级】">
+	    	<parameter name="courseName" value="信息安全意识与网络安全【太原科技大学-2013、2015级】"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
  
