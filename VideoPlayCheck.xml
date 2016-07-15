@@ -15,5 +15,6 @@
 	   <test name="创业基础">
 	    	<parameter name="courseName" value="创业基础"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 
 </suite>
