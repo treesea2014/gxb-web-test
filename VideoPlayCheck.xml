@@ -9,7 +9,7 @@
 </listeners>
 
 	   	    	<parameter name="baseUrl" value="http://hfuu.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="xrwang@gaoxiaobang.com "/>
+	   	    	<parameter name="loginName" value="xrwang@gaoxiaobang.com"/>
 	   	    	<parameter name="password" value="wang654321"/>
 
 	   <test name="创业基础">
