@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="湖北第二师范学院MOOC平台" parallel="tests" preserve-order="true" thread-count="1">
+<suite name="沈阳建筑大学" parallel="tests" preserve-order="true" thread-count="1">
 <listeners>     
 	<listener class-name="com.kkb.test.util.reporter.HTMLReporter" />
 		<listener class-name="com.kkb.test.util.reporter.JUnitXMLReporter" />
@@ -8,13 +8,16 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://hue.gaoxiaobang.com/"/>
-	   	    	<parameter name="loginName" value="13379209092"/>
-	   	    	<parameter name="password" value="123456"/>
+	   	    	<parameter name="baseUrl" value="http://sjzu.gaoxiaobang.com/"/>
+	   	    	<parameter name="loginName" value="zma@gaoxiaobang.com"/>
+	   	    	<parameter name="password" value="abcd1234"/>
 
-	   <test name="移动互联网思维">
-	    	<parameter name="courseName" value="移动互联网思维"/>
+	   <test name="大学生健康教育">
+	    	<parameter name="courseName" value="大学生健康教育"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test>
-
+	   <test name="军事理论">
+	    	<parameter name="courseName" value="军事理论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test>
 </suite>
