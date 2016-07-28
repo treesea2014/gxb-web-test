@@ -8,7 +8,7 @@
 	<listener class-name="com.kkb.test.util.reporter.TestngListener" />
 </listeners>
 
-	   	    	<parameter name="baseUrl" value="http://js-cj.gaoxiaobang.com/"/>
+	   	    	<parameter name="baseUrl" value="http://ysdemo.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="lms05"/>
 	   	    	<parameter name="password" value="123456"/>
 
