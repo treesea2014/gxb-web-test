@@ -17,5 +17,20 @@
 	    	<parameter name="courseName" value="管理学导论"/>
 	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
 	   </test> 
-
+	   <test name="大学语文">
+	    	<parameter name="courseName" value="大学语文"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	   <test name="中医养生方法学">
+	    	<parameter name="courseName" value="中医养生方法学"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	   <test name="经济学导论">
+	    	<parameter name="courseName" value="经济学导论"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
+	   	   <test name="工程估价">
+	    	<parameter name="courseName" value="工程估价"/>
+	   		 <classes><class name="com.kkb.test.steps.pc.gxb.CoursePlayStep"/></classes>
+	   </test> 
 </suite>
