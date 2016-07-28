@@ -11,7 +11,6 @@
 	   	    	<parameter name="baseUrl" value="http://ysdemo.gaoxiaobang.com/"/>
 	   	    	<parameter name="loginName" value="lms05"/>
 	   	    	<parameter name="password" value="123456"/>
-
 	   
 	   <test name="管理学导论">
 	    	<parameter name="courseName" value="管理学导论"/>
