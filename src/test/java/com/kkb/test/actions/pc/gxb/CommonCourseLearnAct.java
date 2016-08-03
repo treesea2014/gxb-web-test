@@ -12,9 +12,12 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -368,22 +371,26 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
         List<WebElement> unitIdList = courseLearnPage.unitIdList;
         //获取第一级,逐个张开
         List<WebElement> chapterList = courseLearnPage.chapterList;
+        JavascriptExecutor js = ((JavascriptExecutor) driver);
+        WebDriverWait wait = new WebDriverWait(driver, 3);
 
         int unitKey = 0;
         for (WebElement e1 : chapterList) {
             logger.info("点击第一级:{}",e1.getText());
+            js.executeScript("arguments[0].scrollIntoView(true);", e1);
+            wait.until(ExpectedConditions.elementToBeClickable(e1));
             e1.click();
             String unitId = unitIdList.get(unitKey++).getAttribute("data-unit-id");
-                //获取第三级中的video视频,逐个存入map
-                if (isElementExist(courseLearnPage.chapterList3Xpath, 10)) {
-                    List<WebElement> chapterList3 = courseLearnPage.chapterList3;
-                    for (WebElement e3 : chapterList3) {
-                        String[] item = {courseName + "=" + e1.getText() + "=" + e3.getText(),
-                                e3.getAttribute("chapter_id"),
-                                unitId};
-                        videoMap.put(key++, item);
-                    }
+            //获取第三级中的video视频,逐个存入map
+            if (isElementExist(courseLearnPage.chapterList3Xpath, 10)) {
+                List<WebElement> chapterList3 = courseLearnPage.chapterList3;
+                for (WebElement e3 : chapterList3) {
+                    String[] item = {courseName + "=" + e1.getText() + "=" + e3.getText(),
+                            e3.getAttribute("chapter_id"),
+                            unitId};
+                    videoMap.put(key++, item);
                 }
+            }
 
             //关闭第一级
             click(e1);

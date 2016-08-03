@@ -54,7 +54,7 @@ public class CourseDetailsPage extends Page {
 	@FindBy(xpath = "//div[@class='vedioRight']/div[@class='r_right']/div[@class='ng-scope']/p")
 	public WebElement startStudy;
 
-	
+
 
 	/**
 	 * 授权提示框

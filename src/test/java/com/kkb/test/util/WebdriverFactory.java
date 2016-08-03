@@ -41,6 +41,7 @@ public class WebdriverFactory {
 
 	public final String FIRFOX_DRIVER_PATH = "selenium.browser.firefox";
 	public final String CHROME_DRIVER_PATH = "selenium.browser.chrome.driver";
+	public final String CHROME_PATH = "selenium.browser.chrome";
 	public final String SAFARI_DRIVER_PATH = "selenium.browser.safari.driver";
 	public final String IE_DRIVER_PATH = "selenium.browser.ie.driver.32";
 
@@ -72,7 +73,7 @@ public class WebdriverFactory {
 		if (FIRFOX_DRIVER.equals(browser)) {
 			webDriver = firefoxBrowserInstance(classpath);
 		} else if (CHROME_DRIVER.equals(browser)) {
-			webDriver = chromeBrowserInstance(classpath);
+			webDriver = chromeBrowserInstance(classpath,p);
 		} else if (IE_DRIVER.equals(browser)) {
 			webDriver = ieBrowserInstance(classpath);
 		} else if (SAFARI_DRIVER.equals(browser)) {
@@ -101,16 +102,20 @@ public class WebdriverFactory {
 	 * @param browserPath
 	 * @return
 	 */
-	private WebDriver chromeBrowserInstance(String classpath) {
+	private WebDriver chromeBrowserInstance(String classpath,Properties proper) {
 		String browserPath = classpath
 				+ props.getProperty(CHROME_DRIVER_PATH);
+		String chromePath = proper.getProperty(CHROME_PATH);
+
 		File file = new File(browserPath);
 			if (!file.exists()) {
 			browserPath = new File(classpath).getParentFile().getPath()
 					+ "\\classes\\"
 					+ props.getProperty(CHROME_DRIVER_PATH);		}
 		System.setProperty("webdriver.chrome.driver", browserPath);
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.setBinary(chromePath);
+		WebDriver driver = new ChromeDriver(options);
 		logger.info("启动Chrome浏览器   [{}]", browserPath);
 		return driver;
 	}

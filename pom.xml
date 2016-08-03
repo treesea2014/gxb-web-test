@@ -50,11 +50,19 @@
 			<version>6.9.4</version>
 		</dependency>
 		<!-- selenium po -->
+		<!-- https://mvnrepository.com/artifact/ru.stqa.selenium/webdriver-factory -->
 		<dependency>
 			<groupId>ru.stqa.selenium</groupId>
 			<artifactId>webdriver-factory</artifactId>
-			<version>1.1.51</version>
+			<version>1.1.52</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>2.52.0</version>
+		</dependency>
+
 		<!-- 邮件 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
