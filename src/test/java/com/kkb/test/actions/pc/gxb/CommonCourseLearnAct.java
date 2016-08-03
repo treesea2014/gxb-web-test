@@ -372,7 +372,7 @@ public class CommonCourseLearnAct extends CommonCourseDetailsAct {
         //获取第一级,逐个张开
         List<WebElement> chapterList = courseLearnPage.chapterList;
         JavascriptExecutor js = ((JavascriptExecutor) driver);
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
 
         int unitKey = 0;
         for (WebElement e1 : chapterList) {
